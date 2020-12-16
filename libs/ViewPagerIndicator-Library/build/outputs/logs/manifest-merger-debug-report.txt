@@ -1,0 +1,9 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/rsl-10/RSL Project /winningtickete/libs/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-4:12
+INJECTED from /home/rsl-10/RSL Project /winningtickete/libs/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-4:12
+INJECTED from /home/rsl-10/RSL Project /winningtickete/libs/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-4:12
+	package
+		ADDED from /home/rsl-10/RSL Project /winningtickete/libs/ViewPagerIndicator-Library/AndroidManifest.xml:3:11-43
+		INJECTED from /home/rsl-10/RSL Project /winningtickete/libs/ViewPagerIndicator-Library/AndroidManifest.xml
+		INJECTED from /home/rsl-10/RSL Project /winningtickete/libs/ViewPagerIndicator-Library/AndroidManifest.xml
