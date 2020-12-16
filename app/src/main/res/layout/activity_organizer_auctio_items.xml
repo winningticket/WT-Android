@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorwhite"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".OrganizerFlow.OrganizerAuctioItems">
+
+    <ImageButton
+        android:layout_margin="@dimen/text_size"
+        android:padding="@dimen/edt_paddingleft"
+        android:id="@+id/btn_back"
+        android:textColor="@color/colorblack"
+        android:gravity="start|center"
+        android:background="@drawable/black_back_arrow"
+        android:layout_width="@dimen/mph_width"
+        android:layout_height="@dimen/mph_width" />
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/text_size"
+        android:layout_marginBottom="@dimen/linear_medium"
+        android:scaleType="fitXY"
+        android:background="@drawable/wtpay"
+        android:layout_width="@dimen/viewpager_hight"
+        android:layout_height="@dimen/logo_live_width"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/text_size"
+        android:layout_marginStart="@dimen/text_size"
+        android:padding="@dimen/aboutus_padding"
+        android:textSize="@dimen/header_text_size"
+        android:textColor="@color/btn_color"
+        android:id="@+id/title_text"
+        android:text="@string/select_auction_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:background="@drawable/editext_acountprofile"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/text_size"
+        android:layout_height="@dimen/edt_hint_height"
+        android:paddingTop="@dimen/edt_hint_padingtop">
+             <Spinner
+            android:layout_marginLeft="@dimen/spinnerlest"
+            android:layout_width="match_parent"
+            android:id="@+id/auction_itmes"
+            android:layout_height="@dimen/edt_hint_height"
+            android:textColor="@color/colorblack"
+            android:theme="@style/ToolbarStyle_black"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_margin="@dimen/text_size"
+        android:background="@color/colornotificqation"
+        android:padding="@dimen/text_size"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+         android:id="@+id/auction_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:visibility="gone"
+        android:textColor="@color/colorwhite"
+        android:id="@+id/buy_it_now"
+        android:layout_margin="@dimen/text_size"
+        android:background="@color/public_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

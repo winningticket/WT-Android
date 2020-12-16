@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="@dimen/aboutus_padding"
+    android:background="@color/colorwhite"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:textColor="@color/colorblack"
+        android:padding="@dimen/aboutus_padding"
+        android:textSize="@dimen/header_text_size"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/filter_stats_by_date"
+        android:id="@+id/filter_by_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_below="@+id/filter_by_state"
+        android:textColor="@color/colorblack"
+        android:padding="@dimen/aboutus_padding"
+        android:textSize="@dimen/text_size"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Select a week to view rounds from that week. Red circle dates indicate that a round has been played"
+        android:id="@+id/filter_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.wisnu.datetimerangepickerandroid.CalendarPickerView
+        android:id="@+id/calendar_view"
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:layout_marginBottom="@dimen/aboutus_padding"
+        android:layout_below="@+id/filter_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pic_hight" />
+
+    <TextView
+        android:layout_below="@+id/calendar_view"
+        android:textColor="@color/colorblack"
+        android:padding="@dimen/aboutus_padding"
+        android:textSize="@dimen/text_size"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Week Selected : 11/5/19 - 11/6/19"
+        android:id="@+id/selected_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_below="@+id/selected_dates"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/btn_show_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:background="@color/btn_color"
+        android:textColor="@color/colorwhite"/>
+
+    <Button
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_below="@+id/btn_show_dates"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:background="@drawable/editext_baground"
+        android:textColor="@color/colorblack"/>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

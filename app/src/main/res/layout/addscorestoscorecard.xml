@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <include
+        android:id="@+id/add_scores"
+        layout="@layout/gross_score_top_section"/>
+
+        <Button
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/edt_paddingleft"
+            android:layout_below="@+id/add_scores"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/linear_small"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/linear_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cross_score_enable"
+            android:id="@+id/btn_cross_scoring_enabled" />
+
+    <LinearLayout
+        android:layout_below="@+id/btn_cross_scoring_enabled"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:id="@+id/crossTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_gross_score"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/gross_score_text" />
+
+        <TextView
+            android:layout_margin="@dimen/aboutus_padding"
+            android:id="@+id/info_gross_score"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/during_a_scramble_all_team_members"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/linear_mrgn" />
+
+          <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+              <GridView
+                   android:scrollbars="none"
+                   android:paddingStart="@dimen/edt_paddingleft"
+                   android:layout_marginTop="@dimen/edt_paddingleft"
+                   android:layout_marginBottom="@dimen/edt_paddingleft"
+                   android:id="@+id/gridview"
+                   android:layout_marginStart="@dimen/aboutus_padding"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:numColumns="3"
+                   android:verticalSpacing="15dp"
+                   android:horizontalSpacing="15dp"
+                   android:stretchMode="columnWidth"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_selected_score"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_margin="@dimen/aboutus_padding"
+            android:background="@color/coloraddreferal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+                  <LinearLayout
+                      android:layout_margin="@dimen/event_top_paddingbtm"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:visibility="gone"
+                      android:orientation="vertical"
+                      android:id="@+id/linear_layout">
+
+                      <LinearLayout
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+
+                          <include
+                              android:visibility="gone"
+                              android:id="@+id/fair_way_hits"
+                              layout="@layout/gross_score_fairway_hit"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"/>
+
+                          <include
+                              android:visibility="gone"
+                              android:id="@+id/green_in_regular"
+                              layout="@layout/gross_score_green_in_reg"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"/>
+
+                          <include
+                              android:visibility="gone"
+                              android:id="@+id/gross_putts"
+                              layout="@layout/gross_score_putts"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"/>
+
+                      </LinearLayout>
+
+                      <Button
+                          android:visibility="gone"
+                          android:layout_marginTop="@dimen/aboutus_padding"
+                          android:paddingRight="@dimen/margin_top_order"
+                          android:paddingLeft="@dimen/margin_top_order"
+                          android:layout_gravity="center"
+                          android:textColor="@color/colorwhite"
+                          android:textSize="@dimen/text_size"
+                          android:textAllCaps="true"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/new_gray_button_bacgound"
+                          android:id="@+id/btn_add_note"
+                          android:text="@string/add_note"/>
+
+                      <LinearLayout
+                          android:visibility="gone"
+                          android:id="@+id/et_layout"
+                          android:layout_marginBottom="@dimen/aboutus_padding"
+                          android:layout_marginTop="@dimen/aboutus_padding"
+                          android:weightSum="2"
+                          android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+
+                          <Button
+                              android:layout_marginEnd="@dimen/aboutus_padding"
+                              android:layout_weight="1.5"
+                              android:paddingRight="@dimen/margin_top_order"
+                              android:paddingLeft="@dimen/margin_top_order"
+                              android:layout_gravity="center"
+                              android:textColor="@color/colorwhite"
+                              android:textSize="@dimen/text_size"
+                              android:textAllCaps="false"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/new_gray_button_bacgound"
+                              android:id="@+id/btn_edit_note"
+                              android:text="@string/edit_you_note"/>
+
+                          <Button
+                              android:layout_marginStart="@dimen/aboutus_padding"
+                              android:layout_weight=".5"
+                              android:paddingRight="@dimen/margin_top_order"
+                              android:paddingLeft="@dimen/margin_top_order"
+                              android:layout_gravity="center"
+                              android:textColor="@color/colorwhite"
+                              android:textSize="@dimen/text_size"
+                              android:textAllCaps="false"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/new_bottom_delete"
+                              android:id="@+id/btn_delete_note"
+                              android:text="@string/delete_note"/>
+
+                      </LinearLayout>
+
+                      <TextView
+                          android:gravity="center"
+                          android:layout_gravity="center"
+                          android:id="@+id/add_stats_text"
+                          android:textColor="@color/btn_color"
+                          android:textSize="@dimen/header_text_size"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/add_your_stats"/>
+
+                      <TextView
+                          android:gravity="center"
+                          android:layout_gravity="center"
+                          android:id="@+id/add_stats_icon"
+                          android:textColor="@color/btn_color"
+                          android:textSize="@dimen/big_big_text"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+                  </LinearLayout>
+
+                  <Button
+                      android:paddingRight="@dimen/margin_top_order"
+                      android:paddingLeft="@dimen/margin_top_order"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:layout_gravity="center"
+                      android:textColor="@color/colorwhite"
+                      android:textSize="@dimen/text_size"
+                      android:layout_marginBottom="@dimen/_10sdp"
+                      android:textAllCaps="true"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/new_bottom_bg"
+                      android:id="@+id/save_grsoss_info"
+                      android:text="@string/save_score"/>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+        </LinearLayout>
+   </RelativeLayout>

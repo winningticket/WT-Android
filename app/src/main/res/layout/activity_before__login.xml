@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorblack"
+        tools:context=".Activity.Before_Login">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_pager" />
+        <LinearLayout
+            android:id="@+id/layoutDots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_layout_height"
+            android:layout_below="@+id/view_pager"
+            android:layout_alignParentStart="true">
+
+
+            <Button
+                android:stateListAnimator="@null"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/edt_marg_right"
+                android:id="@+id/btn_signup"
+                android:background="@color/colorwhite"
+                android:textColor="@color/colorbtn"
+                android:text="@string/signup"
+                android:textSize="@dimen/text_size"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height" />
+
+            <Button
+                android:stateListAnimator="@null"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/edt_marg_right"
+                android:id="@+id/btn_login"
+                android:background="@color/colorbtn"
+                android:layout_marginTop="@dimen/margin_top_order"
+                android:textColor="@color/colorwhite"
+                android:text="@string/login"
+                android:textSize="@dimen/text_size"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/aboutus_padding"
+        android:layout_gravity="bottom|center"
+        android:id="@+id/version_name"
+        android:padding="@dimen/aboutus_padding"
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/linear_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.design.widget.CoordinatorLayout>

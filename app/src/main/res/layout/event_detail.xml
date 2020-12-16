@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ticket_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="Event Date : May 2,2020 - 12PM EST"
+        android:textSize="@dimen/linear_small" />
+
+    <TextView
+        android:id="@+id/event_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="Event Date : May 2,2020 - 12PM EST"
+        android:textSize="@dimen/linear_small" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/event_code"
+        android:padding="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event code : 57HSXK"
+        android:textSize="@dimen/linear_small" />
+
+
+</LinearLayout>

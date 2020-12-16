@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhite"
+    android:layout_height="match_parent"
+    tools:context=".OrganizerFlow.ScanAndPay">
+
+    <ImageButton
+        android:layout_margin="@dimen/text_size"
+        android:padding="@dimen/edt_paddingleft"
+        android:id="@+id/btn_back"
+        android:textColor="@color/colorblack"
+        android:gravity="start|center"
+        android:background="@drawable/black_back_arrow"
+        android:layout_width="@dimen/mph_width"
+        android:layout_height="@dimen/mph_width" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/text_size"
+        android:layout_marginBottom="@dimen/linear_medium"
+        android:scaleType="fitXY"
+        android:background="@drawable/wtpay"
+        android:layout_width="@dimen/viewpager_hight"
+        android:layout_height="@dimen/logo_live_width"
+        android:layout_gravity="center"/>
+
+
+    <EditText
+        android:layout_marginTop="@dimen/text_size"
+        android:layout_marginEnd="@dimen/text_size"
+        android:layout_marginStart="@dimen/text_size"
+        android:id="@+id/et_first_name"
+        android:hint="@string/first_name"
+        android:padding="@dimen/edt_paddingleft"
+        android:background="@drawable/editext_acountprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/text_size"
+        android:id="@+id/ext_last_name"
+        android:hint="@string/last_name"
+        android:layout_marginEnd="@dimen/text_size"
+        android:layout_marginStart="@dimen/text_size"
+        android:padding="@dimen/edt_paddingleft"
+        android:background="@drawable/editext_acountprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/text_size"
+        android:id="@+id/ext_email"
+        android:hint="@string/enter_email_address"
+        android:layout_marginEnd="@dimen/text_size"
+        android:layout_marginStart="@dimen/text_size"
+        android:padding="@dimen/edt_paddingleft"
+        android:background="@drawable/editext_acountprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textColor="@color/colorwhite"
+        android:layout_margin="@dimen/text_size"
+        android:padding="@dimen/text_size"
+        android:layout_gravity="center"
+        android:background="@drawable/new_bottom_bg"
+        android:text="@string/scan_pay"
+        android:id="@+id/btn_scann_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

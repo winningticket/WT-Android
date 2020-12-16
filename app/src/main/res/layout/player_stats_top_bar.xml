@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:padding="@dimen/edt_paddingleft"
+            android:id="@+id/back_stats_top_buttons"
+            android:layout_marginEnd="@dimen/header_text_size"
+            android:textColor="@color/colorblack"
+            android:gravity="start|center"
+            android:background="@drawable/black_back_arrow"
+            android:layout_width="@dimen/mph_width"
+            android:layout_height="@dimen/mph_width" />
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/stats_top_title"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/edt_textsize" />
+
+            <TextView
+                android:id="@+id/stats_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="stats based on 2 rounds played"
+                android:gravity="center"
+                android:textSize="@dimen/linear_medium"
+                android:textColor="@color/colorblack"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end|center"
+            android:padding="@dimen/edt_paddingleft"
+            android:id="@+id/stats_date_filter_btn"
+            android:layout_margin="@dimen/text_size"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:background="@drawable/date_filter_icon"
+            android:layout_width="@dimen/header_back_btn_height"
+            android:layout_height="@dimen/header_back_btn_height" />
+</RelativeLayout>

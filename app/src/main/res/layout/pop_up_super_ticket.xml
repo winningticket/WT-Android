@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:padding="@dimen/edt_paddingleft"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/services">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/edt_marg_right"
+                    android:layout_width="@dimen/public_hight"
+                    android:layout_height="@dimen/leader_board_title"
+                    android:background="@drawable/logo"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/img_cross"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/medium_big_textsize"
+                    android:layout_height="@dimen/medium_big_textsize"
+                    android:background="@drawable/cross_black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="@dimen/edt_paddingleft"
+                android:id="@+id/pop_super_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorblack"
+                android:text="@string/your_super_ticket"
+                android:textSize="@dimen/txt_heading_size" />
+
+            <TextView
+                android:padding="@dimen/aboutus_padding"
+                android:id="@+id/pop_super_ticket_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                    android:weightSum="2"
+                    android:padding="@dimen/aboutus_padding"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/edt_paddingleft"
+                        android:orientation="vertical"
+                        android:layout_weight=".6"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@drawable/super_ticket"
+                            android:layout_width="@dimen/view_item_hitght"
+                            android:layout_height="@dimen/view_item_hitght" />
+                        <TextView
+                            android:id="@+id/pop_super_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorblack"
+                            android:gravity="center"
+                            android:text="Super Ticket \n Contents:"
+                            android:textSize="@dimen/small_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="@dimen/edt_paddingleft"
+                        android:layout_marginBottom="@dimen/edt_paddingleft"
+                        android:layout_marginStart="@dimen/aboutus_padding"
+                        android:layout_marginEnd="@dimen/aboutus_padding"
+                        android:layout_width=".5dp"
+                        android:background="@color/colorblack"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:padding="@dimen/edt_paddingleft"
+                        android:textColor="@color/colorblack"
+                        android:id="@+id/pop_super_ticket_values"
+                        android:textSize="@dimen/text_size"
+                        android:layout_weight="1.4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            <TextView
+                android:padding="@dimen/aboutus_padding"
+                android:textSize="@dimen/header_text_size"
+                android:id="@+id/pop_sponsor_title"
+                android:layout_marginBottom="@dimen/aboutus_padding"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_sponsors"
+                android:textColor="@color/colorblack" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/pop_recler_sponsor"
+                        android:scrollbars="none"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:padding="@dimen/text_size"
+                        android:visibility="gone"
+                        android:id="@+id/pop_empty_sponsor"
+                        android:textColor="@color/colorblack"
+                        android:text="This event doesn’t have any sponsors."
+                        android:textSize="@dimen/text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

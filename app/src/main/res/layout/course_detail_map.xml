@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:behavior_hideable="false"
+    android:background="@color/colorwhite"
+    tools:context=".CourseTab.Course_Detail_Page">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/add_funds"
+        layout="@layout/custome_profile_toolbarpage" />
+
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <fragment android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/map"
+            android:layout_margin="@dimen/edt_paddingleft"
+            tools:context=".CourseTab.Course_Detail_Page"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <include layout="@layout/content_bottom_sheet" />
+
+        <TextView
+            android:padding="@dimen/aboutus_padding"
+            android:gravity="center"
+            android:text="@string/tee_boxes"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/_big_header_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tee_box"/>
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tee_box_all_data"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+ </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+

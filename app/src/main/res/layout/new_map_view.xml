@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/topbar"
+        android:background="@color/colorwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="@dimen/aboutus_padding"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/tvleave_game"
+            android:textSize="@dimen/custom_txt_size"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave\nGame"/>
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/linear_medium"
+                android:textColor="@color/colorblack"
+                android:id="@+id/tv_course_name"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="-2dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorbtn"
+                android:id="@+id/tv_hole_number"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="-2dp"
+                android:textSize="@dimen/linear_medium"
+                android:textColor="@color/colorblack"
+                android:id="@+id/tv_par_yards_handicap"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/wind_direction"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/direction_icon_width"
+            android:layout_height="@dimen/direction_icon_width" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_tab_layout"
+        android:background="@drawable/map_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:layout_marginStart="@dimen/big_big_text"
+            android:layout_marginEnd="@dimen/big_big_text"
+            android:weightSum="5"
+            android:gravity="top|center"
+            android:layout_gravity="top|center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_silent_auction"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/barcode"
+                    android:layout_width="@dimen/arrow_icon"
+                    android:layout_height="@dimen/arrow_icon" />
+                <TextView
+                    android:id="@+id/tv_silent_auction"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:gravity="center"
+                    android:text="@string/auction"
+                    android:textSize="@dimen/ss_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_marginEnd="@dimen/aboutus_padding"
+                android:layout_marginStart="@dimen/aboutus_padding"
+                android:background="@color/colorblack"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/layout_scoring_gps"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/super_ticket"
+                    android:layout_width="@dimen/arrow_icon"
+                    android:layout_height="@dimen/arrow_icon" />
+                <TextView
+                    android:id="@+id/tv_scoring_gps"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:gravity="center"
+                    android:text="@string/super_ticket"
+                    android:textSize="@dimen/ss_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_2"
+                android:layout_marginEnd="@dimen/aboutus_padding"
+                android:layout_marginStart="@dimen/aboutus_padding"
+                android:background="@color/colorblack"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/layout_live_chat"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/chat"
+                    android:layout_width="@dimen/arrow_icon"
+                    android:layout_height="@dimen/arrow_icon" />
+                <TextView
+                    android:id="@+id/tv_live_chat"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:gravity="center"
+                    android:text="Chat"
+                    android:textSize="@dimen/ss_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/text_3"
+                android:layout_marginEnd="@dimen/aboutus_padding"
+                android:layout_marginStart="@dimen/aboutus_padding"
+                android:background="@color/colorblack"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/layout_aline_center"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/aline_center"
+                    android:layout_width="@dimen/arrow_icon"
+                    android:layout_height="@dimen/arrow_icon" />
+                <TextView
+                    android:id="@+id/tv_aling_center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:gravity="center"
+                    android:text="Align Center"
+                    android:textSize="@dimen/ss_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_4"
+                android:layout_marginEnd="@dimen/aboutus_padding"
+                android:layout_marginStart="@dimen/aboutus_padding"
+                android:background="@color/colorblack"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/layout_enter_score"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/enter_score"
+                    android:layout_width="@dimen/arrow_icon"
+                    android:layout_height="@dimen/arrow_icon" />
+                <TextView
+                    android:id="@+id/tv_enter_score"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:gravity="center"
+                    android:text="Enter Score"
+                    android:textSize="@dimen/ss_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

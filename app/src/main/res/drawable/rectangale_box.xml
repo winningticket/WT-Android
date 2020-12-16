@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:radius="@dimen/edt_paddingleft" />
+
+    <solid
+        android:color="@color/orange"/>
+
+    <stroke
+        android:color="@color/orange"
+        android:width="1dp"/>
+
+    <size
+        android:width="@dimen/input_field_height"
+        android:height="@dimen/small_text" />
+
+</shape>

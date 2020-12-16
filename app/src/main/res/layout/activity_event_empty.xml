@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/aboutus_padding"
+    android:background="@color/colorwhite"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/filter_height"
+        android:layout_height="@dimen/filter_height"
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:background="@drawable/hand"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/event_empty_text"
+        android:textSize="@dimen/text_size"
+        android:text = "@string/empty_event"/>
+
+    <Button
+        android:layout_marginEnd="@dimen/mar_left_fifthyt"
+        android:layout_marginStart="@dimen/mar_left_fifthyt"
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:stateListAnimator="@null"
+        android:id="@+id/continue_event"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/layout_mrgn_leftright"
+        android:textColor="@color/colorwhite"
+        android:text="@string/_continue"
+        android:background="@drawable/new_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height" />
+
+</LinearLayout>

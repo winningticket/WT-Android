@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/colorblack"
+            android:layout_width="match_parent"
+             android:gravity="center"
+            android:layout_height="@dimen/view_pager">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/large_text_size"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:text="@string/the_all_inclusive"
+                android:id="@+id/text"
+                android:layout_below="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/text_size"
+                android:text="@string/fundraising_app"
+                android:id="@+id/text2"
+                android:layout_below="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/btn_color"
+        android:textSize="@dimen/linear_medium"
+        android:text="CHARITY , CORPORATE AND INDIVIDUAL PLAY"
+        android:id="@+id/text3"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+                     <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/text2"
+                    android:id="@+id/swipe_to_see"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/linear_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/swipe_to_see_how_it_works"/>
+
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

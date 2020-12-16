@@ -1,0 +1,289 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="com.winningticketproject.in.Fragments.Contact_us">
+    <LinearLayout
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/fulllayout"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/add_funds"
+            layout="@layout/custome_profile_toolbarpage" />
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<ScrollView
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/contact_title"
+        android:textStyle="bold"
+            android:padding="@dimen/txt_margin_lr"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_us_a_message"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_ufname"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+
+        <EditText
+            android:id="@+id/contact_fname"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:gravity="start"
+            android:hint="@string/first_name"
+            android:maxLength="30"
+            android:textSize="@dimen/edt_textsize"
+            android:paddingLeft="@dimen/edt_paddingleft"
+            android:layout_marginRight="@dimen/edt_marg_right"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height"
+
+            android:id="@+id/text_ulname"
+           >
+        <EditText
+            android:id="@+id/contact_lname"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:gravity="start"
+            android:maxLength="30"
+            android:hint="@string/last_name"
+            android:textSize="@dimen/edt_textsize"
+            android:paddingLeft="@dimen/edt_paddingleft"
+            android:layout_marginRight="@dimen/edt_marg_right"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:paddingBottom="@dimen/edt_paddingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_uemail">
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/contact_email"
+            android:gravity="start"
+            android:hint="@string/email"
+            android:textSize="@dimen/edt_textsize"
+            android:paddingLeft="@dimen/edt_paddingleft"
+            android:layout_marginRight="@dimen/edt_marg_right"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_uphno"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+        <EditText
+            android:gravity="start"
+            android:digits="0123456789+-() "
+            android:id="@+id/contact_pno"
+            android:hint="@string/phone"
+            android:maxLength="15"
+            android:textSize="@dimen/edt_textsize"
+            android:paddingLeft="@dimen/edt_paddingleft"
+            android:layout_marginRight="@dimen/edt_marg_right"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_usubject"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:paddingBottom="@dimen/edt_paddingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/contact_subject"
+            android:hint="@string/subject"
+            android:gravity="start"
+            android:maxLength="255"
+            android:textSize="@dimen/edt_textsize"
+            android:paddingLeft="@dimen/edt_paddingleft"
+            android:layout_marginRight="@dimen/edt_marg_right"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:background="@null"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+          android:id="@+id/text_umessage"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/contact_message"
+            android:minLines="4"
+            android:maxLines="4"
+            android:hint="@string/your_message"
+            android:gravity="start"
+            android:maxLength="255"
+            android:textSize="@dimen/edt_textsize"
+            android:paddingLeft="@dimen/edt_paddingleft"
+            android:layout_marginRight="@dimen/edt_marg_right"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:stateListAnimator="@null"
+            android:id="@+id/preview_order"
+            android:layout_marginLeft="@dimen/login_margin"
+            android:layout_marginRight="@dimen/login_margin"
+            android:layout_marginTop="@dimen/settings_padding"
+            android:text="@string/send"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/button_backgound"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height" />
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_top_order"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/facebook"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/margin_top_order"
+                android:padding="@dimen/txt_margin_lr"
+                android:textSize="@dimen/code_key_height"
+                android:text=""
+                android:textColor="@color/colorpaypalbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/twitter"
+                android:layout_margin="@dimen/margin_top_order"
+                android:padding="@dimen/txt_margin_lr"
+                android:textSize="@dimen/code_key_height"
+                android:text=""
+                android:textColor="@color/colorpaypalbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/instagram_logo"
+                android:layout_margin="@dimen/margin_top_order"
+                android:padding="@dimen/txt_margin_lr"
+                android:textSize="@dimen/code_key_height"
+                android:text=""
+                android:textColor="@color/colorpaypalbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
+</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

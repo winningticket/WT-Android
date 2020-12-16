@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pop_op_screen"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_height="wrap_content"
+    android:background="@color/colorwhite">
+
+            <TextView
+                android:id="@+id/pop_up_title"
+                android:text="Purchase Now"
+                android:layout_gravity="center"
+                android:padding="@dimen/txt_margin_lr"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pop_up_sub_title"
+                android:gravity="center"
+                android:text="@string/enter_participant_email"
+                android:layout_gravity="center"
+                android:padding="@dimen/txt_margin_lr"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colordarkgray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <AutoCompleteTextView
+                android:textColor="@color/colorblack"
+                android:layout_margin="@dimen/text_size"
+                android:padding="@dimen/linear_medium"
+                android:background="@drawable/textview_baground"
+                android:hint="Search user"
+                android:id="@+id/et_eamil_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginEnd="@dimen/text_size"
+            android:paddingEnd="@dimen/edt_paddingleft"
+            android:textColor="@color/colorwhite"
+            android:paddingStart="@dimen/edt_paddingleft"
+            android:textSize="@dimen/btn_txt_size"
+            android:textAllCaps="false"
+            android:background="@drawable/new_bottom_bg"
+            android:id="@+id/new_user"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_item_hitght"
+            android:text="@string/new_user" />
+
+        <Button
+            android:layout_marginStart="@dimen/text_size"
+            android:paddingEnd="@dimen/edt_paddingleft"
+            android:textColor="@color/colorwhite"
+            android:paddingStart="@dimen/edt_paddingleft"
+            android:textSize="@dimen/btn_txt_size"
+            android:textAllCaps="false"
+            android:background="@drawable/new_bottom_bg"
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_item_hitght"
+            android:text="@string/scan_pay" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="@dimen/text_size"
+        android:textSize="@dimen/header_text_size"
+        android:textColor="@color/colorblack"
+        android:textAllCaps="false"
+        android:background="@color/colorwhite"
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel" />
+
+        </LinearLayout>

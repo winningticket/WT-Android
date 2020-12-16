@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.winningticketproject.in">
+
+    <uses-sdk tools:overrideLibrary="com.stripe.android,android.support.v17.leanback" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppInfo.AppController"
+        android:allowBackup="false"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateAlwaysHidden"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name=".Stable_modify_stroke_Flow.Stable_modify_leader_board"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+
+        <activity
+            android:name=".BestBallFlow.Bestbal_Leader_Board"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+
+        <activity
+            android:name=".Stable_modify_stroke_Flow.Stable_ford_Leaderboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+
+        <activity
+            android:name=".AuctionModel.NewLive_Auction"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle">
+            <tools:validation testUrl="https://staging.winningticket.com/auction_list/" />
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="staging.winningticket.com"
+                    android:scheme="https"
+                    android:pathPrefix="/auction_list/" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AuctionModel.NewLive_AuctionItem"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle">
+            <tools:validation testUrl="https://staging.winningticket.com/auction_item/" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="staging.winningticket.com"
+                    android:scheme="https"
+                    android:pathPrefix="/auction_item/" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BestBallFlow.BestBall_Scorecard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Stable_modify_stroke_Flow.Stable_modify_ScoreCard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Stable_modify_stroke_Flow.StableFord_Score_Card"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".NewMapEvenFLOW.NormalLeaderoard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".NewMapEvenFLOW.NormalScorreboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".CourseTab.Search_Course_Result"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".OrganizerFlow.Organiser_Billing_Add"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".OrganizerFlow.OrgPurchaseConf"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".OrganizerFlow.OrganizerAuctioItems"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".OrganizerFlow.EventListFlow"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".OrganizerFlow.ScanAndPay"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AllUsersLogin.VerifyGuestUser"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AllUsersLogin.Enter_Player_Code"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AllUsersLogin.AllUserLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".TeeHandicapHole.Hole_Tee_Handicap"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name="com.winningticketproject.RoundNotes.Round_notes_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name="com.winningticketproject.RoundNotes.RoundNotesList"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".Stripe_GetWay.Stripe_Main_Page"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventTab.NewEventDetailPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".SignInSingup.Login_Screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SignInSingup.Registration_form"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".CourseTab.Course_Detail_Page"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".CourseTab.Course_Search_Page"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+
+        <activity
+            android:name=".Live_Score_New_Flow.View_course_map"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+
+        <activity
+            android:name=".SignInSingup.Splash_screen"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyAccountTab.SubcriptionInAppPurchase"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+
+        <service
+            android:name=".AppInfo.MyAndroidFirebaseMsgService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+            </intent-filter>
+        </service>
+        <service android:name=".AppInfo.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorblack" />
+
+        <activity
+            android:name=".CourseTab.Courses_list_flow"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+<!--        <activity-->
+<!--            android:name=".SignInSingup.NewBefore_login"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:theme="@style/before_login" />-->
+        <activity
+            android:name=".EventPurchase.Checkout_Page"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventTab.Purchage_Winning_Ticket"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventTab.Order_Preview"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.Add_Funds"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MyAccountTab.Donate_Funds"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.Transaction_History"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.WIthdrawal"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.EditAccount_Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.Contact_us"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.Notification_Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.About_Us"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.Change_Password"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AffiliatorModel.Affiliate_sign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".SignInSingup.DeepLinkLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AuctionModel.LiveAction_Items"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle">
+            <!--            <tools:validation testUrl="https://www.winningticket.com/auction_item/" />-->
+
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.VIEW" />-->
+
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+            <!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+            <!--                <data-->
+            <!--                    android:host="www.winningticket.com"-->
+            <!--                    android:pathPrefix="/auction_item/"-->
+            <!--                    android:scheme="https" />-->
+            <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".AuctionModel.Live_Auction"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle">
+            <!--            <tools:validation testUrl="https://www.winningticket.com/auction_list/" />-->
+
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.VIEW" />-->
+
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+            <!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+            <!--                <data-->
+            <!--                    android:host="www.winningticket.com"-->
+            <!--                    android:pathPrefix="/auction_list/"-->
+            <!--                    android:scheme="https" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.winningticketproject.in.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity
+            android:name=".AuctionModel.Bidding_History"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AffiliatorModel.Bottom_Tabs_For_afffiliate"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AffiliatorModel.Referral_Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AffiliatorModel.EditReferal_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AffiliatorModel.Add_Referral_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AffiliatorModel.Search_affiliate_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventPurchase.ExtraTickets"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.How_it_works"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventTab.Event_Code_valid"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AffiliatorModel.Edit_Referral_Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AffiliatorModel.Afiliate_Filter"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".MyAccountTab.Profile_Image"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventTab.View_All_Events"
+            android:screenOrientation="portrait"
+            android:theme="@style/toolbar" />
+        <activity
+            android:name=".EventTab.Filter_List"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AffiliatorModel.Afiliate_Referal_List"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".AuctionModel.LiveAuction_purchaseCheckout"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".IndividulaGameType.Location_Services"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".IndividulaGameType.AddScoresToScorecard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.apkgetter.SearchResultsActivity" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/map_key" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <activity
+            android:name=".MyAccountTab.Transaction_histrory_Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventTab.Score_board_new"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventTab.Virtual_gift_bag"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventTab.Virtual_bag_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".EventPurchase.Winning_ticket_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Activity.Select_hole"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".IndividulaGameType.Individul_play_course_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".IndividulaGameType.Grass_score_Update_from_Map"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Activity.Select_tree"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".ChatWithOther.User_List"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".ChatWithOther.Chat_With_Other"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Shamble_flow.Shamble_Player_list_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Shamble_flow.Shamble_Bestball_Map_GS_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Player_stats.graphExample"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Player_stats.BarChartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Player_stats.pieChart1"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Player_stats.pieChart2"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".Player_stats.pieChart3"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle" />
+
+        <service
+            android:name=".AppInfo.GPSTracker"
+            android:exported="false" />
+    </application>
+
+</manifest>

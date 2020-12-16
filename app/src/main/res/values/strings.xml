@@ -1,0 +1,757 @@
+<resources>
+    <string name="app_name">WinningTicket</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="map_key">AIzaSyCvaxgh1utaNo0kwadF8Dbdl3SpNXpSkio</string>
+    <string name="ads_unit_id">ca-app-pub-2954142127845511/7428227173</string>
+    <string name="ads_app_id">ca-app-pub-2954142127845511~6637889686</string>
+
+    <string name="finish_game_btn">Finish Game</string>
+
+    <string name="more"> <![CDATA[MORE >]]></string>
+    <string name="collapse"> <![CDATA[LESS<]]></string>
+<!--AIzaSyBRIh4EnaCmbJkIUrHlhdx7D1WNlUfTo1E-->
+    <string-array name="states">
+        <item>Choose a state</item>
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>District of Columbia</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+
+    </string-array>
+
+    <string name="create_account">Create an account</string>
+    <string name="enter_player_code">Enter player code</string>
+    <string name="enter_player_your_code">Enter your player code</string>
+    <string name="No_this_is_not_me">No, this is not me.</string>
+    <string name="Yes_Continue">Yes. Continue</string>
+    <string name="is_this_you">Is this you?</string>
+    <string name="verify_info">Verify that the code you entered matches up \nwith your information.</string>
+    <string name="enter_player_your_code_text">Enter the seven-digit code given to you by \n your event organizer.</string>
+    <string name="create_account_text">Signup to start participating in events \n Free everyday Play is also available.</string>
+    <string name="empty_event">Finish setting up your \nWinning Ticket account</string>
+    <string name="Alert_text">Finish setting up your Winning\n Ticket account.</string>
+
+    <string name="event">EVENTS</string>
+    <string name="course">COURSES</string>
+    <string name="account">ACCOUNT</string>
+    <string name="referral_name">Referral Name</string>
+    <string name="referral_email_adrress">Referral Email Address</string>
+    <string name="referral_phone_number">Referral Phone Number</string>
+    <string name="choose_user_role">Choose User Role:</string>
+    <string name="event_organizer">Event Organizer</string>
+    <string name="participant">Participant</string>
+    <string name="affiliate">Affiliate</string>
+    <string name="sponsor">Sponsor</string>
+    <string name="add_referral">Add Referral</string>
+    <string name="spinner">Spinner</string>
+    <string name="select_your_handicap">Select Your handicap:</string>
+    <string name="_1">1</string>
+    <string name="_continue">Continue</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="checkout">Checkout</string>
+    <string name="select_your_gross_score">Select your gross score:</string>
+    <string name="event_code">EVENT CODE</string>
+    <string name="purchase_winning_ticket">Purchase Winning ticket</string>
+    <string name="live_scoring">LIVE SCORING</string>
+    <string name="silent_auctions">Silent Auctions</string>
+    <string name="referrals">Referrals</string>
+    <string name="add_new">Add New</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string name="user_role">User Role</string>
+    <string name="no_referral_found">No Referral Found</string>
+    <string name="watch_and_share">Watch and Share !</string>
+    <string name="view_bidding_history">View Bidding History</string>
+    <string name="watch">Watch</string>
+    <string name="share">Share</string>
+    <string name="cancel">Cancel</string>
+    <string name="silent_auction">Silent Auction</string>
+    <string name="event_name">Event Name</string>
+    <string name="no_events_found">No Events found</string>
+    <string name="view">VIEW</string>
+    <string name="view_offer">VIEW OFFER</string>
+    <string name="hole">Hole</string>
+    <string name="yards">Yards</string>
+    <string name="yards_to_center">YARDS TO CENTER</string>
+    <string name="yards_to_front">YARDS TO FRONT</string>
+    <string name="purchase_tickets">Purchase Tickets</string>
+    <string name="your_winning_ticket_includes">Your Winning Ticket Includes</string>
+    <string name="promotions">Promotions</string>
+    <string name="push">Push</string>
+    <string name="text">Text</string>
+    <string name="email">Email</string>
+    <string name="send_me_winning_ticket_news_and_offers">Send me Winning Ticket news and offers</string>
+    <string name="events">Events</string>
+    <string name="send_me_updates_on_upcoming_events">Send me updates on upcoming events</string>
+    <string name="notify_me_24_hours_before_an_event">Notify me 24 hours before an event</string>
+    <string name="auctions">Auctions</string>
+    <string name="notify_me_before_an_event_begins">Notify me before an event begins</string>
+    <string name="notify_me_when_an_auction_i_m_interested_in_is_sold">Notify me when an auction I\'m interested in is sold</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="total">Total</string>
+    <string name="eagle">Eagle</string>
+    <string name="current_balance">CURRENT BALANCE</string>
+    <string name="password_instruction">Your password has been changed</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Re-Enter password</string>
+    <string name="done">Done</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="email_confirmation">Please enter your email address and we\'ll send you a password reset email.</string>
+    <string name="user_email_com">user@email.com</string>
+    <string name="submit">Submit</string>
+    <string name="bank_transfer">bank transfer</string>
+    <string name="go_to_dashboard">Go to dashboard</string>
+    <string name="enter_your_event_code">ENTER YOUR EVENT CODE</string>
+    <string name="select_your_starting_hole">Select your starting hole:</string>
+    <string name="all">All</string>
+    <string name="_public">Public</string>
+    <string name="_private">Private</string>
+
+    <string name="About_us">
+<![CDATA[
+<p><b>Winning Ticket</b> is the most efficient software platform for managing your charity and corporate golf tournaments or just regular day play. All the tools you need to host events and track your game right at the tip of your fingers.</p>
+<p>Whether you\'re hosting a charity golf event to raise money for your charity or a team-building corporate event, <b>Winning Ticket\'s</b> mobile application has everything you need to host a perfect tournament that your participants will love.</p>
+
+<p><b>Fully Customizable - </b>Build your <b>Winning Ticket</b> from a variety of features that will elevate your participant\'s experience.</p>
+
+<p><b>Immediate Payouts - </b>All money is paid in full at the end of the event by immediate bank transfer at 11:59pm.</p>
+
+<p><b>Transparent Accounting - </b>Event coordinators have full admin access for all transactions within the <b>Winning Ticket</b>. You\'ll receive email updates on pre-registration, registration and auction purchases in real-time.</p>
+
+<p>ALL THE TOOLS YOU NEED TO MANAGE YOUR EVENT AND MAKE YOUR LIFE EASIER
+Current event management software is not able to provide an environment that allows event organizers to have all of their tournament information in front of them. <b>Winning Ticket</b> lets you have complete control over your event and your money.</p>
+
+<p>Walks</p> <p>Runs</p> <p>Galas</p> <p>Food festivals</p> <p>Concerts</p> <p>Private events</p> <p>Fishing</p> <p>Auctions</p>
+
+]]>
+</string>
+
+
+    <string name="Term_of_use">
+<![CDATA[
+<p><b>1) </b>Please review these Terms of Use (the “Terms”) carefully before using <b>WinningTicket</b> LLC and its subsidiaries (“WinningTicket.com”) websites and services. By accessing, browsing or using these websites or services, you fully acknowledge that you have read, understood and agree to abide by these Terms and comply with all applicable laws and regulations. If you do not agree to these Terms, you are not authorized to use WinningTicket.com websites and services, including but not limited to the WinningTicket.com services, including but not limited to WinningTicket.com Affiliate Network,  the WinningTicket.com Partner Portal, WinningTicket.com Web Services. These Terms control your use of the websites and services, any content (such as text, data, information, software, graphics or photographs) that WinningTicket.com may make available through the websites (collectively, “Materials”) and any services that WinningTicket.com may provide through the websites (collectively, “Services”). The websites, Materials and Services are referred to in these terms collectively as the “WinningTicket.com Websites.”</p>
+
+<p><b>2) </b>WinningTicket.com reserves the exclusive right to modify or update these Terms, make changes to the WinningTicket.com Websites, or discontinue any or all of its programs, products, materials or services, without providing further notice. Additional terms, notices and conditions may apply to specific information, products, materials, software or services offered through the WinningTicket.com Websites. Should a conflict arise, such additional terms, notices and conditions will prevail over these Terms.</p>
+
+<p><b>Use of Software and WinningTicket.com Websites</b></p>
+
+<p><b>1) </b>To the extent that WinningTicket.com provides for the download of proprietary WinningTicket.com software, third party software, or open source software from WinningTicket.com Websites (“Software”), such Software is protected by the applicable copyright, patent or other Intellectual Property Rights (as defined herein) of either WinningTicket.com or the third-party. Any use of the Software is subject to the terms of the applicable end-user or open source license agreement.</p>
+
+
+<p><b>2) </b>All evaluation Software is provided “AS IS” for evaluation and internal use only. You may not use evaluation Software for commercial, development or production purposes. In addition, evaluation Software may be time-disabled and may cease to operate after a period of time.</p>
+
+<p><b>3) </b>You will not and will not permit any third party, as solely determined by WinningTicket.com, to: (a) use WinningTicket.com Software and Services in violation of others’ rights (including Intellectual Property Rights); (b) engage in or promote gambling, pornography, or illegal activities; (c) circumvent or violate the restrictions of WinningTicket.com Websites; (d) reverse engineer, decompile, or otherwise attempt to derive source code from the WinningTicket.com Websites, unless we make the source code publicly available; and/or (e) disable, interfere with, disrupt, or circumvent any aspect of the WinningTicket.com Websites. You must ensure that any of your users comply with the Terms, and you agree that if you become aware of any violation by one of your users, you will terminate that user’s access immediately</p>
+
+<p><b>Trademarks</b></p>
+
+<p><b>1) </b>WinningTicket.com reserves all rights to its trademarks, service marks and logos, which together with the trademarks, service marks and logos of its subsidiaries registered in the United States or in other countries, are collectively titled “WinningTicket.com Marks.”</p>
+
+<p><b>2) </b>WinningTicket.com Marks are highly valued intellectual property, and therefore WinningTicket.com will take all steps to protect against dilution and usage of third-party marks that are confusingly similar to WinningTicket.com Marks or which are likely to cause confusion with WinningTicket.com Marks. WinningTicket.com does not permit any use of WinningTicket.com Marks in a manner that is likely to cause confusion by implying an association with WinningTicket.com.</p>
+
+
+<p><b>3) </b>Permitted Use. WinningTicket.com acknowledges that use of WinningTicket.com Marks, excluding any logos, may be necessary to refer to WinningTicket.com products or services. Any other WinningTicket.com Marks usage will require a signed trademark license agreement and must comply with WinningTicket.com’s Trademark Guidelines. By using WinningTicket.com Marks, you acknowledge that WinningTicket.com is the exclusive owner of WinningTicket.com Marks and you will not challenge, interfere, or interrupt WinningTicket.com’s exclusive ownership of WinningTicket.com Marks. You may not register any WinningTicket.com Marks or any mark confusingly similar to the WinningTicket.com Marks.</p>
+
+<p><b>4) </b>Attribution. When WinningTicket.com Marks are used, the following trademark attribution is required in text and on all packaging or promotional materials displaying any WinningTicket.com trademarks: “WinningTicket.com, (list all other WinningTicket.com Marks referenced in the document or materials) are trademarks and/or registered trademarks of WinningTicket.com LLC. in the United States and/or other countries.” The trademark attribution should be placed on packaging or promotional materials in close proximity to where the WinningTicket.com Marks are displayed and must be noticeable to the reader.</p>
+
+<p><b>5) </b>Please note that other product and brand names on the WinningTicket.com Websites may be trademarks of their respective companies.</p>
+
+<p><b>6) </b>Linking To WinningTicket.com Websites</p>
+
+<p><b>7) </b>Linking to the WinningTicket.com Websites (including an internal or subsidiary page of any website comprising a part of the WinningTicket.com Websites) must be approved in writing by WinningTicket.com, except a limited, revocable right to create a hyperlink to the website is granted under condition that the website on which the hyperlink resides:</p>
+
+
+<p><b>8) </b>Does not utilize content of a WinningTicket.com Website;</p>
+
+
+<p><b>9) </b>Does not utilize a WinningTicket.com logo;</p>
+
+
+<p><b>10) </b>Does not use framing of a WinningTicket.com Website;</p>
+
+
+<p><b>11) </b>Does not misrepresent an affiliation or other relationship with WinningTicket.com;</p>
+
+
+<p><b>12) </b>Does not misrepresent any possible endorsement by WinningTicket.com;</p>
+
+
+<p><b>13) </b>Does not contain content that could be construed as illegal, distasteful, offensive or controversial; and</p>
+
+<p><b>14) </b>Is promptly modified to delete the hyperlink upon request by WinningTicket.com.</p>
+
+<p><b>Copyright</b></p>
+
+<p><b>1) </b>Except where otherwise specified, the contents of the WinningTicket.com Websites are copyright (c) 2013-present <b>WinningTicket</b> LLC., 1194 Pine Valley Drive Wellington, FL 33414, USA. All rights reserved.</p>
+
+<p><b>2) </b>The contents of the WinningTicket.com Websites are subject to protection under U.S. and foreign copyright laws. You may not copy, modify, or distribute any portion of the WinningTicket.com Websites, except as necessary to view the WinningTicket.com Websites.</p>
+
+<p><b>3) </b>Copyright Infringement Claims</p>
+
+<p><b>4) </b>WinningTicket.com respects the intellectual property of others. If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible via the WinningTicket.com Websites, please notify WinningTicket.com LLC.\'s copyright agent, as set forth in the Digital Millennium Copyright Act of 1998 ("DMCA"). For your complaint to be valid under the DMCA, you must provide the following information in writing:</p>
+<p><b>5) </b>An electronic or physical signature of a person authorized to act on behalf of the copyright owner;</p>
+<p><b>6) </b>identification of the copyrighted work that you claim has been infringed;</p>
+<p><b>7) </b>identification of the material that is claimed to be infringing and where it is located on the WinningTicket.com Websites;</p>
+
+<p><b>8) </b>information reasonably sufficient to permit WinningTicket.com to contact you, such as your address, telephone number, and email address;</p>
+
+
+<p><b>9) </b>a statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or law; and</p>
+
+
+<p><b>10) </b>a statement, made under penalty of perjury, that the above information is accurate, and that you are the copyright owner or are authorized to act on behalf of the owner.</p>
+
+
+<p><b>11) </b>You may send a notice of claim of copyright infringement to the WinningTicket.com Legal Department at: WinningTicket.com LLC., ATTN: Legal Department, 1194 Pine Valley Drive, Wellington FL 33414; E-mail - legal@WinningTicket.com.</p>
+
+<p><b>Links to Third Party Sites</b></p>
+
+<p>The WinningTicket.com Websites may contain links to third-party websites, which are provided solely for your convenience and information. Accessing these links will cause you to leave the WinningTicket.com Websites. WinningTicket.com does not endorse or make any representations about such third party websites, and WinningTicket.com is not responsible for the accuracy, reliability, and suitability of any information, data, opinions, advice or statements made on those websites. WinningTicket.com does not control those websites and holds no responsibility over the contents of any third-party websites, any links contained in third-party websites, or any modifications or updates made to third-party websites. Further, WinningTicket.com shall not be held liable for any losses or damages incurred by users of these third-party websites. Please note that access and usage of these linked third-party websites, including any materials, information, services and products described or provided therein, is made solely at your own risk and discretion. The personal information you choose to provide to unrelated third parties is not covered by the WinningTicket.com Privacy Policy posted at https://WinningTicket.com/privacy-policy.</p>
+
+
+<p><b>Privacy</b></p>
+
+
+<p><b>1) </b>WinningTicket.com’s Privacy Policy posted at https://WinningTicket.com/privacy-policy applies to use of WinningTicket.com Websites, and is incorporated into these Terms of Use.</p>
+
+
+<p><b>2) </b>Anti-Piracy and License Compliance</p>
+
+<p><b>3) </b>WinningTicket.com safeguards its technology vigilantly and only authorizes others to use it by virtue of license agreements. Using or distributing Software without permission from WinningTicket.com constitutes software piracy. WinningTicket.com distributes and sells its Software through a channel network of distributors and resellers worldwide. WinningTicket.com does not distribute or sell its Software through unauthorized channels such as peer-to-peer networking, file-sharing sites, auctions, or through other illegal download sites offering key or serial number generators. If you are contemplating or have obtained Software through one of these avenues, you likely will find yourself with pirated software. Please contact WinningTicket.com at legal@WinningTicket.com for assistance with your own or another’s unauthorized use of Software.</p>
+
+<p><b>Governing Law and Jurisdiction</b></p>
+
+<p>These Terms, the relationship between you and WinningTicket.com, and all matters relating to your access to, or usage of, any WinningTicket.com Websites, are governed by United States federal law and the laws of the State of Florida. Thus, any lawsuit or legal proceeding relating to these Terms, the relationship between you and WinningTicket.com, or your access to, or usage of, WinningTicket.com and the WinningTicket.com Websites shall be brought in the state or federal courts located in the county of Palm Beach, CA. You hereby agree that venue is proper in, and agree to submit to the personal and exclusive jurisdiction of, these courts in any lawsuit or legal proceeding. The laws of Ireland apply to matters pertaining to WinningTicket.com Software International, provided that the foregoing shall exclude any conflict of law rules, and the U.N. Convention on Contracts for the International Sale of Goods shall not apply.</p>
+
+
+<p><b>Electronic Communications</b></p>
+
+
+<p>When you visit the WinningTicket.com Websites or send e-mails to WinningTicket.com, you are communicating with WinningTicket.com electronically. We may respond to you by e-mail or by posting notices on the WinningTicket.com Websites. You agree that all such notices, disclosures and other communications that WinningTicket.com provides to you electronically satisfy any legal requirement that such communications be in writing. You agree that we will be free to use any communication you provide for any purpose. You hereby grant to us a non-exclusive, perpetual, irrevocable, royalty-free, transferable, worldwide right and license, with the right to grant and authorize sublicenses, to use, reproduce, perform, display, disclose, distribute, modify, prepare derivative works of and otherwise use the communication without restriction in any manner now known or in the future conceived and to make, use, sell, offer to sell, import and export any product or service that incorporates or is based in whole or in part on the communication.</p>
+
+<p><b>Terminating Use</b></p>
+
+<p>If we have reason to believe that you or your users have breached these Terms of Use or our Privacy Policy, we or our designated agent may review your use of WinningTicket.com Websites, verify your compliance with these Terms, and at our discretion, terminate your or your user’s access immediately.</p>
+
+<p><b>Disputes</b></p>
+
+<p>All claims, disputes, or controversies arising out of or relating to these Terms or your use of WinningTicket.com Websites must be made within (a) the time period specified by applicable law; or (b) eighteen (18) months after the cause of action accrues if no such period is specified at law.</p>
+
+
+<p><b>United States Government Rights</b></p>
+
+
+<p>All WinningTicket.com products and publications are commercial in nature. The software, publications and software documentation available on the WinningTicket.com Websites are “Commercial Items,” as that term is defined in 48 C.F.R. §2.101, consisting of “Commercial Computer Software” and “Commercial Computer Software Documentation,” as such terms are defined in 48 C.F.R. §252.227-7014(a)(1) and 48 C.F.R. §252.227-7014(a)(5), and used in 48 C.F.R. §12.211, 48 C.F.R. §12.212 and 48 C.F.R. §227.7202, as applicable. Pursuant to 48 C.F.R. §12.211, 48 C.F.R. §12.212, 48 C.F.R.§252.227-7015, 48 C.F.R. §227.7202 through 227.7202-4, 48 C.F.R. §52.227-19 and other relevant sections of the Code of Federal Regulations, as applicable, WinningTicket.com’s publications, commercial computer software and commercial computer software documentation are distributed and licensed to United States Government end users with only those rights as granted to all other end users, according to the terms and conditions contained in the license agreements that accompany the products and software documentation and the terms and conditions herein.</p>
+
+
+<p><b>Disclaimers and Warranties</b></p>
+
+
+<p>Information on the WinningTicket.com Websites is not promised or guaranteed to be correct, current or complete, and the WinningTicket.com Websites may contain technical inaccuracies or typographical errors. WinningTicket.com assumes no responsibility (and expressly disclaims responsibility) for updating the WinningTicket.com Websites to maintain current information or to ensure the accuracy or completeness of any posted information. Accordingly, you should confirm the accuracy and completeness of all posted information before making any decision related to any products, services or other matters described in the WinningTicket.com Websites. WinningTicket.com provides no assurances that any reported problems will be resolved by WinningTicket.com, even if WinningTicket.com elects to provide information with the goal of addressing a problem.
+ALL INFORMATION, SOFTWARE, PRODUCTS, MATERIALS, AND SERVICES PROVIDED ON THE WINNINGTICKET.COM WEBSITES ARE PROVIDED “AS IS” AND “WITH ALL FAULTS” WITH NO WARRANTIES OR GUARANTEES OF ANY KIND. WINNINGTICKET.COM EXPRESSLY DISCLAIMS TO THE FULLEST EXTENT PERMITTED BY LAW ALL EXPRESS, IMPLIED, STATUTORY OR OTHER WARRANTIES, GUARANTEES AND REPRESENTATIONS, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR USE OR PURPOSE, TITLE AND NONINFRINGEMENT OF PROPRIETARY AND INTELLECTUAL PROPERTY RIGHTS, AND WARRANTIES ARISING FROM A COURSE OF DEALING, USAGE OR TRADE PRACTICE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, WINNINGTICKET.COM MAKES NO WARRANTY THAT THE WINNINGTICKET.COM WEBSITES WILL MEET YOUR REQUIREMENTS OR THAT THE WINNINGTICKET.COM WEBSITES WILL BE UNINTERRUPTED, TIMELY, SECURE, ERROR FREE OR THAT THE SERVICES WILL MEET (OR ARE DESIGNED TO MEET) YOUR BUSINESS REQUIREMENTS.</p>
+
+<p><b>Indemnification</b></p>
+
+<p><b>1) </b>You agree to indemnify, defend, release, and hold WinningTicket.com, its parents, subsidiaries, affiliates, officers, directors, agents, partners, employees and licensors harmless from any claims, liabilities, demands, losses, damages, costs, expenses and fees (including reasonable attorneys’ fees) that such parties may incur as a result of or arising from: (1) your (or anyone using your account, computer or Software) use of the WinningTicket.com Websites or violation or breach of these Terms; (2) your content; (3) any infringement or misappropriation of any Intellectual Property Rights (defined below) by you, your customers or your suppliers; (c) violation of laws, rules, regulations, etc. by you; or (4) your use of any third party content. We will (i) provide you with notice of such claim within a reasonable period of time after learning of the claim; and (ii) reasonably cooperate in response to your requests for assistance (subject to your reimbursement of our costs and expenses). WinningTicket.com reserves the right to assume the exclusive defense and control of any matter otherwise subject to indemnification by you and, in such case, you agree to cooperate with WinningTicket.com’s defense of such claim, and in no event may you agree to any settlement affecting WinningTicket.com without WinningTicket.com’s written consent.</p>
+
+
+<p><b>2) </b>“Intellectual Property Rights” means all worldwide intellectual property rights, including, without limitation,“patents, utility models, rights to inventions, copyright and related rights, trademarks and service marks, trade names and domain names, rights in get-up, goodwill and the right to sue for passing off or unfair competition, rights in designs, rights in computer software, database rights, rights to preserve the confidentiality of information (including know-how and trade secrets) and any other intellectual property rights, including all applications for (and rights to apply for and be granted), renewals or extensions of, and rights to claim priority from, such rights and all similar or equivalent rights or forms of protection which subsist or will subsist, now or in the future, in any part of the world.</p>
+
+
+<p><b>Limitation of Liability</b></p>
+
+<p>IN NO EVENT WILL WINNINGTICKET.COM OR OUR LICENSORS BE LIABLE FOR: (A) ANY INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL, PUNITIVE OR EXEMPLARY DAMAGES OR; (B) ANY DAMAGES WHATSOEVER IN EXCESS OF US$100.00, INCLUDING, WITHOUT LIMITATION, THOSE RESULTING FROM LOST PROFITS, REVENUES OR SAVINGS, LOSS OR DAMAGE TO DATA OR BUSINESS INTERRUPTION ARISING OUT OF THE USE OF OR INABILITY TO USE THE WINNINGTICKET.COM WEBSITES OR ANY MATERIALS, INFORMATION, PRODUCTS OR SERVICES ACCESSED ON OR THROUGH THE WINNINGTICKET.COM WEBSITES, WHETHER SUCH DAMAGES ARE BASED ON WARRANTY, CONTRACT, TORT, STATUTE OR ANY OTHER LEGAL THEORY AND EVEN IF WINNINGTICKET.COM HAS BEEN ADVISED (OR SHOULD HAVE KNOWN) OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+<p><b>Exclusions and Limitations</b></p>
+
+<p>The exclusion of certain warranties or the limitation or exclusion of liability for certain damages may not be authorized in some jurisdictions. Accordingly, some of the above disclaimers and limitations of liability may not apply to you. To the extent that WinningTicket.com may not, as a matter of applicable law, disclaim any implied warranty or limit its liabilities, the scope and duration of such warranty and the extent of WinningTicket.com’s liability shall be the minimum permitted under such applicable law.</p>
+
+
+<p><b>General Provisions</b></p>
+
+<p><b>3) </b> Entire Agreement. These Terms together with the provisions of any applicable WinningTicket.com Websites (i) are the complete statement of the agreement of the parties with regard to the subject matter hereof, superseding all previous arrangements between the parties relating to its subject matter; and (ii) may be modified only by a writing signed by both parties. All terms of any purchase order or similar document provided by You, including any pre-printed terms thereon and any terms that are inconsistent or conflict with these Terms, shall be null and void and of no legal force or effect with respect to the use of the applicable WinningTicket.com Website. You confirm that You have not relied on any statement, promise or representation made or given by or on behalf of us which is not set out in these Terms. No party shall have any claim for innocent or negligent misrepresentation based upon any statement in these Terms.</p>
+
+
+<p><b>Severability.</b></p>
+
+<p>If any provision of these Terms becomes or is declared by a court of competent jurisdiction to be illegal, unenforceable, or void, the remaining provisions will remain in effect.</p>
+
+<p><b>4) </b>Relationship to Other Agreements. These Terms apply in addition to WinningTicket.com’s product or Service-specific Terms, including any signed Master Ordering Agreement, Professional Services Agreement or other licensing agreement you may have signed with WinningTicket.com.</p>
+
+<p><b>5) </b>Waiver. Failure to enforce a provision of these Terms will not constitute a waiver.</p>
+
+<p><b>6) </b>Independent Contractor. The parties are independent contractors. Nothing in these Terms shall be construed to create a joint venture, partnership, or an agency relationship between the parties themselves or between the parties and any third person. Except as expressly provided herein, no party has the authority, without the other party’s prior written approval, to bind or commit any other party in any way.</p>
+
+<p><b>7) </b>No Third-party Beneficiaries. These Terms are not intended to confer upon any person other than the parties hereto any rights or remedies hereunder.</p>
+
+<p><b>8) </b>Force Majeure. In the event that either party is prevented from performing or is unable to perform any of its obligations under these Terms due to any Act of God, fire, casualty, flood, earthquake, war, strike, lockout, epidemic, destruction of production facilities, riot, insurrection, material unavailability, unavailability or interruption of telecommunications equipment or networks, or any other cause beyond the reasonable control of the party invoking this section, and if such party shall have used reasonable efforts to mitigate its effects, such party shall give prompt written notice to the other party, its performance shall be excused, and the time for the performance shall be extended for the period of delay or inability to perform due to such occurrences.</p>
+
+<p><b>9) </b>Legal Contact Information. Should you have any inquiries about these Terms, the licensing or usage of WinningTicket.com Marks, or WinningTicket.com copyrighted materials, you may contact the WinningTicket.com Legal Department at legal@WinningTicket.com.</p>
+
+<p><b>10) </b>Construction. As used in this Agreement: (a) the terms “include” and “including” are meant to be inclusive and shall be deemed to mean “include without limitation” or “including without limitation”; (b) the word “or” is disjunctive, but not necessarily exclusive; (c) words used herein in the singular, where the context so permits, shall be deemed to include the plural and vice versa; (d) person includes a natural person, corporate or unincorporated body; (e) a reference to us or You includes personal representatives, successors and/or permitted assigns; (f) a reference to a statute or statutory provision is a reference to such statute or statutory provision as amended or re-enacted and includes any subordinate legislation; (g) a reference to writing or written includes faxes and e-mails; (h) references to “dollars” or “$” shall be to United States dollars unless otherwise specified herein; and (i) unless otherwise specified, all references to days, months or years shall be deemed to be preceded by the word “calendar”.” The headings of these Terms are intended solely for convenience of reference and shall be given no effect in the interpretation or construction of these Terms.
+</p>
+
+]]>
+</string>
+
+
+    <string name="Privacy_policy">
+<![CDATA[
+<p><b>1) </b>General Information</p>
+<p><b>a) </b> This policy (“Privacy Policy”) explains what information WinningTicket LLC. and its subsidiaries (“WinningTicket.com”) or our service providers collect from or about users of the WinningTicket.com websites, including any content WinningTicket.com may provide through the websites (collectively, the “WinningTicket.com Websites”), the WinningTicket.com services, including but not limited to WinningTicket.com Affiliate Network, , the WinningTicket.com Partner Portal, WinningTicket.com Web Services, or any other services that WinningTicket.com may provide through the WinningTicket.com Websites (collectively, the “Service Offerings”), our mobile applications, and other interactions (e.g., customer service inquiries, user conferences, etc.), and states our practices regarding such information. If you are outside the European Economic Area (EEA), by accessing files, browsing, or otherwise using the WinningTicket.com Websites, you have agreed to the use of your data as described in this Privacy Policy. If you are in the EEA, by accessing the WinningTicket.com Websites, you have agreed to the use of my data as described in this Privacy Policy. It also describes the choices regarding use, access and collection of personal information as well as your rights to your personal data that we process. If you do not agree with the terms, please do not access or use the WinningTicket.com Websites, Service Offerings, mobile applications, or any other aspect of WinningTicket.com’s business.</p>
+
+<p><b>2) </b>Scope</p>
+
+<p><b>a) </b>This Privacy Policy applies to personal information and other information WinningTicket.com or its service providers collect from or about the users of the WinningTicket.com Websites, Service Offerings, our mobile applications and other interactions (e.g., customer service inquiries, user conferences, etc.). Unless otherwise specified below, this Privacy Policy does not apply to any other products or services or to information collected in any other way (whether online or offline) or for any other purpose.</p>
+
+
+<p><b>3) </b>Personal Information of our Customers’ Clients and Employees</p>
+
+
+<p><b>a) </b>WinningTicket.com collects information under the direction of our customers, and has no direct relationship with the individuals whose personal data it processes on behalf of such customers. When we provide services to our customers, in some instances we process personal information about their clients or employees (“Client Information”) on their behalf. In these situations, it is our customers rather than we who decide the reasons for which the Client Information will be processed.</p>
+<p><b>b) </b>If you are a client or employee of one of our customers and would no longer like to be contacted by one of our customers that use our service or for details of how the Client Information will be used and protected, and details of how to access or correct the information, please refer to the privacy statement of the WinningTicket.com customer to which you submitted your personal information. We may transfer personal information to companies that help us provide our service. Transfers to subsequent third parties are covered by the service agreements with our customers.</p>
+<p><b>c) </b>WinningTicket.com acknowledges that you have the right to access your personal information. An individual who seeks access, or who seeks to correct, amend, or delete data should directly query WinningTicket.com’s customer. If requested to remove data, we will respond within the applicable legal timeframe.</p>
+<p><b>d) </b>We will retain personal data we process on behalf of our customers for as long as needed to provide services to our customers at their instruction. WinningTicket.com may also retain this personal information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
+<p><b>4) </b>Personal Information</p>
+<p><b>a) </b>For purposes of this Privacy Policy, “personal information” means information that can be used to personally identify you, such as your name, address, telephone number, e-mail address, user IDs and passwords, online identifiers, device information, billing and transaction information, credit card or other financial information, contact preferences, and similar information.</p>
+<p><b>5) </b>Personal Information We Collect</p>
+<p><b>a) </b>WinningTicket.com or our service providers may collect, store, and process personal information and other information from or about you when you:\n
+<b>i)</b> use WinningTicket.com Websites or Service Offerings to order products or services;\n
+<b>ii)</b> register products;\n
+<b>iii)</b> request information;\n
+<b>iv)</b> subscribe to marketing or support materials;\n
+<b>v)</b> download proprietary WinningTicket.com software, third party software, or open source software (“Software”) from WinningTicket.com Websites;\n
+<b>vi)</b> enter a contest;\n
+<b>vii)</b> respond to promotional campaigns; and\n
+<b>viii)</b> register to a secure extranet site to obtain access to Software or Service Offering and any associated information, support, and training.</p>
+
+<p><b>b)</b> We also may collect additional information that is related to you such as your computer’s operating system, browser, and your use of and activities on our websites.</p>
+
+<p><b>6)</b> How We Use the Information We Collect</p>
+
+<p><b>a)</b> WinningTicket.com or our service providers may use the personal information and other information we collect from you in various ways including in connection with: providing service and support to you; billing you for Service Offerings; verifying your identity; carrying out our obligations and enforcing our rights arising from any contracts entered into between you and WinningTicket.com; communicating information about WinningTicket.com Websites, Service Offerings and our mobile applications, and other interactions (e.g., customer service inquiries, user conferences, etc.); improving our WinningTicket.com Websites, Services Offerings and our mobile applications, and other interactions (e.g., customer service inquiries, user conferences, etc.); contacting you to complete surveys that we use for marketing or quality assurance purposes; sending you promotional information; complying with Service Offering obligations as well as in any other way we describe when you provide information; combating fraud, crime and as otherwise required or permitted by law; and for any other purpose with your consent.</p>
+
+<p><b>b) </b>To assist us with the uses described in this Privacy Policy, information we or our service providers have collected from or about you through WinningTicket.com Websites, WinningTicket.com Service Offerings and our mobile applications, and other interactions (e.g., customer service inquiries, user conferences, etc.), including about your use thereof, may be combined with or enhanced by other information from or about you that we have obtained from other online or offline sources, including from our service providers or business partners.</p>
+
+<p><b>c) </b>We may send you push notifications from time-to-time in order to update you about any events or promotions that we may be running. If you no longer wish to receive these types of communications, you may turn them off at the device level by opting out. To ensure you receive proper notifications, we will need to collect certain information about your device such as operating system and user identification information.</p>
+
+
+
+<p><b>7) </b>Collection of Information Using Cookies and Other Tools</p>
+
+<p><b>a)</b> WinningTicket.com may collect and/or log your Internet Protocol address, Internet domain name, the web browser and operating system used to access WinningTicket.com Websites, Service Offerings, our mobile applications or other interactions (e.g., customer service inquiries, user conferences, etc.), the files visited, the time spent in each file, and the time and date of each visit or clickstream data. WinningTicket.com may collect this information automatically as you browse via the use of log files and web beacons to analyze trends in the aggregate and administer the WinningTicket.com Websites and Service Offerings. WinningTicket.com and its partners use cookies or similar technologies to analyze trends, administer the website, track users’ movements around the website, and to gather demographic information about our user base as a whole. You can control the use of cookies at the individual browser level, but if you choose to disable cookies, it may limit your use of certain features or functions on our website or service.</p>
+
+
+<p><b>b)</b> We may also use cookies and other electronic tools placed by a third-party service provider to measure the effectiveness of our advertising and other information and help us understand what product information is of most interest to our customers and what kinds of advertising offers our customers like to see. Although the service provider logs the information coming from WinningTicket.com Websites or Service Offerings on our behalf, WinningTicket.com controls how that data may and may not be used. You can control the use of cookies at the individual browser level, but if you choose to disable cookies, it may limit your use of certain features or functions on our website or service.</p>
+
+<p><b>c)</b> If you wish to opt out of interest-based advertising, please contact us at privacy@WinningTicket.com.io or follow the opt-out instructions in the email.</p>
+
+<p><b>d)</b> We use mobile analytics software to allow us to better understand the functionality of our mobile applications on your phone. This software may record information such as how often you use the application, the events that occur within the application, aggregated usage, performance data, and where the application was downloaded from. We do not link the information we store within the analytics software to any personal information you submit within the mobile application.</p>
+
+
+<p><b>8) </b>Sharing Your Information</p>
+
+
+<p><b>a) </b> WinningTicket.com may share non-personal information (e.g., anonymous, aggregated data) without restriction. WinningTicket.com may share your personal information as described in this Privacy Policy and with its service providers and suppliers to the extent necessary to deliver the WinningTicket.com Websites or Service Offerings you requested, respond to your requests for information on Software or Service Offerings, or otherwise support your business needs. If you opt out of sharing your information with these third-party service providers for these purposes, we may be unable to provide the WinningTicket.com Websites, Service Offerings, mobile applications, information or support you requested.</p>
+
+<p><b>b) </b>Third-party service providers and suppliers receiving personal information are authorized to use your personal information only for the purpose it was originally intended or as required or permitted by law. However, unless otherwise dictated by law or agreement, WinningTicket.com is not responsible for any improper use by such parties.</p>
+
+<p><b>9) </b>Sharing Personal information Across Country Borders</p>
+
+
+<p><b>a) </b>We may also disclose your personal information and other information, including across country borders:\n
+<b>i)</b> to our subsidiaries, affiliates, and worldwide offices;\n
+<b>ii)</b> to comply with the law or in response to a subpoena, court order, law enforcement or government request, or other legal process;\n
+<b>iii)</b> to produce relevant documents or information in connection with litigation, arbitration, mediation, adjudication, government or internal investigations, or other legal or administrative proceedings;\n
+<b>iv)</b> if WinningTicket.com determines in its good faith judgment that such disclosure is necessary to provide its services or to protect the rights, interests, safety, or property of its business, employees, suppliers, customers, or others;\n
+<b>v)</b> in connection with any proposed or actual sale or other transfer of some or all assets of WinningTicket.com, and/or any proposed or actual sale or merger of WinningTicket.com or any division of WinningTicket.com;\n
+<b>vi)</b> to enforce the terms of any agreement with WinningTicket.com;\n
+<b>vii)</b> to combat fraud or other criminal activity;\n
+<b>viii)</b> for any other purpose disclosed by us when you provide the information;\n
+<b>ix)</b> as otherwise required or permitted by law; and/or with your consent.\n
+
+<p><b>b)</b> Unless permitted by relevant laws, WinningTicket.com will not share, sell, trade, or lease your personal information to or with others except as provided for in this Privacy Policy.</p>
+
+<p><b>10)</b> Marketing Choices, Right to Access Your Personal Information, and Our Retention</p>
+
+
+<p><b>a)</b> Your Marketing Choices. Your decision to provide the personal information that we may request from time to time is voluntary. However, if you do not provide the personal information requested, you may not be able to proceed with the activity or receive the benefit for which the personal information is being requested. You can always unsubscribe or choose not to receive promotional materials from WinningTicket.com by following the specific instructions in the email or other communication you receive or by notifying us via the appropriate method(s) described below. It may take a reasonable period of time to process your request, but no longer than 10 business days for email promotions. In countries where WinningTicket.com is required to do so by law, WinningTicket.com will offer you the opportunity to provide opt-in consent before promotional materials are sent, or promotional calls are made, to you. This will not apply to service communications that are considered part of certain Service Offerings, which you may receive periodically unless you cancel the applicable Service Offerings.</p>
+
+<p><b>b)</b> Your Access to Your Personal Information. WinningTicket.com strives to keep your personal information accurate. We have implemented technology, management processes, and policies designed to maintain data integrity. We will provide you with reasonable access to your personal information in accordance with relevant laws, including by making reasonable efforts to provide you with online access and the opportunity to update your information. To protect your privacy and security, we will take steps to verify your identity before granting access or making changes to your personal information. Upon request, WinningTicket.com will provide you with information about whether we hold any of your personal information. To request access, correction, or deletion or transfer of your personal information, follow the applicable instructions below. While we will make reasonable efforts to accommodate your request, we also reserve the right to reject such requests or to impose certain restrictions and requirements on such requests, if required or permitted by applicable law. We will respond to your request within a reasonable time frame.</p>
+
+<p><b>c)</b> Our Retention of Your Information. We will retain your personal information for as long as your account is active or as needed to provide you WinningTicket.com Website, Service Offerings and mobile applications. If you wish to cancel your account, or request that we no longer use your personal information to provide you Software or Services, contact us via the applicable methods provided below. Even after we cancel your account or cease using your personal information to provide you Software or Services, we may still retain, use, and disclose your information as necessary to comply with our legal, regulatory, ethical, or document retention obligations, and any request to delete your personal information is subject to these obligations and restrictions.</p>
+
+
+<p><b>11)</b> Security of Your Personal Information</p>
+
+<p><b>a)</b> WinningTicket.com has implemented administrative, technical, and physical measures designed to protect your personal information from accidental loss and from unauthorized access, disclosure, use, alteration, or destruction. These measures include computer safeguards and secured files and buildings, Internet firewalls, intrusion detection, anti-virus protection, network monitoring, and, where appropriate and required by applicable law, Transport Layer Security (“TLS”) or similarly encrypted browsers. However, no electronic data transmission or storage of information can be guaranteed to be 100% private and secure, and you understand that WinningTicket.com does not ensure or warrant the privacy or security of any information we collect from or about you, and that you use the WinningTicket.com Websites and provide us with information at your own risk. If a password is used to help protect your accounts and personal information, it is your responsibility to keep your password confidential. Please also be careful to avoid “phishing” scams, where someone may send you an email that looks like it is from WinningTicket.com asking for your personal information. WinningTicket.com will never request your personal information through e-mail. If you have any questions about the security of your personal information, you can contact us at set forth below.</p>
+
+<p><b>12)</b> Your California Privacy Rights</p>
+
+<p><b>a)</b> If you are a California resident, California Civil Code §1798.83 permits you to request information regarding the disclosure of your personal information by WinningTicket.com to its affiliates and/or third parties for their direct marketing purposes, within the past year. To make such a request, contact us as set forth below.</p>
+
+<p><b>13)</b> WinningTicket.com Contact Information for Marketing Choices, Requests for Access, Correction Deletion or Transfer, and Questions About and Enforcement of This Privacy Policy</p>
+
+<p><b>a)</b> Unsubscribe from WinningTicket.com emails at our unsubscribe page here.</p>
+
+<p><b>b)</b> To request access, correction, deletion or transfer of your personal information or withdrawal of consent to the processing described in this Privacy Policy, please email us at privacy@winningticket.com.</p>
+
+<p><b>c)</b> If you have questions regarding our compliance with this Privacy Policy, please contact us by mail at WinningTicket LLC., 1194 Pine Valley Drive Wellington, FL 33414 Attn: Legal; or emailing us at privacy@winningticket.com.</p>
+
+<p><b>d)</b> If you are a resident of the EEA and have an unresolved privacy or personal information collection, use, or disclosure concern that we have not addressed satisfactorily, please contact the EU Data Protection Authorities. If you are a resident of Switzerland and have this concern, please contact the Swiss Federal Data Protection and Information Commissioner.</p>
+
+<p><b>i)</b> For more information on how to contact the EU Data Protection Authorities, click here.\n
+</b>ii)</b> For more information on how to contact the Swiss Federal Data Protection and Information Commissioner, click here.</p>
+
+<p><b>14)</b> Changes to this Privacy Policy </p>
+
+<p><b>a)</b> WinningTicket.com may update this Privacy Policy periodically, and will note the date of its most recent revision above. If we make material changes to this Privacy Policy, we will notify you either by prominently posting a notice of such changes prior to implementing the changes or by directly sending you a notification. We encourage you to review this Privacy Policy frequently to be informed of how WinningTicket.com is collecting, using, retaining, protecting, disclosing, and transferring your information. </p>
+]]>
+</string>
+
+    <string name="signup">SignUp</string>
+    <string name="login">Login</string>
+    <string name="customize_event">Customize Event</string>
+    <string name="distribute_nevent_code">Distribute  event code</string>
+    <string name="raise_money_for_your_charity">Raise money for your charity</string>
+    <string name="download_winning_ticket_app">Download winning ticket app</string>
+    <string name="create_event_code">Create event code</string>
+    <string name="create_verified_account">Create verified account</string>
+    <string name="donate_cash_and_prizes">Donate cash and prizes</string>
+    <string name="choose_events_you_want_to_sponsor">Choose events you want to sponsor</string>
+    <string name="scorecard_and_leaderboard">Scorecard and Leaderboard</string>
+    <string name="event_location">event location</string>
+    <string name="start_playing">Start Playing</string>
+    <string name="contact_first_name">Contact First Name</string>
+    <string name="contact_last_name">Contact Last Name</string>
+    <string name="mailing_address_line_1">Mailing Address Line 1</string>
+    <string name="mailing_address_line_2">Mailing Address Line 2</string>
+    <string name="contact_phone_number">Contact Phone Number</string>
+    <string name="by_state">By State :</string>
+    <string name="by_date">By Date :</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="apply">Apply</string>
+    <string name="_hole">Hole</string>
+    <string name="_10">10</string>
+    <string name="_11">11</string>
+    <string name="_12">12</string>
+    <string name="_13">13</string>
+    <string name="_14">14</string>
+    <string name="_15">15</string>
+    <string name="_16">16</string>
+    <string name="_17">17</string>
+    <string name="_18">18</string>
+    <string name="in">In</string>
+    <string name="par">Par</string>
+    <string name="score">Score</string>
+    <string name="net">Net</string>
+    <string name="request_paypal_transfer">Request PayPal transfer</string>
+    <string name="amount">Amount</string>
+    <string name="_0_00">0.00</string>
+    <string name="add_recipients">Assign your extra ticket.</string>
+    <string name="get_access_to_all_winning_ticket_features">GET ACCESS TO ALL WINNING TICKET FEATURES</string>
+    <string name="virtual_gift_bags">VIRTUAL GIFT BAGS</string>
+    <string name="multi_purpose_tickets">MULTI-PURPOSE TICKETS</string>
+    <string name="purchase_your_winning_ticket">PURCHASE YOUR WINNING TICKET</string>
+    <string name="request_bank_transfer">Request Bank transfer</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="bank_account_routing_number">Bank Account Routing Number</string>
+    <string name="bank_account_number">Bank Account Number</string>
+    <string name="partner_sign_up">Partner Sign Up</string>
+    <string name="golf_course_name">Golf Course Name</string>
+    <string name="contact_title">Contact Title</string>
+    <string name="contact_email">Contact Email</string>
+    <string name="sign_up_request">Sign Up request</string>
+    <string name="filter_by">Filter By :</string>
+    <string name="no_auction_items_are_available">No Auction Items Are Available</string>
+    <string name="view_your_complete">You\'ve completed your game!</string>
+    <string name="continue_playing">continue playing</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="use_account_balance">Use Account Balance</string>
+    <string name="current_balance_100_00">Current Balance: $100.00</string>
+    <string name="use_account_balance_to_pay">Use Account Balance to Pay</string>
+    <string name="amount_not_found">Amount Not Found</string>
+    <string name="doller">$</string>
+    <string name="deposit_funds">Deposit Funds</string>
+    <string name="phone">PHONE</string>
+    <string name="no_donations_found">No Donations Found</string>
+    <string name="send_us_a_message">Send us a message</string>
+    <string name="first_name">First Name</string>
+    <string name="subject">Subject</string>
+    <string name="your_message">Your Message</string>
+    <string name="event_name_">Event Name:</string>
+    <string name="no_sponsorship_available">No Sponsorship Available</string>
+    <string name="the_all_inclusive">THE ALL-INCLUSIVE</string>
+    <string name="fundraising_app">TOURNAMENT MANAGEMENT APP</string>
+    <string name="select_withdraw_option">Select Withdraw option:</string>
+    <string name="all_events">All Events</string>
+    <string name="referral_email">Referral Email</string>
+    <string name="update_referral">Update Referral</string>
+    <string name="net_score">Net Score</string>
+    <string name="handicap">Handicap</string>
+    <string name="upcoming_events">Upcoming &amp; Live Events</string>
+    <string name="no_upcoming_events">No live or upcoming events</string>
+    <string name="enter_a_donation_amount">Enter your donation amount :</string>
+    <string name="make_donation">MAKE DONATION</string>
+    <string name="transaction">Transaction</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="donation_recepient">Donation Recipient</string>
+    <string name="no_bids">NO BIDS</string>
+    <string name="place_bid">Place Bid</string>
+    <string name="check_out">Checkout</string>
+    <string name="item_description">Item Description</string>
+    <string name="similar_items">Similar Items</string>
+    <string name="no_similar_items_are_available">No Similar Items Are Available</string>
+    <string name="enter_code_provided_by_the_event_organizer">Enter your 6-digit event code below</string>
+    <string name="enter_event_code">Enter Event Code</string>
+    <string name="log_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="keep_me_logged_in">Keep me logged in</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="event_expand">Click for event detail </string>
+    <string name="position">POS</string>
+    <string name="player_name">Name</string>
+    <string name="to_par">TO PAR</string>
+    <string name="near_by_course">To find nearby courses and utilize the Winning Ticket GPS tracker, you must enable your location services</string>
+    <string name="enable">Enable</string>
+    <string name="not_now">not now</string>
+    <string name="child_hole">Hole</string>
+    <string name="_0">0</string>
+    <string name="_4">4</string>
+    <string name="_4_">4+</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="out">Out</string>
+    <string name="par_child">Par</string>
+    <string name="location_services_required">Location services required</string>
+    <string name="gross">Gross</string>
+    <string name="hcp">HCP</string>
+    <string name="edit">Edit</string>
+    <string name="eadge">Eadge</string>
+    <string name="birdie">Birdie</string>
+    <string name="bogey">Bogey</string>
+    <string name="double_bogey">Double Bogey</string>
+    <string name="g_score">Gross Score</string>
+    <string name="n_score">Net Score</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="below_par">Below Par</string>
+    <string name="above_par">Above Par</string>
+    <string name="date">Round Date</string>
+    <string name="avg_par">Avg. Par</string>
+    <string name="fairway_hit">Fairways Hit</string>
+    <string name="green_in_regular">Greens In Regulation</string>
+    <string name="save_score">Save Score</string>
+    <string name="passed_events">Passed Events</string>
+    <string name="add_fund_current_balance">Current Balance</string>
+    <string name="select_amount_you_d_like_to_add">Select amount you\'d like to add:</string>
+    <string name="or_enter_a_custom_amount">or enter a custom amount:</string>
+    <string name="swipe_to_see_how_it_works">Swipe To See How It Works</string>
+    <string name="step_1">Step 1</string>
+    <string name="step_2">Step 2</string>
+    <string name="step_3">Step 3</string>
+    <string name="golf_course_sub_title">Enter your golf course name, your contact information, and click submit to be reviewed for our affiliate program.</string>
+    <string name="start_a_new_round">Start a new round</string>
+    <string name="premium_string">Don\'t lose your scores! Upgrade to a premium account for only $14.99/year to save all of your scores and view your stats.</string>
+    <string name="purchase_gps_location">Statistics and scores will not save after 11:59 PM on the day you started your round.</string>
+    <string name="purchase_premium">Purchase Premium</string>
+    <string name="continue_as_free_user">Continue as free user</string>
+    <string name="empty_holes">Hole Information not exist for this course</string>
+    <string name="empty_tee">Tee Information not exist for this course</string>
+    <string name="select_event_correct">Select an event below that correlates with the charity you would like to donate to:</string>
+    <string name="you_will_be_redirected_from">Due to Play Store terms of conditions, donations cannot be made within our mobile app. After clicking “Make Donation”, you will be redirected from our mobile application to your web browser to complete the transaction. Thank you for your understanding.</string>
+    <string name="individual_empty_message">Please subscribe for premium to see the history</string>
+    <string name="yards_to_back">YARDS TO BACK</string>
+    <string name="realign_center">Realign Center</string>
+    <string name="user_not_found">User Not Found</string>
+    <string name="write_a_message">Enter message to send</string>
+    <string name="net_scores">Net Scores</string>
+    <string name="showing_last_six_scores">Showing last six scores</string>
+    <string name="hit">Hit</string>
+    <string name="fairways_hit">Fairways Hit</string>
+    <string name="select_your_tee_box">Select your tee box:</string>
+    <string name="your_rounds">Your Rounds</string>
+    <string name="not_started_round">You haven\'t started round yet. Search for a course and click \"Play Round\" on the course\'s page to get started</string>
+    <string name="send">Send</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="event_type">EVENT TYPE</string>
+    <string name="game_description">GAME DESCRIPTION</string>
+    <string name="live_scoring_gps">LIVE SCORING + GPS</string>
+    <string name="chosen_color">Chosen Score</string>
+    <string name="team_name">Team Name</string>
+    <string name="save_name">SAVE NAME</string>
+    <string name="help">Help</string>
+    <string name="includes">Includes:</string>
+    <string name="event_sponsors">Event Sponsors</string>
+    <string name="your_super_ticket">Your Event Super Ticket</string>
+    <string name="order_details">Order Details</string>
+    <string name="confirm_your_order_details_below">Confirm your order details below</string>
+    <string name="purchase_price">Purchase Price</string>
+    <string name="total_usd">Total (USD)</string>
+    <string name="event_access">Event Access</string>
+    <string name="f015">\uf015</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="f09d">\uf09d</string>
+    <string name="confirm_purchase">Confirm Purchase</string>
+    <string name="continuess">Continue</string>
+    <string name="super_ticket">Super Ticket</string>
+    <string name="auction">Auction</string>
+    <string name="be_write_back">Be Right Back</string>
+    <string name="home">Home</string>
+    <string name="looking_for_charity">Looking for a charity or group event?</string>
+    <string name="single_play">Single Play</string>
+    <string name="tournaments">Tournaments</string>
+    <string name="explore_all_charity_and_events">Charity and Group Events</string>
+    <string name="course_locator">Course Locator</string>
+    <string name="_38_000_courses_worldwide">38,000+ global courses</string>
+    <string name="start_round">Start Round</string>
+    <string name="play_now">Play Now</string>
+    <string name="today_s_events">Today’s Events</string>
+    <string name="explore_public_charity_events">Explore public charity events that are taking place right now. View auction items and place a bid to support other organizations.</string>
+    <string name="passed_event_decription">Events that you have entered that are now expired. You may view leaderboards and other relevant event data.</string>
+    <string name="expand"><![CDATA[Expand >]]></string>
+    <string name="use_course_locator">Use the course locator to find your course.After selecting course,click "start round" to get started!</string>
+    <string name="filter_stats_by_date">Filter stats by date</string>
+    <string name="premium_purchase_infomation">Use the Winning Ticket to know exactly where
+you are on over 38,000 world-wide golf course at
+all times with our GPS + feature. Track and save
+all of your scorecard data from driving distances
+to fairways hit, greens in regulation to total putts
+in your easy to navigate dashboard. Live weather
+and wind information.</string>
+    <string name="pricing_options">Pricing Options</string>
+    <string name="auto_renew">Auto-renews until canceled.
+Cancel anytime from your Account dashboard.</string>
+    <string name="my_acc_your_rounds">ROUNDS</string>
+    <string name="all_stats">All Stats</string>
+    <string name="event_access_ss">Event Access</string>
+    <string name="todays_event">There aren\'t any public events today</string>
+    <string name="enter_silent_auction">Enter Silent Auction</string>
+
+    <string name="add_your_stats">Add your stats</string>
+    <string name="during_a_scramble_all_team_members">During a scramble, all team members have   the ability to edit the team score from their device</string>
+    <string name="putts">Putts</string>
+    <string name="add_note">+ Add Note</string>
+    <string name="select_score">Select Score</string>
+    <string name="add_notes">add notes</string>
+    <string name="edit_you_note">edit you note</string>
+    <string name="delete_note">delete note</string>
+    <string name="no_round_notes_founds">No Round Notes Founds</string>
+    <string name="live_event">Live Event</string>
+    <string name="premium_type">Subscription Type</string>
+    <string name="sign_up">Sign up</string>
+    <string name="create_a_wt_acc">Create a WT account to start \nparticipating in events.</string>
+    <string name="create_my_account">Create my account</string>
+    <string name="tee_boxes">Tee Boxes</string>
+    <string name="select_tee_box">Select tee box:</string>
+    <string name="continue_round">Continue Round</string>
+    <string name="continue_event">Continue Event</string>
+
+    <string name="stblfrd">SF</string>
+    <string name="double_bogey_or_worse">Double Bogey or worse</string>
+    <string name="semi_private">Semi-private</string>
+    <string name="sort_by">Sort By:</string>
+    <string name="view_all"><![CDATA[View All >]]></string>
+    <string name="virtual_gift_bag">Virtual Gift Bag</string>
+    <string name="scan_pay"><![CDATA[Scan & Pay]]></string>
+    <string name="enter_participant_email">Search user or create new user</string>
+    <string name="new_user">New user</string>
+    <string name="select_auction_item">Select Acution Item</string>
+    <string name="finish">Finish</string>
+    <string name="payment_confirmed">Payment Confirmed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="near_by_corses">Nearby Courses (Public)</string>
+    <string name="private_course">Nearby Courses (Private)</string>
+    <string name="near_by_courses">Nearby Courses </string>
+    <string name="search_by_course_name">Search by course name</string>
+    <string name="or_search_by_location">Or Search by location</string>
+    <string name="search_by_city">Search by city</string>
+    <string name="search_results">Search Results</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="no_records_found">No Records Found</string>
+
+    <string name="double_bogey_or_better">Double Bogey or better</string>
+    <string name="eagle_or_better">Eagle or better</string>
+    <string name="scoring_legend">Scoring Legend</string>
+    <string name="text_gps">GPS</string>
+    <string name="thru">Thru</string>
+    <string name="live_leaderboard">Live Leaderboard</string>
+    <string name="enter_score">Enter Score</string>
+    <string name="view_scorecard">View Scorecard</string>
+    <string name="type_your_message">type your message</string>
+    <string name="slide_to_cancel">slide to cancel</string>
+    <string name="tot">TOT</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="given_a_code">Given a code?</string>
+    <string name="select_an_option">Select an option below to proceed</string>
+    <string name="live">LIVE</string>
+    <string name="game_type">GAME TYPE</string>
+
+</resources>

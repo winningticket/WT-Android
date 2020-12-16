@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorwhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:padding="@dimen/edt_paddingleft"
+        android:id="@+id/stripe_btn_back"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:textColor="@color/colorblack"
+        android:gravity="start|center"
+        android:background="@drawable/black_back_arrow"
+        android:layout_width="@dimen/mph_width"
+        android:layout_height="@dimen/mph_width" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/mar_left_fifthyt"
+        android:scrollbars="none"
+        android:layout_marginStart="@dimen/mar_left_fifthyt"
+        android:id="@+id/all_cards_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.stripe.android.view.CardMultilineWidget
+        android:id="@+id/card_input_widget"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/mar_left_fifthyt"
+        android:layout_marginStart="@dimen/mar_left_fifthyt"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginBottom="@dimen/linear_small"
+        android:layout_gravity="bottom|center"
+        android:id="@+id/add_funds"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/login_margin"
+        android:layout_marginRight="@dimen/login_margin"
+        android:layout_marginTop="@dimen/settings_padding"
+        android:background="@drawable/button_backgound"
+        android:stateListAnimator="@null"
+        android:text="Pay"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/text_size" />
+
+</LinearLayout>

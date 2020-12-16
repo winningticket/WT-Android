@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/custome_purchage" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_icon_padding"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:background="@color/colorwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/sort_by"
+            android:id="@+id/sort_by_text"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/colorblack"
+            android:padding="@dimen/text_icon_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:popupBackground="@color/colorwhite"
+            android:layout_marginStart="@dimen/aboutus_padding"
+            android:id="@+id/auction_filter_by"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/coloraddreferal"/>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <ListView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:scrollbars="none"
+            android:id="@+id/live_auction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:minLines="3"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/colordarkgray"
+        android:id="@+id/view_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_auction_items_are_available" />
+
+</LinearLayout>

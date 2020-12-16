@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context="com.winningticketproject.in.MyAccountTab.Transaction_histrory_Details">
+
+    <include
+        android:id="@+id/add_funds"
+        layout="@layout/custome_profile_toolbarpage" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#CAECF6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_hight"/>
+         <RelativeLayout
+             android:layout_width="@dimen/tool_bar_hight"
+             android:layout_height="@dimen/tool_bar_hight"
+             android:layout_marginTop="@dimen/edt_paddingleft"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:id="@+id/relativeLayout">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                 android:orientation="vertical">
+                 <TextView
+                     android:layout_margin="2dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:textAllCaps="true"
+                     android:textSize="@dimen/linear_medium"
+                     android:textColor="@color/colorwhite"
+                     android:text="@string/transaction"
+                     android:id="@+id/transation"
+                     />
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:maxLength="10"
+                     android:textAllCaps="true"
+                     android:textStyle="bold"
+                     android:textSize="@dimen/header_text_size"
+                     android:textColor="@color/colorwhite"
+                     android:id="@+id/transation_id"
+                    />
+
+             </LinearLayout>
+
+
+         </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/edt_paddingleft"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_big_header_text_size"
+            android:textColor="@color/colorblack"
+            android:id="@+id/amount"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorblack"
+            android:id="@+id/tv_transation_type"
+            />
+
+        <View
+            android:background="#909090"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorblack"
+            android:id="@+id/create_date"
+            />
+        <View
+            android:background="#909090"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/layout_below"
+            android:layout_marginLeft="@dimen/edt_paddingleft"
+            android:layout_marginRight="@dimen/edt_paddingleft"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorblack"
+                android:text="@string/payment_type"
+                android:id="@+id/payment_type"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorblack"
+                android:id="@+id/pay_ment_type" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorblack"
+                android:text="@string/donation_recepient"
+                android:id="@+id/donation_recipient"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorblack"
+                android:id="@+id/donation_values"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorblack"
+                android:text="@string/event_name"
+                android:id="@+id/event_name"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorblack"
+                android:id="@+id/name_of_event" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

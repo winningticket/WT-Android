@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="6"
+    android:id="@+id/layout_row"
+     android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:padding="@dimen/aboutus_padding"
+                android:id="@+id/serial_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:textStyle="bold"
+                android:id="@+id/hole_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/distance1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:id="@+id/distance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:layout_weight="1.3"
+                android:gravity="center" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/edt_paddingleft"
+            android:paddingBottom="@dimen/edt_paddingleft"
+            android:clickable="false"
+            android:id="@+id/distance2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size"
+            android:gravity="center" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/distance3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/edit_icon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/first_row_color"
+                android:textSize="@dimen/header_text_size"
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:layout_weight=".7"
+                android:gravity="center" />
+</LinearLayout>
+

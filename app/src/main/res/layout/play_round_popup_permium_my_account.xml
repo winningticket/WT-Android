@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/dailog_popup_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:padding="@dimen/edt_paddingleft"
+            android:id="@+id/btn_back"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:textColor="@color/colorblack"
+            android:gravity="start|center"
+            android:background="@drawable/black_back_arrow"
+            android:layout_width="@dimen/mph_width"
+            android:layout_height="@dimen/mph_width" />
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/cancel_premim_pop"
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:layout_marginEnd="@dimen/aboutus_padding"
+            android:src="@drawable/cross_black"
+            android:background="@color/colorwhite"
+            android:layout_gravity="end"
+            android:layout_width="@dimen/medium_big_textsize"
+            android:layout_height="@dimen/medium_big_textsize" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/aboutus_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/services">
+
+            <ImageView
+                android:layout_width="@dimen/pop_up_width"
+                android:layout_height="@dimen/pop_up_hight"
+                android:background="@drawable/logo_wt_premium"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_premium_purchase"
+                android:text="@string/premium_purchase_infomation"
+                android:textColor="@color/coloraddreferal"
+                android:textAlignment="center"
+                android:textSize="@dimen/txt_heading_size"/>
+
+
+            <TextView
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_premium"
+                android:text="@string/pricing_options"
+                android:textColor="@color/colorblack"
+                android:textAlignment="center"
+                android:textSize="@dimen/txt_heading_size"/>
+
+            <TextView
+                android:textColor="@color/coloraddreferal"
+                android:text="@string/auto_renew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_chose_plan"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:textSize="@dimen/text_size"/>
+
+
+            <Button
+                android:padding="@dimen/aboutus_padding"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size"
+                android:stateListAnimator="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$1.99 Billed Monthly"
+                android:id="@+id/btn_montly"
+                android:textColor="@color/colorwhite"
+                android:background="@color/public_color"
+                android:layout_marginLeft="@dimen/mar_left_fifthyt"
+                android:layout_marginRight="@dimen/mar_left_fifthyt"
+                android:layout_marginTop="@dimen/edt_marg_right"
+                android:layout_marginBottom="@dimen/aboutus_padding"/>
+
+            <Button
+                android:padding="@dimen/aboutus_padding"
+                android:textSize="@dimen/text_size"
+                android:stateListAnimator="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_yearly"
+                android:textAllCaps="false"
+                android:text="$14.99 Billed Annually"
+                android:background="@color/public_color"
+                android:textColor="@color/colorwhite"
+                android:layout_marginLeft="@dimen/mar_left_fifthyt"
+                android:layout_marginRight="@dimen/mar_left_fifthyt"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:layout_marginBottom="@dimen/mar_left_fifthyt"/>
+        </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

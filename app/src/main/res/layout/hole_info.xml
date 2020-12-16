@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/aboutus_padding"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="@dimen/aboutus_padding"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/tvleave_game"
+            android:background="@drawable/leave_game_bg"
+            android:textSize="@dimen/leadebord_score_cardtxt_size"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_width="@dimen/edt_hint_height"
+            android:layout_height="@dimen/edt_hint_height"
+            android:text="Leave\nRound"/>
+
+        <ImageView
+            android:layout_marginStart="@dimen/aboutus_padding"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/tvWhether_info"
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:background="@drawable/whether_bg"
+            android:padding="@dimen/small_text"
+            android:src="@drawable/ic_cloud_queue_black_24dp"
+            android:textSize="@dimen/leadebord_score_cardtxt_size"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_width="@dimen/edt_hint_height"
+            android:layout_height="@dimen/edt_hint_height" />
+
+        <ImageView
+            android:layout_marginStart="@dimen/aboutus_padding"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/tvalign_center"
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:src="@drawable/ic_my_location_black_24dp"
+            android:padding="@dimen/small_text"
+            android:background="@drawable/transprent_bg"
+            android:textSize="@dimen/leadebord_score_cardtxt_size"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_width="@dimen/edt_hint_height"
+            android:layout_height="@dimen/edt_hint_height" />
+
+        <ImageView
+            android:id="@+id/iv_auction"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_gravity="center"
+            android:src="@drawable/new_auction_icon"
+            android:layout_width="@dimen/pro_logo_width"
+            android:layout_height="@dimen/pro_logo_width"/>
+
+        <ImageView
+            android:id="@+id/iv_super_ticket"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_gravity="center"
+            android:src="@drawable/new_superticket_icon"
+            android:layout_width="@dimen/pro_logo_width"
+            android:layout_height="@dimen/pro_logo_width"/>
+
+        <ImageView
+            android:id="@+id/iv_chat"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_gravity="center"
+            android:src="@drawable/new_chat_icon"
+            android:layout_width="@dimen/pro_logo_width"
+            android:layout_height="@dimen/pro_logo_width"/>
+
+        <ImageView
+            android:id="@+id/iv_map_leader_board"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_gravity="center"
+            android:background="@drawable/new_leaserboard_icon"
+            android:layout_width="@dimen/pro_logo_width"
+            android:layout_height="@dimen/pro_logo_width"/>
+
+        <ImageView
+            android:id="@+id/iv_map_score_card"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_gravity="center"
+            android:background="@drawable/new_scorecard"
+            android:layout_width="@dimen/pro_logo_width"
+            android:layout_height="@dimen/pro_logo_width"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hole_information"
+        android:textSize="@dimen/linear_medium"
+        android:textColor="@color/colorwhite"
+        android:padding="@dimen/aboutus_padding"
+        android:layout_marginEnd="@dimen/aboutus_padding"
+        android:layout_marginStart="@dimen/aboutus_padding"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/textViewSpinnerItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/spinner"
+    android:textSize="@dimen/text_size"
+    android:layout_gravity="left|center"
+    android:ellipsize="marquee"
+    android:lineSpacingExtra="@dimen/_2sdp"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingBottom="2dp"
+    android:textColor="@color/colorblack"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

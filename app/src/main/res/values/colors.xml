@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorbtn">#0bb1de</color>
+    <color name="colorpaypalbtn">#0bb1de</color>
+    <color name="btn_color">#0bb1de</color>
+    <color name="enable_button">#00B0E1</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorgray">#757575</color>
+    <color name="live_scoiring">#252525</color>
+    <color name="colordarkgray">#97757575</color>
+    <color name="colorlightkgray">#ba757575</color>
+    <color name="colorlightplusgray">#45757575</color>
+    <color name="colorbackgrounty">#28757575</color>
+    <color name="colornotificqation">#F0F3F8</color>
+    <color name="colorsnakbar">#757575</color>
+    <color name="colorgraylittel">#424242</color>
+    <color name="coloraddreferal">#838D94</color>
+    <color name="colorgreen">#00a651</color>
+    <color name="fdfdf">#FD2726</color>
+    <color name="livebg">#C81B17</color>
+    <color name="goden_color">#F6DD7F</color>
+    <color name="row_background_color">#F9F9F8</color>
+    <color name="score_color">#0BB2DF</color>
+    <color name="link_color">#0000FF</color>
+    <color name="setting_page">#D0E7F7</color>
+    <color name="public_color">#00AC2C</color>
+    <color name="keypad_color_selection">#EBEBEB</color>
+    <color name="leader_board_row_color">#e7fbff</color>
+
+    <color name="color_gry">#a9aeb7</color>
+    <color name="color_bottom_gry">#6c717a</color>
+
+
+    <color name="new_row_scoreboard">#c9e5ec</color>
+    <color name="second_new_row_scoreboard">#d8f3f9</color>
+    <color name="new_gry_baground">#edeef0</color>
+
+
+    <color name="eadges">#F9E083</color>
+    <color name="birdie">#90C5A4</color>
+    <color name="bogey">#EB8B93</color>
+    <color name="double_bogey">#86ABCC</color>
+    <color name="albertross">#1B497C</color>
+    <color name="par">#EBEBEB</color>
+    <!--<color name="par">#B58EBC</color>-->
+    <color name="chosen_color">#4d4d4d</color>
+
+    <color name="first_row_color">#09A5CE</color>
+    <color name="second_row">#0AB1DE</color>
+    <color name="above_par">#F46263</color>
+    <color name="below_par">#00A7DC</color>
+
+    <color name="translucent_black">#80000000</color>
+
+    <color name="orange">#FFA500</color>
+    <color name="LightGrey">#C0C0C0</color>
+    <color name="black">#000000</color>
+
+    <color name="score_1">#FF8B38</color>
+    <color name="score_2">#FF3030</color>
+    <color name="score_3">#5CB768</color>
+    <color name="score_4">#8AB6FF</color>
+    <color name="score_5">#C400FF</color>
+    <color name="buy_it_now">#EC407A</color>
+
+    <color name="player_code">#e70086</color>
+    //this is for HighLighted dates
+
+    // this is for Deactivated dates
+
+</resources>

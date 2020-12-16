@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colornotificqation"
+    tools:context="com.winningticketproject.in.MyAccountTab.Notification_Settings"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/custome_profile_toolbarpage" />
+
+    <include
+        android:visibility="gone"
+        layout="@layout/setting_page_rules"/>
+
+    <TextView
+        android:padding="@dimen/aboutus_padding"
+        android:id="@+id/text_title"
+        android:textSize="@dimen/header_text_size"
+        android:textColor="@color/colorblack"
+        android:layout_margin="@dimen/edt_paddingleft"
+        android:text="Winning Ticket will send you auction information and updates through email and SMS messages. You can choose to opt-out of all messages below."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:paddingStart="@dimen/edt_paddingleft"
+        android:paddingTop="@dimen/edt_paddingleft"
+        android:background="@color/colorwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/settings_padding"
+            android:gravity="center"
+            android:id="@+id/sms_notificatio_title1"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:background="@color/colorwhite"
+            android:text="EMAIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/push_togal_button_1" />
+
+        <ToggleButton
+            android:layout_margin="@dimen/togale_width_size_email"
+            android:layout_alignParentRight="true"
+            android:id="@+id/toggle_email"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/radio_width"
+            android:layout_height="@dimen/radio_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/new_togal_button"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorlightkgray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:paddingStart="@dimen/edt_paddingleft"
+        android:paddingTop="@dimen/edt_paddingleft"
+        android:background="@color/colorwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="@dimen/edt_paddingleft"
+            android:paddingStart="@dimen/edt_paddingleft"
+            android:layout_gravity="center"
+            android:id="@+id/text_push_sms"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:background="@color/colorwhite"
+            android:text="SMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/push_togal_button_1" />
+
+        <ToggleButton
+            android:layout_margin="@dimen/togale_width_size_email"
+            android:layout_alignParentRight="true"
+            android:id="@+id/toggle_sms"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/radio_width"
+            android:layout_height="@dimen/radio_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/new_togal_button"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+</LinearLayout>

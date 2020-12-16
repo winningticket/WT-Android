@@ -1,0 +1,251 @@
+<resources>
+
+    <!--Splash screen-->
+    <!--Before Login-->
+    <dimen name="login_layout_height">180dp</dimen>
+    <dimen name="aboutus_padding">7dp</dimen>
+    <!--Header-->
+
+    <dimen name="virtula_gift_width">330dp</dimen>
+
+    <dimen name="header_back_btn_height">60dp</dimen>
+    <dimen name="header_back_btn_txt_size">25dp</dimen>
+    <dimen name="header_text_size">20sp</dimen>
+    <!--Edittext hint layout-->
+    <dimen name="edt_hint_margin">7dp</dimen>
+    <dimen name="edt_hint_padingtop">10dp</dimen>
+    <dimen name="edt_hint_padingleft">7dp</dimen>
+    <dimen name="edt_hint_height">60dp</dimen>
+
+    <dimen name="select_image_width">75dp</dimen>
+
+
+    <dimen name="leadebord_score_cardtxt_size">14dp</dimen>
+    <dimen name="bestball_leadebord_score_cardtxt_size">12sp</dimen>
+    <dimen name="leaderboard_row_width">90dp</dimen>
+    <dimen name="bestballleaderboard_row_width">80dp</dimen>
+
+    <dimen name="add_funds_inside">120dp</dimen>
+
+    <dimen name="popup_image">350dp</dimen>
+
+    <dimen name="map_btn_width">120dp</dimen>
+    <dimen name="map_btn_hight">40dp</dimen>
+    <dimen name="map_btn_hight_h">36dp</dimen>
+
+
+    <!--Edittext-->
+    <dimen name="edt_paddingbtm">10dp</dimen>
+    <dimen name="event_top_paddingbtm">10dp</dimen>
+    <dimen name="edt_textsize">18dp</dimen>
+    <dimen name="edt_paddingleft">15dp</dimen>
+    <dimen name="edt_marg_right">15dp</dimen>
+    <dimen name="edt_height">35dp</dimen>
+    <!--Textview-->
+    <dimen name="linear_mrgn">25dp</dimen>
+    <dimen name="txt_heading_size">20dp</dimen>
+    <dimen name="large_text_size">22sp</dimen>
+    <dimen name="linear_small">16dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="linear_medium">16dp</dimen>
+    <dimen name="_big_header_text_size">26sp</dimen>
+    <dimen name="big_text_size">30dp</dimen>
+    <dimen name="line_size">50dp</dimen>
+    <dimen name="medium_big_textsize">22dp</dimen>
+
+    <dimen name="pop_up_width">130dp</dimen>
+    <dimen name="pop_up_hight">110dp</dimen>
+
+    <dimen name="logo_grey_width">220dp</dimen>
+    <dimen name="logo_grey_height">120dp</dimen>
+
+    <dimen name="plus_minus">35sp</dimen>
+    <dimen name="bottom_tab_text">14sp</dimen>
+
+    <dimen name="logo_margin_top">115dp</dimen>
+
+    <!--Button-->
+    <dimen name="btn_txt_size">18dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_width">250dp</dimen>
+    <dimen name="login_button_width">250dp</dimen>
+
+    <dimen name="map_hight">400dp</dimen>
+
+    <dimen name="login_sign_up_heading_hight">260dp</dimen>
+
+    <dimen name="view_pager">320dp</dimen>
+    <dimen name="editext_bottom">8dp</dimen>
+
+    <dimen name="play_round_button_width">250dp</dimen>
+
+    <!--Imageview-->
+    <dimen name="image_width">170dp</dimen>
+    <dimen name="image_height">140dp</dimen>
+
+    <dimen name="filteer_width">120dp</dimen>
+    <dimen name="filter_height">40dp</dimen>
+
+    <dimen name="auction_item_width">200dp</dimen>
+    <dimen name="barder">190dp</dimen>
+
+
+    <dimen name="search_layout_height">60dp</dimen>
+    <dimen name="layout_mrgn_top">25dp</dimen>
+    <dimen name="layout_difference_mrgn_top">10dp</dimen>
+    <dimen name="layout_mrgn_leftright">15dp</dimen>
+    <dimen name="layout_btn_top">35dp</dimen>
+    <dimen name="image_icon_width">35dp</dimen>
+    <dimen name="image_icon_height">25dp</dimen>
+
+    <dimen name="gross_score_text">18sp</dimen>
+
+    <dimen name="text_icon_height">30dp</dimen>
+    <dimen name="text_icon_padding">4dp</dimen>
+    <dimen name="edtxt_padding">10dp</dimen>
+    <dimen name="txt_margin_lr">10dp</dimen>
+
+    <dimen name="radio_width">45dp</dimen>
+    <dimen name="radio_height">25dp</dimen>
+    <dimen name="login_margin">30dp</dimen>
+    <dimen name="settings_padding">15dp</dimen>
+
+    <dimen name="ss_text">10sp</dimen>
+
+    <dimen name="arrow_icon">30dp</dimen>
+    <dimen name="new_text_icon_padding">2dp</dimen>
+
+    <dimen name="view_hight">7dp</dimen>
+
+    <dimen name="add_fund_amount_min">155dp</dimen>
+
+
+    <dimen name="spinner_hight">60dp</dimen>
+    <dimen name="logo_icon_width">90dp</dimen>
+    <dimen name="logo_icon_hight">80dp</dimen>
+
+    <dimen name="pro_logo_width">60dp</dimen>
+    <dimen name="margin_top_order">15dp</dimen>
+    <dimen name="custom_txt_size">16dp</dimen>
+    <dimen name="custom_txt_padding">10dp</dimen>
+    <dimen name="custom_button_height">40dp</dimen>
+    <dimen name="colum_text_size">14dp</dimen>
+    <dimen name="second_colum_text_size">16dp</dimen>
+    <dimen name="amount_filds">10dp</dimen>
+
+    <dimen name="score_text_hedder">13dp</dimen>
+
+    <dimen name="txt_mrgn_right">30dp</dimen>
+    <dimen name="code_key_height">60dp</dimen>
+    <dimen name="forgot_edt_pdg">18dp</dimen>
+    <dimen name="hint_txt_size">13dp</dimen>
+
+    <dimen name="back_arrow">25dp</dimen>
+
+    <dimen name="txt_margin_lr_hint">5dp</dimen>
+
+    <dimen name="select_hole">100dp</dimen>
+    <dimen name="select_hole_w">120dp</dimen>
+
+
+    <dimen name="event_code_mrgn">30dp</dimen>
+    <dimen name="menu_icon">50dp</dimen>
+
+    <dimen name="add_fund_button_hight">50dp</dimen>
+    <dimen name="spinnerlest">5dp</dimen>
+
+    <dimen name="view_item_hitght">40dp</dimen>
+    <dimen name="view_item_width">140dp</dimen>
+
+    <dimen name="listview_padding">0dp</dimen>
+
+    <dimen name="amount_min">140dp</dimen>
+    <dimen name="amount_max">140dp</dimen>
+
+
+    <dimen name="edt_hint_padingsstop">6dp</dimen>
+
+    <dimen name="font_size">16dp</dimen>
+
+    <dimen name="mar_left_fifthyt">20dp</dimen>
+
+    <dimen name="referal_button_margin">40dp</dimen>
+    <dimen name="logout_button">50dp</dimen>
+
+    <dimen name="tool_bar_hight">140dp</dimen>
+
+    <dimen name="small_text">12dp</dimen>
+    <dimen name="small_to_medium_text">14dp</dimen>
+
+    <dimen name="margin_live">110dp</dimen>
+    <dimen name="text_size_score">20dp</dimen>
+    <dimen name="text_size_score_event">16dp</dimen>
+    <dimen name="text_size_score_event_new">10dp</dimen>
+    <dimen name="live_text_size">50dp</dimen>
+    <dimen name="score_text_size">30dp</dimen>
+    <dimen name="button_margin">150dp</dimen>
+    <dimen name="start_playing_width">230dp</dimen>
+    <dimen name="start_playing_height">50dp</dimen>
+    <dimen name="logo_live_width">140dp</dimen>
+    <dimen name="logo_live_height">120dp</dimen>
+
+    <dimen name="viewpager_hight">280sp</dimen>
+    <dimen name="public_width">120sp</dimen>
+    <dimen name="public_hight">140sp</dimen>
+
+    <dimen name="sponsor_above">130sp</dimen>
+
+
+    <dimen name="pic_hight">350dp</dimen>
+
+    <dimen name="add_fun_left">-65dp</dimen>
+
+    <dimen name="your_score_bord_title">260dp</dimen>
+
+    <dimen name="leaderboardhight_title">40dp</dimen>
+    <dimen name="leaderboardwidth">30dp</dimen>
+    <dimen name="leaderboardwidth_title">50dp</dimen>
+    <dimen name="leader_board_title">80dp</dimen>
+    <dimen name="player_name">150dp</dimen>
+
+    <dimen name="leaderboardhight">45dp</dimen>
+
+    <dimen name="border_pading">4dp</dimen>
+
+    <dimen name="notification_txt">75dp</dimen>
+    <dimen name="notification_email">85dp</dimen>
+    <dimen name="togale_width_size">15dp</dimen>
+    <dimen name="togale_width_size_email">20dp</dimen>
+
+    <dimen name="edit_text_top">2dp</dimen>
+    <dimen name="sign_up_spinner">0dp</dimen>
+
+    <dimen name="live_auction_width">160dp</dimen>
+    <dimen name="remove_icon_size">30dp</dimen>
+
+    <dimen name="leader_board_title_second">50dp</dimen>
+
+    <dimen name="score_board_bottom">-62dp</dimen>
+    <dimen name="sponsaor_logo">100dp</dimen>
+
+    <dimen name="how_it_works_cions">110dp</dimen>
+    <dimen name="how_it_works_margin_top">30dp</dimen>
+    <dimen name="how_it_works_text">100dp</dimen>
+
+    <dimen name="paypal_padding">115dp</dimen>
+
+    <dimen name="direction_icon_width">50dp</dimen>
+
+    <dimen name="mph_hight">25dp</dimen>
+    <dimen name="mph_width">30dp</dimen>
+
+    <dimen name="account_row_left">58dp</dimen>
+    <dimen name="account_text">10sp</dimen>
+    <dimen name="ps_five">-7dp</dimen>
+    <dimen name="ps_nine">-11dp</dimen>
+    <dimen name="ps_thirty">-35sp</dimen>
+    <dimen name="big_big_text">34dp</dimen>
+
+    <dimen name="listview_bottom_space">50dp</dimen>
+
+</resources>

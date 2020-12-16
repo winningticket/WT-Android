@@ -1,0 +1,196 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editpagelayout"
+    android:background="@color/colorwhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:padding="@dimen/edt_paddingleft"
+        android:id="@+id/btn_back"
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:textColor="@color/colorblack"
+        android:gravity="start|center"
+        android:background="@drawable/black_back_arrow"
+        android:layout_width="@dimen/mph_width"
+        android:layout_height="@dimen/mph_width" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/top_section_payment_flow"/>
+
+            <LinearLayout
+                android:padding="@dimen/mar_left_fifthyt"
+                android:background="@color/setting_page"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/billing_address_with_wallet"/>
+
+                <TextView
+                    android:id="@+id/view_hide"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/aboutus_padding"
+                    android:layout_marginLeft="@dimen/aboutus_padding"
+                    android:background="@color/colorgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/succes_layout"
+                    android:layout_marginLeft="@dimen/aboutus_padding"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/congratulations"
+                        android:id="@+id/Congrats_mesage"
+                        android:layout_gravity="center|left"
+                        android:padding="@dimen/text_icon_padding"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/header_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/success_status"
+                            android:layout_gravity="center|left"
+                            android:layout_weight="1.5"
+                            android:padding="@dimen/text_icon_padding"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/text_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/remove_icon"
+                            android:layout_width="@dimen/remove_icon_size"
+                            android:layout_height="@dimen/remove_icon_size"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="@dimen/forgot_edt_pdg"
+                            android:gravity="center|right"
+                            android:padding="@dimen/text_icon_padding"
+                            android:src="@drawable/remove_apply_code" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/aboutus_padding"
+                    android:background="@color/colorgray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/applay_credit_balance"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/edt_paddingleft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/account_balance"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="@dimen/text_icon_padding"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/header_text_size"
+                        android:text="@string/use_account_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/aboutus_padding"
+                        android:gravity="center|right"
+                        android:padding="@dimen/text_icon_padding"
+                        android:id="@+id/payment_downarrow"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/arrow_icon"
+                        android:layout_width="@dimen/radio_width"
+                        android:layout_height="@dimen/radio_width"
+                        android:textColor="@color/colorblack"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_wallete_balance"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginLeft="@dimen/edt_paddingleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_balance_100_00"/>
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/pay_not"
+                    android:layout_marginTop="@dimen/aboutus_padding"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/edt_paddingleft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ToggleButton
+                        android:id="@+id/togal_button"
+                        android:layout_gravity="left"
+                        android:layout_width="@dimen/radio_width"
+                        android:layout_height="@dimen/radio_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/new_togal_button"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                    <TextView
+                        android:id="@+id/text_use_wallete_balance"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/text_size"
+                        android:layout_marginLeft="@dimen/aboutus_padding"
+                        android:layout_gravity="center"
+                        android:text="@string/use_account_balance_to_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_margin="@dimen/mar_left_fifthyt"
+                android:stateListAnimator="@null"
+                android:id="@+id/preview_order"
+                android:textColor="@color/colorwhite"
+                android:background="@color/public_color"
+                android:text="@string/confirm_purchase"
+                android:textSize="@dimen/text_size"
+                android:layout_weight="0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height" />
+
+            <ImageView
+                android:id="@+id/grey_logo"
+                android:layout_marginTop="@dimen/image_icon_height"
+                android:layout_width="@dimen/logo_grey_width"
+                android:layout_height="@dimen/logo_grey_height"
+                android:layout_gravity="center"
+                android:background="@drawable/logo_grey"
+                android:layout_marginBottom="@dimen/image_icon_height" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

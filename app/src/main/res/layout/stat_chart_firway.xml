@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/aboutus_padding"
+    android:weightSum="3">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/firway_pie_chart"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/image_width"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:id="@+id/fair_way_data_empty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Statics appears here after rounds are saved"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/text_size"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_fair_way_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/aboutus_padding"
+            android:text="@string/fairways_hit"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size" />
+
+
+        <LinearLayout
+            android:id="@+id/fair_ways_hit_empty_lay"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="@dimen/linear_medium"
+                        android:layout_height="@dimen/linear_medium"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_brightness_1_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/txt_fairway_hit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/linear_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginStart="@dimen/text_size"
+                    android:gravity="start|center"
+                    android:id="@+id/hint_hit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/hit"
+                    android:textColor="@color/colorlightkgray"
+                    android:textSize="@dimen/small_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/aboutus_padding"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="@dimen/linear_medium"
+                        android:layout_height="@dimen/linear_medium"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_brightness_skyblue_dp" />
+
+                    <TextView
+                        android:id="@+id/txt_fairway_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/linear_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginStart="@dimen/text_size"
+                    android:id="@+id/hint_left"
+                    android:layout_gravity="center|start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Miss Left"
+                    android:textColor="@color/colorlightkgray"
+                    android:textSize="@dimen/small_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/aboutus_padding"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="@dimen/linear_medium"
+                        android:layout_height="@dimen/linear_medium"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_brightness_pink_24dp" />
+
+                    <TextView
+                        android:id="@+id/txt_fairway_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/linear_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hint_right"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Miss Right"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorlightkgray"
+                    android:textSize="@dimen/small_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".2"
+        android:onClick="click1"
+        android:background="@drawable/ic_chevron_right_black_24dp" />
+
+</LinearLayout>

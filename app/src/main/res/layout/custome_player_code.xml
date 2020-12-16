@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_marginEnd="@dimen/mar_left_fifthyt"
+    android:layout_marginStart="@dimen/mar_left_fifthyt"
+    android:background="@color/mdtp_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/code_layout"
+        android:layout_marginBottom="@dimen/aboutus_padding"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/play_code_title"
+            android:textSize="@dimen/linear_small"
+            android:padding="2dp"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_player_your_code_text"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/small_text"
+            android:layout_marginLeft="@dimen/linear_mrgn"
+            android:layout_marginRight="@dimen/linear_mrgn"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="textCapCharacters"
+                android:singleLine="true"
+                android:maxLength="1"
+                android:gravity="center"
+                android:id="@+id/play_edittext1"
+                android:layout_margin="@dimen/text_icon_padding"
+                android:layout_weight="1"
+                android:background="@drawable/textview_baground"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/code_key_height" />
+
+            <EditText
+                android:inputType="textCapCharacters"
+                android:singleLine="true"
+                android:maxLength="1"
+                android:gravity="center"
+                android:id="@+id/play_edittext2"
+                android:layout_margin="@dimen/text_icon_padding"
+                android:layout_weight="1"
+                android:background="@drawable/textview_baground"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/code_key_height" />
+
+            <EditText
+                android:singleLine="true"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:gravity="center"
+                android:id="@+id/play_edittext3"
+                android:layout_margin="@dimen/text_icon_padding"
+                android:layout_weight="1"
+                android:background="@drawable/textview_baground"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/code_key_height"/>
+
+            <EditText
+                android:singleLine="true"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:gravity="center"
+                android:id="@+id/play_edittext4"
+                android:layout_margin="@dimen/text_icon_padding"
+                android:layout_weight="1"
+                android:background="@drawable/textview_baground"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/code_key_height"/>
+
+            <EditText
+                android:singleLine="true"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:gravity="center"
+                android:id="@+id/play_edittext5"
+                android:layout_margin="@dimen/text_icon_padding"
+                android:layout_weight="1"
+                android:background="@drawable/textview_baground"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/code_key_height"/>
+
+            <EditText
+                android:singleLine="true"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:gravity="center"
+                android:id="@+id/play_edittext6"
+                android:layout_margin="@dimen/text_icon_padding"
+                android:layout_weight="1"
+                android:background="@drawable/textview_baground"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/code_key_height"/>
+
+
+            <EditText
+                android:singleLine="true"
+                android:inputType="textCapCharacters"
+                android:gravity="center"
+                android:maxLength="1"
+                android:id="@+id/play_edittext7"
+                android:layout_margin="@dimen/text_icon_padding"
+                android:layout_weight="1"
+                android:background="@drawable/textview_baground"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/header_text_size"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/code_key_height"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/custom_txt_padding"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:stateListAnimator="@null"
+                android:textSize="@dimen/btn_txt_size"
+                android:textColor="@color/colorwhite"
+                android:background="@drawable/new_gray_button_bacgound"
+                android:id="@+id/play_cancel"
+                android:layout_weight="0.3"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height" />
+
+
+            <Button
+                android:stateListAnimator="@null"
+                android:textSize="@dimen/btn_txt_size"
+                android:id="@+id/player_code"
+                android:textAllCaps="false"
+                android:layout_marginLeft="@dimen/txt_margin_lr"
+                android:textColor="@color/colorwhite"
+                android:background="@drawable/new_bottom_bg"
+                android:layout_weight="1"
+                android:text="@string/enter_player_code"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

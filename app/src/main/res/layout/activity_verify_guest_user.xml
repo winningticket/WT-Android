@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorwhite"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AllUsersLogin.VerifyGuestUser">
+
+    <RelativeLayout
+        android:background="@drawable/mask_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_width">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/auction_item_width"
+            android:layout_height="@dimen/auction_item_width"
+            android:layout_gravity="top|center"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/linear_medium"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_marginEnd="@dimen/edt_textsize"
+            android:layout_marginStart="@dimen/edt_textsize"
+            android:id="@+id/verify_text"
+            android:textSize="@dimen/_big_header_text_size"
+            android:textColor="@color/colorbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/is_this_you" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:id="@+id/info_verify"
+            android:text="@string/verify_info"
+            android:textSize="@dimen/mar_left_fifthyt"
+            android:layout_marginStart="@dimen/edt_textsize"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout_linear"
+            android:layout_marginTop="@dimen/layout_mrgn_leftright"
+            android:layout_marginRight="@dimen/txt_heading_size"
+            android:layout_marginLeft="@dimen/txt_heading_size"
+            android:padding="@dimen/txt_heading_size"
+            android:background="@drawable/back">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/linear_small"
+                android:id="@+id/user_info_text"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Yes_Continue"
+            android:textAllCaps="false"
+            android:textSize="@dimen/txt_heading_size"
+            android:id="@+id/btn_continues"
+            android:textColor="@color/colorwhite"
+            android:layout_margin="@dimen/txt_heading_size"
+            android:background="@drawable/new_bottom_bg"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/No_this_is_not_me"
+            android:textAllCaps="false"
+            android:textSize="@dimen/txt_heading_size"
+            android:id="@+id/btn_this_not_me"
+            android:textColor="@color/colorwhite"
+            android:layout_marginLeft="@dimen/txt_heading_size"
+            android:layout_marginRight="@dimen/txt_heading_size"
+            android:background="@drawable/add_refre_button_baground"/>
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginEnd="@dimen/edt_paddingleft"
+        android:layout_marginStart="@dimen/edt_paddingleft"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:id="@+id/home_page_event_logo"
+            android:src="@drawable/logo"
+            android:layout_width="@dimen/view_pager"
+            android:layout_height="@dimen/view_pager" />
+
+        <TextView
+            android:id="@+id/live_event_text"
+            android:textColor="@color/fdfdf"
+            android:textSize="@dimen/linear_medium"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="@string/live"
+            android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_margin="@dimen/aboutus_padding"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorblack"
+                    android:id="@+id/evnt_name"
+                    android:textSize="@dimen/linear_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:id="@+id/course_name"
+                    android:textSize="@dimen/linear_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/colorblack"
+                    android:id="@+id/event_date"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/small_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/aboutus_padding"
+            android:orientation="vertical"
+            android:id="@+id/button_continue_event"
+            android:padding="@dimen/small_text"
+            android:background="@drawable/new_botton_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/mdtp_white"
+                android:id="@+id/play_now"
+                android:text="@string/play_now"
+                android:textSize="@dimen/linear_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/mdtp_white"
+                android:id="@+id/play_game_name"
+                android:textSize="@dimen/linear_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/small_text"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:padding="@dimen/edt_paddingleft"
+                android:id="@+id/tv_gps"
+                android:src="@drawable/home_gps"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_gravity="center"
+                android:background="@drawable/new_gray_button_bacgound"
+                android:layout_width="@dimen/pro_logo_width"
+                android:layout_height="@dimen/pro_logo_width"/>
+
+            <ImageView
+                android:padding="@dimen/edt_paddingleft"
+                android:src="@drawable/home_score_card"
+                android:id="@+id/iv_score_board"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_gravity="center"
+                android:background="@drawable/new_gray_button_bacgound"
+                android:layout_width="@dimen/pro_logo_width"
+                android:layout_height="@dimen/pro_logo_width"/>
+
+            <ImageView
+                android:padding="@dimen/edt_paddingleft"
+                android:src="@drawable/home_event_new"
+                android:id="@+id/iv_event_home"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_gravity="center"
+                android:background="@drawable/home_item_select"
+                android:layout_width="@dimen/pro_logo_width"
+                android:layout_height="@dimen/pro_logo_width"/>
+
+            <ImageView
+                android:padding="@dimen/edt_paddingleft"
+                android:src="@drawable/home_leaderboard"
+                android:id="@+id/iv_leader_board"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_gravity="center"
+                android:background="@drawable/new_gray_button_bacgound"
+                android:layout_width="@dimen/pro_logo_width"
+                android:layout_height="@dimen/pro_logo_width"/>
+            <ImageView
+                android:visibility="gone"
+                android:padding="@dimen/edt_paddingleft"
+                android:background="@drawable/new_gray_button_bacgound"
+                android:id="@+id/iv_event_auction"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_gravity="center"
+                android:src="@drawable/home_auction"
+                android:layout_width="@dimen/pro_logo_width"
+                android:layout_height="@dimen/pro_logo_width"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

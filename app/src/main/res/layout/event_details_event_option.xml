@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/linear_small"
+        android:id="@+id/cardview_silent_auction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/linear_medium"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_silent_auction"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/barcode"
+                    android:layout_width="@dimen/image_icon_width"
+                    android:layout_height="@dimen/image_icon_width" />
+                <TextView
+                    android:id="@+id/tv_silent_auction"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:gravity="center"
+                    android:text="Silent\nAuction"
+                    android:textSize="@dimen/linear_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorblack"/>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/layout_scoring_gps"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/golf_ball"
+                    android:layout_width="@dimen/image_icon_width"
+                    android:layout_height="@dimen/image_icon_width" />
+                <TextView
+                    android:id="@+id/tv_scoring_gps"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:gravity="center"
+                    android:text="Scoring \n &amp; GPS"
+                    android:textSize="@dimen/linear_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorblack"/>
+
+            <LinearLayout
+
+                android:id="@+id/layout_live_chat"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:background="@drawable/chat"
+                        android:layout_width="@dimen/image_icon_width"
+                        android:layout_height="@dimen/image_icon_width" />
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:background="@drawable/red_chat_count"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/chart_count"
+                        android:layout_marginLeft="@dimen/aboutus_padding">
+                        <TextView
+                            android:textSize="@dimen/linear_small"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/text_chart_count"
+                            android:textColor="@color/colorwhite"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_live_chat"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:gravity="center"
+                    android:text="Live \n Chat"
+                    android:textSize="@dimen/linear_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/edt_paddingleft"
+        android:layout_marginBottom="@dimen/edt_paddingleft"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/virtual_gift_tit"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorblack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/virtual_gift_bag"/>
+        <TextView
+            android:gravity="center|end"
+            android:layout_weight="1"
+            android:id="@+id/virtual_gift_viewall"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/btn_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/view_all"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recler_virtual_gift_bag"
+            android:scrollbars="none"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:gravity="center"
+            android:padding="@dimen/edt_paddingleft"
+            android:background="@color/colorwhite"
+            android:visibility="gone"
+            android:id="@+id/empty_text"
+            android:textColor="@color/colorlightkgray"
+            android:text="This event doesn’t have any gift bag items."
+            android:textSize="@dimen/linear_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

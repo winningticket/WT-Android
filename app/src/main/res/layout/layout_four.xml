@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/colorblack"
+            android:layout_width="match_parent"
+             android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="@dimen/view_pager">
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/medium_big_textsize"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:text="@string/step_3"
+        android:id="@+id/text_steps_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+            <TextView
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/large_text_size"
+                android:gravity="center"
+                android:text="@string/get_access_to_all_winning_ticket_features"
+                android:id="@+id/text_access_goal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/colorbtn"
+                android:textSize="@dimen/header_text_size"
+                android:gravity="center"
+                android:text="@string/live_scoring"
+                android:layout_marginTop="@dimen/edt_paddingleft"
+                android:id="@+id/text_live_auction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/colorbtn"
+        android:textSize="@dimen/header_text_size"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:text="@string/silent_auctions"
+        android:id="@+id/text_silent_auction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/colorbtn"
+        android:textSize="@dimen/header_text_size"
+        android:gravity="center"
+        android:text="@string/virtual_gift_bags"
+        android:id="@+id/text_gift_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/colorbtn"
+        android:textSize="@dimen/header_text_size"
+        android:gravity="center"
+        android:text="@string/multi_purpose_tickets"
+        android:id="@+id/text_multipurpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

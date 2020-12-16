@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhite"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:fillViewport="true"
+        android:gravity="top" >
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/puts_score"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/big_text_size" />
+
+                    <TextView
+                        android:id="@+id/putts_score_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/colorblack"
+                        android:text="Putts"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/putts_dates"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorblack"
+                android:id="@+id/puts_course_name"
+                android:textSize="@dimen/text_size" />
+
+            <GridView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:scrollbars="none"
+                android:numColumns="6"
+                android:layout_width="match_parent"
+                android:id="@+id/grid_list_data"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:text="Hole information not available"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/score_2"
+                android:id="@+id/empty_hole_information"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

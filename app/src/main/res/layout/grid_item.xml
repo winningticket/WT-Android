@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    android:background="@drawable/bg_auction"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView"
+    android:paddingLeft="@dimen/edt_paddingbtm"
+    android:paddingRight="@dimen/edt_paddingbtm"
+    android:paddingTop="@dimen/_1sdp"
+    android:paddingBottom="@dimen/_1sdp"
+    android:textSize="@dimen/small_text"
+    android:textAllCaps="true"
+    android:layout_marginLeft="@dimen/aboutus_padding"
+    android:textStyle="normal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/wallet_holo_blue_light" />

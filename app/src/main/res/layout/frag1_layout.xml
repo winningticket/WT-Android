@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mdtp_white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sort_by_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_icon_padding"
+        android:layout_marginTop="@dimen/small_text"
+        android:layout_marginLeft="@dimen/small_text"
+        android:text="@string/sort_by"
+        android:textSize="@dimen/linear_mrgn" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginLeft="@dimen/small_text"
+        android:layout_marginRight="@dimen/small_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/live_text_size"
+            android:layout_weight="1"
+            android:textColor="@color/mdtp_light_gray"
+            android:id="@+id/Item_Number"
+            android:textAllCaps="false"
+            android:background="@drawable/background_dialog"
+            android:text = "Item Number"
+            android:textSize="@dimen/event_top_paddingbtm"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/live_text_size"
+            android:layout_weight="1"
+            android:layout_marginLeft="-5dp"
+            android:textColor="@color/mdtp_light_gray"
+            android:id="@+id/Lowest_Price"
+            android:textAllCaps="false"
+            android:background="@drawable/background_dialog"
+            android:text = "Lowest Price"
+            android:textSize="@dimen/event_top_paddingbtm"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/live_text_size"
+            android:layout_weight="1"
+            android:layout_marginLeft="-5dp"
+            android:textColor="@color/mdtp_light_gray"
+            android:textAllCaps="false"
+            android:id="@+id/Highest_Price"
+            android:background="@drawable/background_dialog"
+            android:text = "Highest Price"
+            android:textSize="@dimen/event_top_paddingbtm"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/live_text_size"
+            android:layout_weight="1"
+            android:layout_marginLeft="-5dp"
+            android:textColor="@color/mdtp_light_gray"
+            android:id="@+id/Time_End_Show"
+            android:textAllCaps="false"
+            android:background="@drawable/background_dialog"
+            android:text = "Time End Show"
+            android:textSize="7dp"/>
+
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_view"
+        android:layout_marginLeft="@dimen/small_text"
+        android:layout_marginRight="@dimen/small_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <ListView
+        android:layout_marginTop="@dimen/small_text"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:id="@+id/live_auction"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/aboutus_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:minLines="3"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/colordarkgray"
+        android:id="@+id/view_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_auction_items_are_available" />
+
+</RelativeLayout>

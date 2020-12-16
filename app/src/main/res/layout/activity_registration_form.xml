@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:background="@color/colorwhite"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/sign_up_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_sign_up_heading_hight">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/small_text"
+            android:layout_width="@dimen/auction_item_width"
+            android:layout_height="@dimen/auction_item_width"
+            android:layout_gravity="top|center"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/edt_textsize"
+            android:layout_marginStart="@dimen/edt_textsize"
+            android:id="@+id/tv_sign_up"
+            android:textSize="@dimen/big_big_text"
+            android:textColor="@color/colorbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:text="@string/sign_up" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginEnd="@dimen/edt_textsize"
+        android:layout_marginStart="@dimen/edt_textsize"
+        android:textColor="@color/colorblack"
+        android:id="@+id/tv_wt_top_info"
+        android:textSize="@dimen/text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_a_wt_acc"/>
+
+    <ScrollView
+        android:layout_marginTop="@dimen/edt_paddingleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_marginEnd="@dimen/edt_textsize"
+        android:layout_marginStart="@dimen/edt_textsize"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_fname"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingRight="@dimen/edt_hint_padingleft"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+            <EditText
+                android:gravity="start"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:id="@+id/sign_up_f_name"
+                android:maxLength="30"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/edt_textsize"
+                android:paddingRight="@dimen/edt_paddingleft"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:textColorHint="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:hint="@string/first_name"
+                android:background="@null"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_lname"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingRight="@dimen/edt_hint_padingleft"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+            <EditText
+                android:gravity="start"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:id="@+id/sign_up_l_name"
+                android:maxLength="30"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/edt_textsize"
+                android:paddingRight="@dimen/edt_paddingleft"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:textColorHint="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:hint="@string/last_name"
+                android:background="@null"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tv_up_email"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingRight="@dimen/edt_hint_padingleft"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+
+            <EditText
+                android:id="@+id/et_sign_up_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/edt_marg_right"
+                android:background="@null"
+                android:gravity="start"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/edt_paddingleft"
+                android:textColor="@color/colorblack"
+                android:textColorHint="@color/colorwhite"
+                android:textSize="@dimen/edt_textsize" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tvxtinput_phone_number"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingRight="@dimen/edt_hint_padingleft"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+
+            <EditText
+                android:maxLength="12"
+                android:id="@+id/et_sign_up_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/edt_marg_right"
+                android:background="@null"
+                android:gravity="start"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:paddingStart="@dimen/edt_paddingleft"
+                android:textColor="@color/colorblack"
+                android:textColorHint="@color/colorwhite"
+                android:textSize="@dimen/edt_textsize" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_password"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingRight="@dimen/edt_hint_padingleft"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+            <EditText
+                android:inputType="textPassword"
+                android:gravity="start"
+                android:id="@+id/sign_up_password"
+                android:maxLength="16"
+                android:textSize="@dimen/edt_textsize"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:paddingRight="@dimen/edt_paddingleft"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:textColorHint="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:hint="@string/password"
+                android:background="@null"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_confirm_password"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingRight="@dimen/edt_hint_padingleft"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+            <EditText
+                android:inputType="textPassword"
+                android:gravity="start"
+                android:id="@+id/sign_up_conform_password"
+                android:maxLength="16"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="@dimen/edt_textsize"
+                android:paddingRight="@dimen/edt_paddingleft"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:textColorHint="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:hint="@string/confirm_new_password"
+                android:background="@null"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:stateListAnimator="@null"
+            android:textSize="@dimen/btn_txt_size"
+            android:id="@+id/btn_create_account"
+            android:textAllCaps="false"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/new_bottom_bg"
+            android:text="@string/create_my_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height" />
+
+        <TextView
+            android:padding="@dimen/edt_paddingleft"
+            android:id="@+id/privacy_policy"
+            android:gravity="center"
+            android:textSize="@dimen/linear_small"
+            android:textColor="@color/colorgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    android:id="@+id/event_code_btn"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/aboutus_padding"
+        android:gravity="center"
+        android:id="@+id/tv_code_title"
+        android:textSize="@dimen/header_text_size"
+        android:textColor="@color/colorblack"
+        android:layout_gravity="center"
+        android:text="@string/given_a_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="gone"
+        android:padding="@dimen/aboutus_padding"
+        android:layout_marginStart="@dimen/aboutus_padding"
+        android:gravity="center"
+        android:id="@+id/tv_code_sub_title"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/colorblack"
+        android:layout_gravity="center"
+        android:text="@string/select_an_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_two_button"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/edt_paddingleft"
+        android:layout_marginEnd="@dimen/edt_paddingleft"
+        android:weightSum="2"
+        android:layout_marginBottom="@dimen/linear_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btn_player_code"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/new_bottom_bg"
+            android:textSize="@dimen/text_size"
+            android:layout_marginEnd="@dimen/aboutus_padding"
+            android:layout_marginStart="@dimen/edt_paddingleft"
+            android:padding="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn_event_code"
+            android:textAllCaps="false"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/new_player_code_bg"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="@dimen/aboutus_padding"
+            android:layout_marginEnd="@dimen/edt_paddingleft"
+            android:padding="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginEnd="@dimen/mar_left_fifthyt"
+        android:layout_marginStart="@dimen/mar_left_fifthyt"
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:stateListAnimator="@null"
+        android:id="@+id/enter_event_code"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/layout_mrgn_leftright"
+        android:textColor="@color/colorwhite"
+        android:text="@string/enter_event_code"
+        android:background="@drawable/new_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height" />
+
+    <include
+        android:id="@+id/code_enter"
+        android:visibility="gone"
+        layout="@layout/custome_code_enter"/>
+
+</LinearLayout>

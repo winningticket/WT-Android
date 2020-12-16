@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:background="@color/colorblack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_Screen"
+    android:background="@color/colorwhite"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.winningticketproject.in.SignInSingup.Login_Screen">
+
+    <RelativeLayout
+        android:background="@drawable/sign_up_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_sign_up_heading_hight">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/auction_item_width"
+            android:layout_height="@dimen/auction_item_width"
+            android:layout_marginTop="@dimen/small_text"
+            android:layout_gravity="top|center"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/edt_textsize"
+            android:layout_marginStart="@dimen/edt_textsize"
+            android:id="@+id/tv_sign_in"
+            android:textSize="@dimen/big_big_text"
+            android:textColor="@color/colorbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:text="@string/log_in" />
+
+    </RelativeLayout>
+
+
+                  <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_usename"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/editext_acountprofile"
+                    android:textColorHint="@color/colorblack"
+                      android:layout_marginEnd="@dimen/edt_textsize"
+                    android:layout_marginStart="@dimen/edt_textsize"
+                    android:paddingTop="@dimen/edt_hint_padingsstop"
+                    android:paddingLeft="@dimen/edt_hint_padingleft"
+                      android:layout_marginTop="@dimen/big_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edt_hint_height">
+                    <EditText
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:id="@+id/et_email"
+                        android:textColor="@color/colorblack"
+                        android:background="@null"
+                        android:textColorHint="@color/colorblack"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/email"
+                        android:gravity="start"
+                        android:maxLength="32"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/edt_textsize"
+                        android:paddingLeft="@dimen/edt_paddingleft"
+                        android:layout_marginRight="@dimen/edt_marg_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginEnd="@dimen/edt_textsize"
+                    android:layout_marginStart="@dimen/edt_textsize"
+                    android:theme="@style/TextLabel"
+                    android:id="@+id/text_password"
+                    android:background="@drawable/editext_acountprofile"
+                    android:textColorHint="@color/colorblack"
+                    android:paddingTop="@dimen/edt_hint_padingsstop"
+                    android:layout_marginTop="@dimen/edt_paddingleft"
+                    android:paddingLeft="@dimen/edt_hint_padingleft"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edt_hint_height">
+
+                    <EditText
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:id="@+id/et_password"
+                        android:textColor="@color/colorblack"
+                        android:background="@null"
+                        android:textColorHint="@color/colorblack"
+                        android:hint="@string/password"
+                        android:maxLength="30"
+                        android:gravity="start"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/edt_textsize"
+                        android:paddingLeft="@dimen/edt_paddingleft"
+                        android:layout_marginRight="@dimen/edt_marg_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/edt_paddingleft"
+                        android:layout_marginEnd="@dimen/edt_textsize"
+                        android:layout_marginStart="@dimen/edt_textsize"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/edt_paddingleft"
+                        android:paddingBottom="@dimen/edt_marg_right"
+                        android:layout_height="wrap_content">
+                        <Switch
+                            android:theme="@style/ToggleSwitchTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/switch_keep_me_login" />
+                        <TextView
+                            android:textColor="@color/colorblack"
+                            android:padding="@dimen/text_icon_padding"
+                            android:id="@+id/tv_keep_me_login"
+                            android:layout_width="wrap_content"
+                            android:text="@string/keep_me_logged_in"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                <Button
+                    android:layout_marginEnd="@dimen/edt_textsize"
+                    android:layout_marginStart="@dimen/edt_textsize"
+                    android:layout_marginTop="@dimen/edt_paddingleft"
+                    android:stateListAnimator="@null"
+                    android:textSize="@dimen/btn_txt_size"
+                    android:id="@+id/btn_login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorwhite"
+                    android:background="@drawable/new_bottom_bg"
+                    android:text="@string/log_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height" />
+
+
+                    <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/txt_forgotpassword"
+                    android:textSize="@dimen/text_size"
+                    android:layout_margin="@dimen/layout_mrgn_leftright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorblack"
+                        android:text="@string/forgot_your_password"/>
+
+<!--    <TextView-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginEnd="@dimen/edt_textsize"-->
+<!--        android:layout_marginStart="@dimen/edt_textsize"-->
+<!--        android:layout_marginTop="@dimen/edt_textsize"-->
+<!--        android:stateListAnimator="@null"-->
+<!--        android:textSize="@dimen/header_text_size"-->
+<!--        android:id="@+id/tv_login_text"-->
+<!--        android:textColor="@color/colorblack"-->
+<!--        android:background="@drawable/sign_in_bg"-->
+<!--        android:text="@string/log_in"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/button_height" />-->
+
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

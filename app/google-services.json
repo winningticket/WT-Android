@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "14905276484",
+    "firebase_url": "https://winning-ticket-e617f.firebaseio.com",
+    "project_id": "winning-ticket-e617f",
+    "storage_bucket": "winning-ticket-e617f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14905276484:android:b624d03c0bef80e8",
+        "android_client_info": {
+          "package_name": "com.winningticketproject.in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14905276484-2sct1ca9votupkntb9knodl59ulmbg2e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.winningticketproject.in",
+            "certificate_hash": "fa63416758c63779a3333d4eaca220d9a919b0b9"
+          }
+        },
+        {
+          "client_id": "14905276484-3qsj1hvl66hn8r2bqtvflu1ci9nu25q1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.winningticketproject.in",
+            "certificate_hash": "2d9778ff47d85b312fcf365bc1d10bb5fec4b00e"
+          }
+        },
+        {
+          "client_id": "14905276484-i4rlkv71o2g2pub698lfmm23hclct43u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqPV8qLhCd7cSoFMzu7dpQbLFjIRVtdmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14905276484-i4rlkv71o2g2pub698lfmm23hclct43u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "14905276484-nrr0u18h76fpc95vu96mih7puc244fcb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.revelationlabs.WinningTickt"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2954142127845511~6637889686"
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/small_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/services">
+
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_margin="@dimen/ss_text"
+            android:layout_gravity="end|center"
+            android:src="@drawable/cross_black"
+            android:layout_width="@dimen/linear_medium"
+            android:layout_height="@dimen/linear_medium"/>
+
+        <TextView
+            android:text="Event Start date and time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_home_page_title"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/colorblack"
+            android:textAlignment="center"
+            android:textSize="@dimen/header_text_size"/>
+
+        <Button
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size"
+            android:stateListAnimator="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continuess"
+            android:id="@+id/btn_home_page_countinue"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/new_bottom_bg"
+            android:layout_marginLeft="@dimen/mar_left_fifthyt"
+            android:layout_marginRight="@dimen/mar_left_fifthyt"
+            android:layout_marginTop="@dimen/edt_marg_right"
+            android:layout_marginBottom="@dimen/aboutus_padding"/>
+
+    </LinearLayout>
+</RelativeLayout>

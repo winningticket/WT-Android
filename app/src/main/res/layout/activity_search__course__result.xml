@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseTab.Search_Course_Result">
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:padding="@dimen/edt_paddingleft"
+            android:id="@+id/back_to_course_page"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:textColor="@color/colorblack"
+            android:gravity="start|center"
+            android:background="@drawable/black_back_arrow"
+            android:layout_width="@dimen/mph_width"
+            android:layout_height="@dimen/mph_width" />
+
+        <TextView
+            android:layout_marginBottom="@dimen/aboutus_padding"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:gravity="center"
+            android:padding="@dimen/edt_marg_right"
+            android:layout_gravity="center"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/colorlightkgray"
+            android:id="@+id/search_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_results" />
+
+
+    </RelativeLayout>
+
+
+                    <LinearLayout
+                    android:layout_marginEnd="@dimen/edt_paddingleft"
+                    android:layout_marginStart="@dimen/edt_paddingleft"
+                    android:weightSum="3"
+                    android:layout_below="@+id/search"
+                    android:background="@drawable/search_baground_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayout2">
+
+                        <TextView
+                            android:padding="@dimen/aboutus_padding"
+                            android:background="@drawable/new_selected_bottom_bg"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/edt_marg_right"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/colum_text_size"
+                            android:textColor="@color/colorbtn"
+                            android:id="@+id/all_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/all" />
+
+                        <TextView
+                            android:padding="@dimen/aboutus_padding"
+                            android:layout_weight=".75"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/edt_marg_right"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/colum_text_size"
+                            android:textColor="@color/colorblack"
+                            android:id="@+id/public_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_public" />
+
+
+                        <TextView
+                            android:padding="@dimen/aboutus_padding"
+                            android:layout_weight=".75"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/edt_marg_right"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/colum_text_size"
+                            android:textColor="@color/colorblack"
+                            android:id="@+id/private_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_private" />
+
+                        <TextView
+                            android:padding="@dimen/aboutus_padding"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/edt_marg_right"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/colum_text_size"
+                            android:textColor="@color/colorblack"
+                            android:id="@+id/semi_private_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/semi_private" />
+
+                    </LinearLayout>
+
+              <android.support.v7.widget.RecyclerView
+                  android:layout_margin="@dimen/edt_paddingleft"
+                  android:visibility="gone"
+                  android:id="@+id/all_map_data"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"/>
+
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/colordarkgray"
+        android:textSize="@dimen/header_text_size"
+        android:text="@string/no_record_found"
+        android:id="@+id/course_search_result_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>

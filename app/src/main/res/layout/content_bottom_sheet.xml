@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:background="@color/colorwhite"
+    android:padding="@dimen/aboutus_padding"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/aboutus_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <include layout="@layout/course_details_new_course_name"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/layout_mrgn_leftright"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/btn_play_round"
+            android:layout_width="@dimen/play_round_button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/new_bottom_bg"
+            android:stateListAnimator="@null"
+            android:text="@string/start_playing"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/text_size" />
+
+        <include layout="@layout/course_details_course_info"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/keypad_color_selection"
+            android:layout_height="@dimen/aboutus_padding" />
+
+</LinearLayout>

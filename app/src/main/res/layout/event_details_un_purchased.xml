@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/txt_heading_size"
+    android:visibility="gone"
+    android:id="@+id/is_live_layout"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_auction_purchased"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:layout_marginBottom="@dimen/edt_paddingleft"
+        app:cardCornerRadius="@dimen/linear_small"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:padding="@dimen/aboutus_padding"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/add_fund_button_hight"
+                android:layout_height="@dimen/add_fund_button_hight"
+                android:background="@drawable/barcode" />
+
+            <TextView
+                android:layout_marginStart="@dimen/aboutus_padding"
+                android:id="@+id/silent_auction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="@string/enter_silent_auction"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        android:id="@+id/card_not_purchased"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/linear_small"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/text_size"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/aboutus_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/pro_logo_width"
+                    android:layout_height="@dimen/pro_logo_width"
+                    android:background="@drawable/credit_card" />
+
+                <TextView
+                    android:id="@+id/access_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/need_process"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/text_size" />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/setting_page"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/small_text"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/include_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/includes"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:id="@+id/include_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/linear_medium" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_purchase_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:layout_marginBottom="-6dp"
+                android:background="@color/public_color"
+                android:text="@string/purchase_tickets"
+                android:textColor="@color/colorwhite" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

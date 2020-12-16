@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!-- PARENT -->
+
+    <include layout="@layout/shamble_top"/>
+
+    <ListView
+        android:scrollbars="none"
+        android:background="@color/colorwhite"
+        android:layout_marginRight="@dimen/linear_small"
+        android:layout_marginLeft="@dimen/linear_small"
+        android:id="@+id/shamble_plaer_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/shamble_leader_board_bottom"/>
+
+</LinearLayout>

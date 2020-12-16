@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/adreferal"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorwhite"
+    tools:context="com.winningticketproject.in.AffiliatorModel.Add_Referral_list">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/custome_purchage" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="@dimen/edt_marg_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_fname"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingRight="@dimen/edt_hint_padingleft"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+
+
+            <EditText
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:id="@+id/referral_name"
+                android:hint="@string/referral_name"
+                android:inputType="textPersonName"
+                android:gravity="start"
+                android:maxLength="30"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/edt_textsize"
+                android:paddingRight="@dimen/edt_paddingleft"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:background="@null"
+                android:textColorHint="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_emailadress"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingRight="@dimen/edt_hint_padingleft"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/referral_email"
+                android:hint="@string/referral_email_adrress"
+                android:gravity="start"
+                android:maxLength="30"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/edt_textsize"
+                android:paddingRight="@dimen/edt_paddingleft"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:background="@null"
+                android:textColorHint="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_pno"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingRight="@dimen/edt_hint_padingleft"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/editext_acountprofile"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+            <EditText
+                android:gravity="start"
+                android:digits="0123456789+-() "
+                android:maxLength="15"
+                android:id="@+id/referral_phone_number"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/edt_textsize"
+                android:paddingRight="@dimen/edt_paddingleft"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:background="@null"
+                android:textColorHint="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:hint="@string/referral_phone_number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/user_role"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="@dimen/edt_hint_padingleft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_user_role"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/referal_button_margin"
+            android:layout_marginLeft="@dimen/referal_button_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/event_orgranizer"
+                android:textSize="@dimen/btn_txt_size"
+                android:text="@string/event_organizer"
+                android:textColor="@color/coloraddreferal"
+                android:background="@drawable/add_referral"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"  />
+
+            <Button
+                android:stateListAnimator="@null"
+                android:id="@+id/participant"
+                android:textSize="@dimen/btn_txt_size"
+                android:text="@string/participant"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/coloraddreferal"
+                android:background="@drawable/add_referral"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:stateListAnimator="@null"
+                android:layout_marginTop="10dp"
+                android:id="@+id/affiliate"
+                android:textSize="@dimen/btn_txt_size"
+                android:text="@string/affiliate"
+                android:textColor="@color/coloraddreferal"
+                android:background="@drawable/add_referral"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height" />
+
+            <Button
+                android:stateListAnimator="@null"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sponser"
+                android:textSize="@dimen/btn_txt_size"
+                android:text="@string/sponsor"
+                android:textColor="@color/coloraddreferal"
+                android:background="@drawable/add_referral"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:stateListAnimator="@null"
+            android:id="@+id/add_referral"
+            android:layout_marginLeft="@dimen/edt_hint_margin"
+            android:layout_marginRight="@dimen/edt_hint_margin"
+            android:layout_marginTop="@dimen/settings_padding"
+            android:background="@drawable/button_backgound"
+            android:textColor="@color/colorwhite"
+            android:text="@string/add_referral"
+            android:textSize="@dimen/btn_txt_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"  />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

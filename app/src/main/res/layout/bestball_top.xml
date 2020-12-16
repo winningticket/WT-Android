@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@color/colorblack"
+        android:id="@+id/leadrbord_all_team"
+        android:textSize="@dimen/linear_small"
+        android:padding="@dimen/aboutus_padding"
+        android:layout_marginRight="@dimen/linear_small"
+        android:layout_marginLeft="@dimen/linear_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="@dimen/aboutus_padding"
+        android:layout_marginBottom="@dimen/aboutus_padding"
+        android:layout_marginRight="@dimen/linear_small"
+        android:layout_marginLeft="@dimen/linear_small"
+        android:id="@+id/childrow"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_handicap"
+            android:textSize="@dimen/colum_text_size"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:textColor="@color/colorblack"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_pos_t"
+            android:textSize="@dimen/colum_text_size"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_par_score"
+            android:textSize="@dimen/colum_text_size"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_gross_score"
+            android:textSize="@dimen/colum_text_size"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:textColor="@color/colorblack"
+            android:layout_weight="1.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

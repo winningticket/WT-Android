@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhite"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Your_round">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/course_content"
+                android:textSize="@dimen/text_size"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:textColor="@color/colorblack"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/not_started_round" />
+            <ListView
+                android:visibility="gone"
+                android:scrollbars="none"
+                android:id="@+id/your_round"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+</FrameLayout>

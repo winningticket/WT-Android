@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/home_page_coordinator"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/aboutus_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/event_flow"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/home_page_custome_event_list"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/course_flow"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginStart="@dimen/aboutus_padding"
+                    android:src="@drawable/passed_event"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/medium_big_textsize"
+                    android:layout_height="@dimen/medium_big_textsize" />
+
+                <TextView
+                    android:layout_marginStart="@dimen/aboutus_padding"
+                    android:gravity="center|left"
+                    android:id="@+id/tv_event_name_course_name"
+                    android:textSize="@dimen/header_text_size"
+                    android:textColor="@color/colorblack"
+                    android:layout_gravity="center"
+                    android:text="Event name or course name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:layout_marginEnd="@dimen/edt_paddingleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="@dimen/medium_big_textsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorblack"
+                    android:id="@+id/tv_course_date"/>
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/medium_big_textsize"
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_thur"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_total_par"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:layout_marginEnd="@dimen/mar_left_fifthyt"
+                android:layout_marginStart="@dimen/mar_left_fifthyt"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:stateListAnimator="@null"
+                android:id="@+id/button_start_round"
+                android:textSize="@dimen/text_size"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/layout_mrgn_leftright"
+                android:textColor="@color/colorwhite"
+                android:text="@string/continue_round"
+                android:background="@drawable/new_bottom_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height" />
+    </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/event_empty">
+            <include layout="@layout/activity_event_empty"/>
+        </LinearLayout>
+</LinearLayout>
+
+<!--    <View-->
+<!--        android:background="@color/colornotificqation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/aboutus_padding"/>-->
+
+</LinearLayout>

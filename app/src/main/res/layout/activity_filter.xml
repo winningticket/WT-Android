@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/add_funds"
+        layout="@layout/custome_profile_toolbarpage" />
+    <LinearLayout
+        android:layout_margin="@dimen/txt_margin_lr"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/user_role"
+            android:textColor="@color/colorblack"
+            android:textStyle="bold"
+            android:textSize="@dimen/header_text_size"
+            android:text="@string/filter_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/login_button_width"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:background="@drawable/editext_acountprofile"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/role"
+                android:layout_height="@dimen/edt_hint_height">
+
+            </Spinner>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/relative_bar"
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:layout_marginLeft="@dimen/aboutus_padding"
+        android:layout_marginRight="@dimen/aboutus_padding"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:background="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_layout_height">
+
+            <TextView
+                android:textAllCaps="true"
+                android:id="@+id/referral_name"
+                android:textSize="@dimen/btn_txt_size"
+                android:padding="@dimen/event_top_paddingbtm"
+                android:textColor="@color/colorwhite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/referral_name"
+                android:layout_gravity="center"
+                android:layout_weight="0.9" />
+
+            <TextView
+                android:textAllCaps="true"
+                android:textSize="@dimen/btn_txt_size"
+                android:textColor="@color/colorwhite"
+                android:padding="@dimen/event_top_paddingbtm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/user_role"
+                android:layout_gravity="center"
+                android:id="@+id/referal_role"
+                android:layout_weight="1.2" />
+        </TableRow>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:scrollbars="none"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:id="@+id/filter_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:minLines="3"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colordarkgray"
+                android:id="@+id/view_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/no_referral_found" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

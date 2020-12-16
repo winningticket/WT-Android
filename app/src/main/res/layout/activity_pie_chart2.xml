@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:background="@color/colorwhite"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/player_stats_top_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/text_size"
+            android:layout_marginEnd="@dimen/text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/text_size"
+                            android:layout_height="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_brightness_1_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/regulation_hit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/regulation_hit_hint"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="@dimen/linear_medium"
+                        android:textColor="@color/LightGrey"
+                        android:text="Hit"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/text_size"
+                            android:layout_height="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_brightness_skyblue_dp" />
+
+                        <TextView
+                            android:id="@+id/regulation_miss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="13.9%"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/regulation_miss_hit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:text="Miss"
+                        android:textSize="@dimen/linear_medium"
+                        android:textColor="@color/LightGrey" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/details_regular_pie_chart"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_width="@dimen/login_button_width"
+                android:layout_height="@dimen/login_button_width"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:id="@+id/view"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:layout_margin="@dimen/aboutus_padding"
+            android:id="@+id/regulation_your_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/your_rounds"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+
+        <ListView
+            android:scrollbars="none"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

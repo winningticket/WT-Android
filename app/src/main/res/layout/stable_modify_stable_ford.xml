@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/edt_paddingleft"
+    android:background="@color/colorwhite"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cross_close"
+        android:layout_width="@dimen/back_arrow"
+        android:layout_height="@dimen/back_arrow"
+        android:layout_gravity="end"
+        android:background="@drawable/cross_black" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/logo_icon_hight"
+        android:background="@drawable/logo"/>
+
+
+    <TextView
+        android:padding="@dimen/edt_paddingleft"
+        android:layout_gravity="center"
+        android:id="@+id/tv_lengend_leader"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/header_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scoring_legend"/>
+
+
+    <LinearLayout
+        android:gravity="center|start"
+        android:layout_margin="@dimen/edt_paddingleft"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:background="@color/albertross"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/tv_alboross"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size"
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albatross (5 pts)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center|start"
+            android:layout_margin="@dimen/edt_paddingleft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:background="@color/eadges"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/tv_eagle"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size"
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eagle (4 pts)"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center|start"
+            android:layout_margin="@dimen/edt_paddingleft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:background="@color/birdie" />
+            <TextView
+                android:id="@+id/tv_bride"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size"
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birdie (3 pts)"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center|start"
+            android:layout_margin="@dimen/edt_paddingleft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:background="@color/par"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/tv_par"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size"
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Par (2 pts)"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center|start"
+        android:layout_margin="@dimen/edt_paddingleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginStart="@dimen/edt_paddingleft"
+            android:background="@color/bogey"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp" />
+        <TextView
+            android:id="@+id/tv_bogey"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="@dimen/edt_paddingleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bogey (1 pts)"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/edt_paddingleft"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginStart="@dimen/edt_paddingleft"
+            android:background="@color/double_bogey"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp" />
+        <TextView
+            android:id="@+id/tv_double_bogey"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="@dimen/edt_paddingleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Double Bogey or Worse (0 pts)"/>
+    </LinearLayout>
+
+</LinearLayout>

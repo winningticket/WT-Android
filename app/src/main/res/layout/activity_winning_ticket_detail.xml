@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colornotificqation"
+    android:orientation="vertical"
+    tools:context="com.winningticketproject.in.EventPurchase.Winning_ticket_detail">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/custome_purchage" />
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:background="@color/colorwhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_weight="0"
+            android:layout_width="@dimen/live_auction_width"
+            android:layout_height="@dimen/live_auction_width">
+            <ImageView
+                android:padding="1dp"
+                android:id="@+id/gift_bag_iamge"
+                android:layout_width="@dimen/live_auction_width"
+                android:layout_height="@dimen/live_auction_width" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:layout_gravity="top"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/aboutus_padding"
+            android:layout_marginRight="@dimen/text_icon_padding"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/event_name_"
+                android:id="@+id/event_title"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/event_name"
+                android:gravity="left"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/medium_big_textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:paddingTop="@dimen/aboutus_padding"
+        android:background="#F1F1F1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mainlayout"
+        android:id="@+id/txtid"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="@dimen/header_text_size"
+        android:id="@+id/some_dummy_values"
+        android:padding="@dimen/aboutus_padding"
+        android:background="#1D1D1D"
+        android:layout_below="@+id/txtid"
+        android:text="@string/your_winning_ticket_includes"
+        android:textColor="@color/colorwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:scrollbars="none"
+        android:background="@color/colorwhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/some_dummy_values"
+        android:layout_alignBottom="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/sponsor_above">
+        <LinearLayout
+            android:background="@color/colorwhite"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:scrollbars="none"
+                android:id="@+id/list_with_aminities"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:background="#EFEFEF"
+        android:layout_marginTop="@dimen/edt_paddingleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout3">
+        <LinearLayout
+            android:background="@drawable/sponsaor_bg"
+            android:layout_marginLeft="@dimen/aboutus_padding"
+            android:layout_marginRight="@dimen/aboutus_padding"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_width">
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/aboutus_padding"
+                android:layout_marginRight="@dimen/aboutus_padding"
+                android:scrollbars="none"
+                android:id="@+id/horizontal_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/sponsor_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minLines="3"
+                android:text="@string/no_sponsorship_available"
+                android:textColor="@color/colordarkgray"
+                android:textSize="@dimen/text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

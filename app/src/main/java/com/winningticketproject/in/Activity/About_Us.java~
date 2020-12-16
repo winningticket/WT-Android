@@ -1,0 +1,61 @@
+package com.winning_ticket.in.Activity;
+
+import android.graphics.Typeface;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.winning_ticket.in.R;
+
+public class About_Us extends AppCompatActivity implements View.OnClickListener {
+    TextView cancel_purchage,account_title,work_title,work_description;
+    Typeface textfont;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_about__us);
+
+        textfont = Typeface.createFromAsset(getAssets(),"GothamMedium.ttf");
+
+        cancel_purchage = (TextView) findViewById(R.id.cancel_purchage);
+        cancel_purchage.setOnClickListener(this);
+
+        work_title = (TextView) findViewById(R.id.work_title);
+        work_description = (TextView) findViewById(R.id.work_description);
+
+        account_title = (TextView) findViewById(R.id.account_title);
+        account_title.setText("About Us");
+
+        cancel_purchage.setTypeface(textfont);
+        work_title.setTypeface(textfont);
+        work_description.setTypeface(textfont);
+        account_title.setTypeface(textfont);
+
+
+        RelativeLayout backtouch = (RelativeLayout) findViewById(R.id.backtouch);
+        backtouch.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                finish();
+                return false;
+            }
+        });
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.cancel_purchage:
+                finish();
+                break;
+
+
+        }
+    }
+}

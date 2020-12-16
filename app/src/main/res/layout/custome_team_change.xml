@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhite"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="@dimen/text_size"
+        android:id="@+id/pop_op_screen"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_layout_bg">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/logo_icon_width"
+                android:background="@drawable/logo"/>
+            <TextView
+                android:id="@+id/pop_up_title"
+                android:text="Change your team name"
+                android:layout_gravity="center"
+                android:padding="@dimen/txt_margin_lr"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_fname"
+                android:layout_margin="@dimen/edt_hint_margin"
+                android:paddingTop="@dimen/edt_hint_padingsstop"
+                android:paddingRight="@dimen/edt_hint_padingleft"
+                android:paddingLeft="@dimen/edt_hint_padingleft"
+                android:theme="@style/TextLabel"
+                android:background="@drawable/editext_acountprofile"
+                android:textColorHint="@color/coloraddreferal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_hint_height">
+                <EditText
+                    android:gravity="start"
+                    android:id="@+id/et_team_name"
+                    android:hint="@string/team_name"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:textSize="@dimen/edt_textsize"
+                    android:paddingRight="@dimen/edt_paddingleft"
+                    android:paddingLeft="@dimen/edt_paddingleft"
+                    android:layout_marginRight="@dimen/edt_marg_right"
+                    android:textColorHint="@color/colorblack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edt_height"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:background="@null"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:padding="@dimen/aboutus_padding"
+                    android:textColor="@color/colorwhite"
+                    android:layout_gravity="center"
+                    android:stateListAnimator="@null"
+                    android:textSize="@dimen/btn_txt_size"
+                    android:textAllCaps="false"
+                    android:background="@color/colorbtn"
+                    android:id="@+id/save_team_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_name" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/aboutus_padding"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="@dimen/aboutus_padding"
+        android:id="@+id/location_navigate"
+
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/image_icon_width"
+            android:textColor="@color/colorblack"
+            android:layout_gravity="center"
+            android:textSize="@dimen/big_text_size"
+            android:id="@+id/location_icon"
+            android:layout_height="@dimen/image_icon_width" />
+        <TextView
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size"
+            android:autoLink="map"
+            android:layout_marginLeft="@dimen/aboutus_padding"
+            android:id="@+id/location_name"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/image_icon_width"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/big_text_size"
+            android:layout_gravity="center"
+            android:id="@+id/phone_icon"
+            android:layout_height="@dimen/image_icon_width" />
+        <TextView
+            android:autoLink="phone"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size"
+            android:layout_marginLeft="@dimen/aboutus_padding"
+            android:id="@+id/phonenumber"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/image_icon_width"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/big_text_size"
+            android:layout_gravity="center"
+            android:id="@+id/browser_icon"
+            android:layout_height="@dimen/image_icon_width" />
+        <TextView
+            android:autoLink="web"
+            android:maxLines="3"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size"
+            android:layout_marginLeft="@dimen/aboutus_padding"
+            android:id="@+id/browser"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

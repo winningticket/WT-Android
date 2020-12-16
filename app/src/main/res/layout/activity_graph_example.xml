@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:padding="@dimen/edt_paddingleft"
+            android:id="@+id/btn_all_stats_back"
+            android:layout_marginEnd="@dimen/header_text_size"
+            android:textColor="@color/colorblack"
+            android:gravity="start|center"
+            android:background="@drawable/black_back_arrow"
+            android:layout_width="@dimen/mph_width"
+            android:layout_height="@dimen/mph_width" />
+
+        <TextView
+            android:text="@string/all_stats"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/all_stats_title"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size" />
+
+        <ImageButton
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end|center"
+            android:padding="@dimen/edt_paddingleft"
+            android:id="@+id/all_stats_date_filter_btn"
+            android:layout_marginRight="@dimen/text_size"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:background="@drawable/date_filter_icon"
+            android:layout_width="@dimen/input_field_height"
+            android:layout_height="@dimen/input_field_height" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:fillViewport="true"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".graphExample">
+
+            <include layout="@layout/stat_chart_firway"/>
+
+            <include layout="@layout/green_in_regular_layout"/>
+
+
+            <include layout="@layout/scoring_layout"/>
+
+            <include layout="@layout/layout_puts"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

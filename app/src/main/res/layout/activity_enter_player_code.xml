@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllUsersLogin.Enter_Player_Code">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_layout"
+        android:background="@color/colorwhite">
+
+        <RelativeLayout
+            android:background="@drawable/mask_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_width">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/auction_item_width"
+                android:layout_height="@dimen/auction_item_width"
+                android:layout_gravity="top|center"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+
+            <TextView
+                android:layout_marginEnd="@dimen/edt_textsize"
+                android:layout_marginStart="@dimen/edt_textsize"
+                android:id="@+id/tv_player_code"
+                android:textSize="@dimen/arrow_icon"
+                android:textColor="@color/colorbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/enter_player_your_code" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="@dimen/large_text_size"
+                android:textSize="@dimen/mar_left_fifthyt"
+                android:id="@+id/tv_text_player"
+                android:textColor="@color/black"
+                android:text="@string/enter_player_your_code_text"/>
+
+
+                <EditText
+                    android:padding="@dimen/small_text"
+                    android:layout_margin="@dimen/header_text_size"
+                    android:background="@drawable/enter_code_bg"
+                    android:inputType="textCapCharacters"
+                    android:hint="Enter player code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/edit_player_code"
+                    android:textSize="@dimen/big_text_size"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:maxLength="7" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_continue"
+                android:textAllCaps="false"
+                android:textSize="@dimen/medium_big_textsize"
+                android:id="@+id/btn_continue"
+                android:textColor="@color/colorwhite"
+                android:layout_margin="@dimen/txt_heading_size"
+                android:background="@drawable/new_bottom_bg"/>
+
+        </LinearLayout>
+
+</LinearLayout>

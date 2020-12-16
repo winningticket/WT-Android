@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorwhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="@dimen/edt_paddingleft"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight=".1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_list_logo"
+                app:border_width="3dp"
+                android:layout_weight="0"
+                android:layout_gravity="center"
+                android:background="@drawable/white_circle_view"
+                app:border_color="@color/colorwhite"
+                android:layout_width="@dimen/select_image_width"
+                android:layout_height="@dimen/select_image_width"
+                android:src="@drawable/profile_pic" />
+
+            <TextView
+                android:id="@+id/online_status"
+                android:layout_weight="0"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/small_text"
+                android:layout_height="@dimen/small_text"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/status_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:textSize="@dimen/text_size"
+                    android:text="Suresh"
+                    android:layout_marginLeft="@dimen/small_text"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bell_icon_bg"
+                    android:layout_width="25dp"
+                    android:gravity="center"
+                    android:layout_height="25dp"
+                    android:id="@+id/chart_count"
+                    android:layout_marginLeft="@dimen/aboutus_padding">
+                    <TextView
+                        android:textSize="@dimen/linear_small"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/text_chart_count"
+                        android:textColor="@color/colorwhite"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_msg"
+                android:layout_marginLeft="@dimen/small_text"
+                android:textSize="@dimen/linear_medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/edt_paddingleft"
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:textSize="@dimen/small_text"
+        android:gravity="center" />
+
+    <View
+        android:layout_marginRight="@dimen/aboutus_padding"
+        android:layout_marginLeft="@dimen/aboutus_padding"
+        android:layout_marginBottom="2dp"
+        android:background="@color/colordarkgray"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"/>
+</RelativeLayout>

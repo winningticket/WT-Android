@@ -1,0 +1,106 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:padding="@dimen/edt_paddingleft"
+        android:id="@+id/back_to_search_page"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:textColor="@color/colorblack"
+        android:gravity="start|center"
+        android:background="@drawable/black_back_arrow"
+        android:layout_width="@dimen/mph_width"
+        android:layout_height="@dimen/mph_width" />
+
+    <LinearLayout
+         android:descendantFocusability="beforeDescendants"
+         android:focusableInTouchMode="true"
+         android:layout_margin="@dimen/medium_big_textsize"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <EditText
+             android:singleLine="true"
+             android:id="@+id/tv_search_by_name"
+             android:padding="@dimen/linear_small"
+             android:background="@drawable/course_page_all_fields_bg"
+             android:drawableLeft="@drawable/ic_search_black_24dp"
+             android:hint="@string/search_by_course_name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_or"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="@dimen/text_size"
+            android:gravity="center"
+            android:text="@string/or_search_by_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <RelativeLayout
+            android:background="@drawable/course_page_all_fields_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+            <Spinner
+                android:layout_marginLeft="@dimen/spinnerlest"
+                android:layout_width="match_parent"
+                android:id="@+id/spinner_country"
+                android:layout_height="@dimen/edt_hint_height"
+                android:textColor="@color/colorblack"
+                android:theme="@style/ToolbarStyle_black">
+            </Spinner>
+        </RelativeLayout>
+
+         <RelativeLayout
+             android:visibility="gone"
+             android:id="@+id/relative_state"
+             android:background="@drawable/course_page_all_fields_bg"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/edt_hint_height"
+             android:layout_marginTop="@dimen/colum_text_size">
+             <Spinner
+                 android:layout_marginLeft="@dimen/spinnerlest"
+                 android:layout_width="match_parent"
+                 android:id="@+id/state_search_course"
+                 android:layout_height="@dimen/edt_hint_height"
+                 android:textColor="@color/colorblack"
+                 android:theme="@style/ToolbarStyle_black">
+             </Spinner>
+         </RelativeLayout>
+
+        <EditText
+            android:singleLine="true"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/colum_text_size"
+            android:id="@+id/tv_city_by_name"
+            android:padding="@dimen/linear_small"
+            android:background="@drawable/course_page_all_fields_bg"
+            android:hint="@string/search_by_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:textAllCaps="false"
+             android:stateListAnimator="@null"
+             android:id="@+id/appaly_button"
+             android:textColor="@color/colorwhite"
+             android:background="@drawable/new_bottom_bg"
+             android:layout_marginTop="@dimen/filter_height"
+             android:layout_gravity="center"
+             android:padding="@dimen/text_icon_padding"
+             android:textSize="@dimen/text_size"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/button_height"
+             android:text="@string/search"/>
+
+     </LinearLayout>
+ </LinearLayout>

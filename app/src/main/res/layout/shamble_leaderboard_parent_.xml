@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PARENT -->
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/id_champion_ship"
+        android:padding="2dp"
+        android:gravity="center"
+        android:background="@color/colordarkgray"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/linear_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_gravity="top">
+
+        <TextView
+            android:layout_weight="1"
+            android:paddingTop="@dimen/edt_paddingleft"
+            android:paddingBottom="@dimen/edt_paddingleft"
+            android:textStyle="bold"
+            android:textSize="@dimen/second_colum_text_size"
+            android:textColor="@color/colorblack"
+            android:id="@+id/text_1"
+            android:layout_width="@dimen/leader_board_title"
+            android:gravity="center"
+            android:paddingRight="@dimen/aboutus_padding"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/aboutus_padding"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center|left"
+            android:paddingRight="@dimen/edt_marg_right"
+            android:layout_weight="3"
+            android:layout_width="@dimen/player_name"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingLeft="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/second_colum_text_size"
+                android:layout_gravity="center|left"
+                android:id="@+id/tvplayer_name"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorblack"
+                android:gravity="center|left"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:paddingLeft="@dimen/_5sdp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="@dimen/linear_medium"
+                android:layout_gravity="center|left"
+                android:id="@+id/tvtrophy"
+                android:layout_width="wrap_content"
+                android:textColor="@color/goden_color"
+                android:gravity="center|left"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight=".6"
+            android:textStyle="bold"
+            android:textSize="@dimen/second_colum_text_size"
+            android:id="@+id/tv_thru"
+            android:layout_width="@dimen/leader_board_title_second"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/aboutus_padding"
+            android:paddingRight="@dimen/edt_marg_right"/>
+
+        <TextView
+            android:layout_weight=".6"
+            android:textStyle="bold"
+            android:textSize="@dimen/second_colum_text_size"
+            android:id="@+id/tv_score"
+            android:layout_width="@dimen/leader_board_title_second"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/aboutus_padding"
+            android:paddingRight="@dimen/edt_marg_right"/>
+        <TextView
+            android:layout_weight=".8"
+            android:textStyle="bold"
+            android:textSize="@dimen/second_colum_text_size"
+            android:paddingLeft="@dimen/aboutus_padding"
+            android:paddingRight="@dimen/aboutus_padding"
+            android:id="@+id/tv_par_score"
+            android:layout_width="@dimen/leader_board_title_second"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

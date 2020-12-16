@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_margin="@dimen/aboutus_padding"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/tv_fairway_hit"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/linear_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fairway_hit"/>
+
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="@dimen/aboutus_padding"
+                android:gravity="center"
+                android:background="@drawable/gross_score_selecter"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:id="@+id/tvleft"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height"
+                android:src="@drawable/stats_left" />
+
+
+            <ImageView
+                android:padding="@dimen/aboutus_padding"
+                android:background="@drawable/gross_score_selecter"
+                android:src="@drawable/stats_ok"
+                android:gravity="center"
+                android:id="@+id/tv_center"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height" />
+
+            <ImageView
+                android:padding="@dimen/aboutus_padding"
+                android:background="@drawable/gross_score_selecter"
+                android:src="@drawable/stats_right"
+                android:gravity="center"
+                android:id="@+id/tv_right"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

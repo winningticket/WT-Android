@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:visibility="gone"
+    android:layout_gravity="center|top"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_non_course"
+    android:layout_margin="@dimen/aboutus_padding"
+    android:padding="@dimen/aboutus_padding">
+
+    <ImageView
+        android:id="@+id/iv_auction"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_gravity="center"
+        android:src="@drawable/new_auction_icon"
+        android:layout_width="@dimen/pro_logo_width"
+        android:layout_height="@dimen/pro_logo_width"/>
+
+    <ImageView
+        android:id="@+id/iv_super_ticket"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_gravity="center"
+        android:src="@drawable/new_superticket_icon"
+        android:layout_width="@dimen/pro_logo_width"
+        android:layout_height="@dimen/pro_logo_width"/>
+
+    <ImageView
+        android:id="@+id/iv_chat"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_gravity="center"
+        android:src="@drawable/new_chat_icon"
+        android:layout_width="@dimen/pro_logo_width"
+        android:layout_height="@dimen/pro_logo_width"/>
+
+    <ImageView
+        android:id="@+id/iv_leader_board"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_gravity="center"
+        android:background="@drawable/new_leaserboard_icon"
+        android:layout_width="@dimen/pro_logo_width"
+        android:layout_height="@dimen/pro_logo_width"/>
+
+</LinearLayout>

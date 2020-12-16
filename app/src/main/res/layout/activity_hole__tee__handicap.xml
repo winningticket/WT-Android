@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    tools:context=".TeeHandicapHole.Hole_Tee_Handicap">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="@dimen/edt_paddingleft"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/logo_live_width"
+            android:layout_height="@dimen/select_image_width"
+            android:background="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/tv_event_name"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="@dimen/aboutus_padding"
+            android:id="@+id/tv_tee_text"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_tee_box"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_non_scramble"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginEnd="@dimen/edt_paddingleft"
+            android:layout_marginStart="@dimen/edt_paddingleft"
+            android:background="@drawable/editext_baground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:padding="@dimen/aboutus_padding"
+                android:id="@+id/spinner_tee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <TextView
+            android:padding="@dimen/aboutus_padding"
+            android:id="@+id/tv_select_hole_text"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_starting_hole"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/edt_paddingleft"
+            android:layout_marginStart="@dimen/edt_paddingleft"
+            android:background="@drawable/editext_baground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:padding="@dimen/aboutus_padding"
+                android:id="@+id/spinner_hole"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:padding="@dimen/aboutus_padding"
+            android:id="@+id/tv_handicap_text"
+            android:layout_marginTop="@dimen/edt_paddingleft"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_handicap"/>
+
+        <LinearLayout
+            android:id="@+id/handicap_layout"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/aboutus_padding"
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/edt_paddingleft"
+            android:layout_marginStart="@dimen/edt_paddingleft"
+            android:background="@drawable/editext_baground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:padding="@dimen/aboutus_padding"
+                android:id="@+id/spinner_handicap"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_selected_nadicap"
+                android:textSize="@dimen/hint_txt_size"
+                android:textColor="@color/colorblack"
+                android:gravity="bottom|center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(stroke taken off from hardest hole)"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+            <GridView
+                android:scrollbars="none"
+                android:paddingStart="@dimen/edt_paddingleft"
+                android:layout_marginTop="@dimen/edt_paddingleft"
+                android:layout_marginBottom="@dimen/edt_paddingleft"
+                android:id="@+id/hole_gridview"
+                android:layout_marginStart="@dimen/aboutus_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:verticalSpacing="@dimen/text_size"
+                android:horizontalSpacing="@dimen/text_size"
+                android:stretchMode="columnWidth"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/button_start_round"
+                    android:textAllCaps="false"
+                    android:text="@string/start_round"
+                    android:textSize="@dimen/header_text_size"
+                    android:textColor="@color/colorwhite"
+                    android:background="@drawable/new_bottom_bg"
+                    android:layout_margin="@dimen/edt_textsize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginBottom="@dimen/edt_paddingleft"
+                    android:id="@+id/tv_cancel_"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/header_text_size"
+                    android:textColor="@color/colorblack"
+                    android:text="@string/cancel"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

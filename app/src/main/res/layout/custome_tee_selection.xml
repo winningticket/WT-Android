@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/text_icon_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back"
+    android:id="@+id/linear_row">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tv_course_rating"
+        android:textSize="@dimen/text_size"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/colorblack"
+        android:paddingTop="@dimen/edt_marg_right" />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tv_total_yards"
+        android:text="Total yards: 6541"
+        android:gravity="center"
+        android:textSize="@dimen/linear_small"
+        android:textColor="@color/colorblack"
+        android:paddingBottom="@dimen/linear_small" />
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/mar_left_fifthyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="@dimen/mar_left_fifthyt"
+        android:background="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/_50sdp"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/edt_marg_right"
+        android:gravity="center"
+        android:text="@string/select_your_handicap"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/_big_header_text_size"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@drawable/minus"
+            android:id="@+id/minus_symbol"
+            android:layout_margin="@dimen/edt_marg_right"
+            android:layout_width="@dimen/big_text_size"
+            android:layout_height="@dimen/big_text_size" />
+
+        <TextView
+            android:id="@+id/result"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/_big_header_text_size"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/edt_marg_right"
+            android:background="@drawable/textview_baground"
+            android:layout_margin="@dimen/edt_marg_right"
+            android:text="@string/_1"
+            android:layout_width="@dimen/public_width"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="@drawable/plus"
+            android:id="@+id/plus_symbol"
+            android:layout_margin="@dimen/edt_marg_right"
+            android:layout_width="@dimen/big_text_size"
+            android:layout_height="@dimen/big_text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:padding="@dimen/edit_text_top"
+        android:textSize="@dimen/custom_txt_size"
+        android:textColor="@color/colorgray"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_warning"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/ic_warning_black_24dp"
+            android:id="@+id/warning_icon"
+            android:layout_width="@dimen/image_icon_width"
+            android:layout_height="@dimen/image_icon_width"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/aboutus_padding"
+            android:id="@+id/warning_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/header_text_size" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:stateListAnimator="@null"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/continue_button"
+        android:background="@drawable/button_backgound"
+        android:layout_margin="@dimen/margin_top_order"
+        android:textColor="@color/colorwhite"
+        android:text="@string/_continue"
+        android:textSize="@dimen/text_size"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        tools:targetApi="lollipop" />
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

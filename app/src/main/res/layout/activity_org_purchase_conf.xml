@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="@dimen/edt_paddingleft"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhite"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="@dimen/edt_height"
+        android:layout_marginBottom="@dimen/header_text_size"
+        android:scaleType="fitXY"
+        android:background="@drawable/wtpay"
+        android:layout_width="@dimen/viewpager_hight"
+        android:layout_height="@dimen/logo_live_width"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:text="@string/payment_confirmed"
+        android:textSize="@dimen/header_text_size"
+        android:id="@+id/txt_payment_title"
+        android:layout_marginStart="@dimen/text_size"
+        android:textColor="@color/public_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="@dimen/text_size"
+        android:id="@+id/txt_item_name"
+        android:padding="@dimen/edt_paddingleft"
+        android:background="@drawable/editext_acountprofile"
+        android:layout_margin="@dimen/text_size"
+        android:textColor="@color/colorblack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:lineSpacingExtra="@dimen/edt_paddingleft"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/txt_purchase_details"
+        android:padding="@dimen/text_size"
+        android:layout_margin="@dimen/text_size"
+        android:background="@color/colornotificqation"
+        android:textColor="@color/colorblack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        android:layout_margin="@dimen/text_size"
+        android:paddingStart="@dimen/text_size"
+        android:paddingEnd="@dimen/text_size"
+        android:layout_gravity="center"
+        android:background="@drawable/new_bottom_bg"
+        android:text="@string/finish"
+        android:id="@+id/btn_finish"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

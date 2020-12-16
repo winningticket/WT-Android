@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhite"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/player_stats_top_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/line_chart"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/start_playing_width" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+
+        <TextView
+        android:id="@+id/puts_your_round"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/your_rounds"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/header_text_size" />
+
+        <ListView
+            android:paddingEnd="@dimen/aboutus_padding"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/puts_list" />
+
+    </LinearLayout>
+
+</LinearLayout>

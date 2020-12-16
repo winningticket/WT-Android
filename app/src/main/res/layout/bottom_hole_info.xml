@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:padding="@dimen/aboutus_padding"
+        android:layout_width="@dimen/map_btn_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_back"
+        android:background="@drawable/map_left_drawable_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/leaderboardwidth"
+            android:layout_height="@dimen/leaderboardwidth"
+            android:id="@+id/preview_click"
+            android:background="@drawable/preview"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_left_holes_score"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:textSize="@dimen/linear_medium"
+            android:padding="@dimen/aboutus_padding"
+            android:layout_width="@dimen/login_layout_height"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_score"
+            android:textAllCaps="false"
+            android:id="@+id/btn_enter_score"
+            android:layout_gravity="center"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/enter_score_btn"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:padding="@dimen/aboutus_padding"
+        android:layout_width="@dimen/map_btn_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_next"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/map_dawble_bg"
+        android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/tv_right_holes_score"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorwhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="right|center"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:layout_height="@dimen/leaderboardwidth"
+            android:id="@+id/next_click"
+            android:background="@drawable/next"/>
+    </LinearLayout>
+
+</RelativeLayout>

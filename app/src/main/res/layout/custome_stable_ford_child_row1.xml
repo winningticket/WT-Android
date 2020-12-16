@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:weightSum="11"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+           <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/custom_txt_size"
+            android:id="@+id/tv_colunm_1"
+            android:layout_width="@dimen/leaderboard_row_width"
+            android:textColor="@color/colorblack"
+            android:text="@string/child_hole"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_2"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_1"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_3"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_2"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_4"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_3"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_5"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_4"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_6"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_5"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_7"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_6"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_8"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_7"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_9"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_8"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_10"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_9"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_11"
+            android:layout_width="@dimen/leaderboardwidth_title"
+            android:textColor="@color/colorblack"
+            android:text="@string/out"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorlightplusgray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:weightSum="11"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/custom_txt_size"
+            android:id="@+id/roq_ii_1"
+            android:layout_width="@dimen/leaderboard_row_width"
+            android:textColor="@color/colorblack"
+            android:text="@string/par_child"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:padding="@dimen/text_icon_padding"
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_2"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_3"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_4"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_5"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_6"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_7"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_8"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_9"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_10"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_ii_11"
+            android:layout_width="@dimen/leaderboardwidth_title"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorlightplusgray"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"/>
+
+    <LinearLayout
+        android:weightSum="11"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/custom_txt_size"
+            android:id="@+id/roq_iii_1"
+            android:layout_width="@dimen/leaderboard_row_width"
+            android:textColor="@color/colorblack"
+            android:text="@string/g_score"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iii_2"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:id="@+id/roq_iii_3"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:layout_height="@dimen/leaderboardhight"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/custom_txt_size" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iii_4"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iii_5"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iii_6"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iii_7"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iii_8"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iii_9"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iii_10"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iii_11"
+            android:layout_width="@dimen/leaderboardwidth_title"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorlightplusgray"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"/>
+
+    <LinearLayout
+        android:weightSum="11"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/custom_txt_size"
+            android:id="@+id/roq_iiii_1"
+            android:layout_width="@dimen/leaderboard_row_width"
+            android:textColor="@color/colorblack"
+            android:text="@string/n_score"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_2"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_3"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_4"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_5"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_6"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_7"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_8"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_9"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_10"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiii_11"
+            android:layout_width="@dimen/leaderboardwidth_title"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorlightplusgray"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"/>
+
+    <LinearLayout
+        android:weightSum="11"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/custom_txt_size"
+            android:id="@+id/roq_iiiii_1"
+            android:layout_width="@dimen/leaderboard_row_width"
+            android:textColor="@color/colorblack"
+            android:text="@string/stblfrd"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_2"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_3"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_4"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_5"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_6"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_7"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_8"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_9"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_10"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+        <TextView
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_weight="1"
+            android:id="@+id/roq_iiiii_11"
+            android:layout_width="@dimen/leaderboardwidth_title"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="@dimen/leaderboardhight" />
+
+    </LinearLayout>
+
+</LinearLayout>

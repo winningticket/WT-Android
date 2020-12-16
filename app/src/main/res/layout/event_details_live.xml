@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/card_live"
+    android:visibility="visible"
+    android:layout_marginTop="@dimen/txt_heading_size"
+    android:paddingLeft="@dimen/txt_heading_size"
+    android:paddingRight="@dimen/txt_heading_size"
+    android:paddingBottom="@dimen/txt_heading_size">
+
+    <include layout="@layout/event_details_event_option"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/edt_paddingleft"
+        android:id="@+id/tv_event_access"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorblack"
+        android:text="@string/event_access_ss"
+        android:textSize="@dimen/text_size" />
+
+    <include
+        layout="@layout/event_details_access_event"/>
+
+
+    <include layout="@layout/event_details_super_ticket"/>
+
+
+    <include layout="@layout/event_details_sponsor"/>
+
+
+</LinearLayout>

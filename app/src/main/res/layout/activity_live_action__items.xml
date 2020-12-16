@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhite"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:background="@color/colorwhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/edt_paddingleft">
+    <RelativeLayout
+        android:padding="@dimen/aboutus_padding"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/backtouch"
+        android:layout_width="@dimen/header_back_btn_height"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:background="@drawable/cross"
+            android:id="@+id/cancel_purchage"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/txt_margin_lr"
+            android:padding="@dimen/txt_mrgn_right"
+            android:textColor="@color/colorwhite"
+            android:layout_width="@dimen/header_back_btn_txt_size"
+            android:layout_height="@dimen/header_back_btn_txt_size" />
+    </LinearLayout>
+    <TextView
+        android:textAllCaps="true"
+        android:id="@+id/toolbar_title"
+        android:textStyle="bold"
+        android:textColor="@color/colorwhite"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/txt_margin_lr"
+        android:padding="@dimen/txt_margin_lr"
+        android:textSize="@dimen/header_back_btn_txt_size"
+        android:text="@string/purchase_tickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/menu_icon"
+            android:layout_width="@dimen/header_back_btn_height"
+            android:layout_height="@dimen/header_back_btn_height">
+            <TextView
+                android:layout_centerVertical="true"
+                android:background="@drawable/menu_item"
+                android:id="@+id/menu_item"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/txt_margin_lr"
+                android:padding="@dimen/txt_mrgn_right"
+                android:textColor="@color/colorwhite"
+                android:layout_width="@dimen/header_back_btn_txt_size"
+                android:layout_height="@dimen/header_back_btn_txt_size" />
+        </RelativeLayout>
+
+</RelativeLayout>
+    <ScrollView
+        android:id="@+id/items_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/viewpager_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v4.view.ViewPager
+                        android:layout_margin="@dimen/aboutus_padding"
+                        android:id="@+id/pager"
+                        android:layout_width="@dimen/viewpager_hight"
+                        android:layout_height="@dimen/viewpager_hight" />
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="@dimen/edt_paddingleft"
+                        app:centered="true"
+                        android:textStyle="bold"
+                        app:fillColor="#0bb1de"
+                        app:strokeColor="#000000"
+                        app:snap="true" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/noofpostion"
+                    android:layout_margin="@dimen/edt_paddingleft"
+                    android:background="@drawable/image_swiper_postion"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorgray"
+                    android:padding="@dimen/event_top_paddingbtm"
+                    android:textSize="@dimen/linear_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/items_titles"
+                android:layout_marginBottom="@dimen/aboutus_padding"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:layout_marginRight="@dimen/edt_paddingleft"
+                android:layout_marginLeft="@dimen/edt_paddingleft"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/item_amount"
+                    android:layout_marginRight="@dimen/edt_paddingleft"
+                    android:layout_marginLeft="@dimen/edt_paddingleft"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/aboutus_padding"
+                    android:id="@+id/details_bid_counts"
+                    android:textSize="@dimen/score_text_hedder"
+                    android:textColor="@color/colorwhite"
+                    android:paddingTop="@dimen/new_text_icon_padding"
+                    android:paddingLeft="@dimen/editext_bottom"
+                    android:paddingRight="@dimen/editext_bottom"
+                    android:paddingBottom="@dimen/new_text_icon_padding"
+                    android:background="@drawable/bids_baground"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/no_bids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/aboutus_padding"
+                    android:layout_marginRight="@dimen/edt_paddingleft"
+                    android:layout_marginLeft="@dimen/edt_paddingleft"
+                    android:id="@+id/watch_bidcoutn"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/custom_txt_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/aboutus_padding"
+                    android:id="@+id/watch_icon"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="@dimen/aboutus_padding"
+                    android:layout_marginLeft="@dimen/edt_paddingleft"
+                    android:id="@+id/bid_type"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/custom_txt_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/aboutus_padding"
+                    android:id="@+id/bidding_row"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/custom_txt_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:layout_marginEnd="@dimen/edt_paddingleft"
+                android:padding="@dimen/edt_paddingleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bidding_msg"
+                android:focusable="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorgray"/>
+
+            <Button
+                android:stateListAnimator="@null"
+                android:visibility="gone"
+                android:id="@+id/palcebid"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:background="@drawable/new_bottom_bg"
+                android:textColor="@color/colorwhite"
+                android:layout_marginRight="@dimen/edt_paddingleft"
+                android:layout_marginLeft="@dimen/edt_paddingleft"
+                android:text="@string/place_bid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height" />
+
+            <Button
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:stateListAnimator="@null"
+                android:visibility="gone"
+                android:id="@+id/checkout_btn"
+                android:textSize="@dimen/text_size"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:background="@drawable/new_bottom_bg"
+                android:textColor="@color/colorwhite"
+                android:layout_marginRight="@dimen/edt_paddingleft"
+                android:layout_marginLeft="@dimen/edt_paddingleft"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_hight" />
+
+            <Button
+                android:visibility="gone"
+                android:stateListAnimator="@null"
+                android:id="@+id/button_buy_it_now"
+                android:textSize="@dimen/text_size"
+                android:layout_marginTop="@dimen/edt_paddingleft"
+                android:background="@drawable/new_buy_now_button_bg"
+                android:textColor="@color/colorwhite"
+                android:layout_marginRight="@dimen/edt_paddingleft"
+                android:layout_marginLeft="@dimen/edt_paddingleft"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height" />
+
+            <Button
+                android:background="@color/colorwhite"
+                android:stateListAnimator="@null"
+                android:visibility="gone"
+                android:id="@+id/watch_firstlayout"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/edt_paddingleft"
+                android:textColor="@color/colorblack"
+                android:layout_marginRight="@dimen/edt_paddingleft"
+                android:layout_marginLeft="@dimen/edt_paddingleft"
+                android:text="@string/watch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height" />
+
+            <View
+                android:layout_margin="@dimen/edt_paddingleft"
+                android:background="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <TextView
+                android:textAllCaps="true"
+                android:id="@+id/item_description"
+                android:layout_marginLeft="@dimen/edt_paddingleft"
+                android:textColor="@color/colorblack"
+                android:text="@string/item_description"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="@dimen/edt_paddingleft"
+                android:id="@+id/description_content"
+                android:layout_marginLeft="@dimen/text_size_score_event"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/custom_txt_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_margin="@dimen/edt_paddingleft"
+                android:background="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/edt_paddingleft"
+                android:layout_marginLeft="@dimen/edt_paddingleft"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAllCaps="true"
+                    android:id="@+id/similar_item"
+                    android:textColor="@color/colorblack"
+                    android:text="@string/similar_items"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <android.support.v7.widget.RecyclerView
+                        android:scrollbars="none"
+                        android:id="@+id/horizontal_recycler_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:minLines="3"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/colordarkgray"
+                        android:id="@+id/tv_auction_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/no_similar_items_are_available" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

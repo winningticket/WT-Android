@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:background="@color/colorwhite"
+    tools:context=".EventTab.NewEventDetailPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:layout_width="match_parent"
+                layout="@layout/event_purse_info_layout"
+                android:layout_height="match_parent" />
+
+            <include layout="@layout/event_details_un_purchased"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

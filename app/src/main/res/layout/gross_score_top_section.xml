@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:padding="@dimen/edt_paddingleft"
+        android:id="@+id/gross_Score_btn_back"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:textColor="@color/colorblack"
+        android:gravity="start|center"
+        android:background="@drawable/black_back_arrow"
+        android:layout_width="@dimen/mph_width"
+        android:layout_height="@dimen/mph_width" />
+
+    <TextView
+        android:id="@+id/gross_Score_course_name"
+        android:textSize="@dimen/header_text_size"
+        android:textColor="@color/colorblack"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvholes"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/big_text_size"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

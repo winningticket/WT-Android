@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@color/colornotificqation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:padding="@dimen/text_icon_padding"
+                        android:layout_margin="@dimen/mar_left_fifthyt"
+                        android:background="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_top"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/text_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/edit_text_top"
+                            android:text="@string/net_scores" />
+
+                        <TextView
+                            android:id="@+id/tv_shows_last_six"
+                            android:textColor="@color/colordarkgray"
+                            android:textSize="@dimen/small_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/edit_text_top"
+                            android:text="@string/showing_last_six_scores" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:gravity="center">
+                                <ImageButton
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_10sdp"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:background="@color/above_par" />
+                                <TextView
+                                    android:id="@+id/tv_top_col1"
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="@dimen/small_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_3sdp"
+                                    android:text="@string/above_par" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:gravity="center">
+                                <ImageButton
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_10sdp"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:background="@color/below_par" />
+                                <TextView
+                                    android:id="@+id/tv_top_col2"
+                                    android:textSize="@dimen/small_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_3sdp"
+                                    android:text="@string/below_par"
+                                    android:textColor="@color/colorblack" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <TextView
+                                android:id="@+id/tv_left"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/small_text"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:rotation="268"
+                                android:text="@string/net_score" />
+
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/my_account_line_chart"
+                                android:layout_weight="3"
+                                android:background="@color/colorwhite"
+                                android:layout_margin="@dimen/aboutus_padding"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp" />
+
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/tv_right"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/small_text"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".2"
+                                android:text="@string/avg_par" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_bottom"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/small_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/edit_text_top"
+                            android:text="@string/date" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.winningticketproject.in.EventTab.ListViewForEmbeddingInScrollView
+                    android:id="@+id/firstlist"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/edt_paddingbtm" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

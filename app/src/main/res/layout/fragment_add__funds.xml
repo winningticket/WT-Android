@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/mdtp_white"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/add_funds"
+        layout="@layout/custome_profile_toolbarpage" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pic_hight"
+                android:layout_marginLeft="@dimen/add_fun_left"
+                android:background="@drawable/add_fund_bg"
+                android:paddingTop="@dimen/edt_paddingbtm" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spinner_hight"
+                android:layout_marginTop="-250dp"
+                android:layout_marginRight="@dimen/spinner_hight"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/current_balence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_top_order"
+                    android:layout_marginTop="@dimen/settings_padding"
+                    android:gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/big_big_text" />
+
+                <TextView
+                    android:id="@+id/chose_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_top_order"
+                    android:layout_marginBottom="@dimen/txt_margin_lr"
+                    android:gravity="center"
+                    android:text="@string/add_fund_current_balance"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/edt_textsize" />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/big_text_size"
+                    android:layout_marginBottom="@dimen/aboutus_padding"
+                    app:cardCornerRadius="@dimen/edt_hint_padingleft"
+                    app:cardElevation="4dp"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/aboutus_padding"
+                        android:orientation="vertical"
+                        android:padding="@dimen/edt_marg_right">
+
+                        <TextView
+                            android:id="@+id/no_title_test"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/edt_marg_right"
+                            android:layout_marginBottom="@dimen/aboutus_padding"
+                            android:gravity="center"
+                            android:padding="@dimen/aboutus_padding"
+                            android:text="@string/select_amount_you_d_like_to_add"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/linear_medium" />
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/login_margin"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/editext_baground"
+                                android:padding="@dimen/text_icon_padding"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorlightkgray"
+                                android:textSize="@dimen/linear_small" />
+
+                            <Button
+                                android:id="@+id/button_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/aboutus_padding"
+                                android:layout_weight="1"
+                                android:background="@drawable/editext_baground"
+                                android:padding="@dimen/text_icon_padding"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorlightkgray"
+                                android:textSize="@dimen/linear_small" />
+
+                            <Button
+                                android:id="@+id/button_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/aboutus_padding"
+                                android:layout_weight="1"
+                                android:background="@drawable/editext_baground"
+                                android:padding="@dimen/text_icon_padding"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorlightkgray"
+                                android:textSize="@dimen/linear_small" />
+
+
+                            <Button
+                                android:id="@+id/button_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/aboutus_padding"
+                                android:layout_weight="1"
+                                android:background="@drawable/editext_baground"
+                                android:padding="@dimen/text_icon_padding"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorlightkgray"
+                                android:textSize="@dimen/linear_small" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/no_amoount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/aboutus_padding"
+                            android:text="@string/amount_not_found"
+                            android:textColor="@color/colorlightkgray"
+                            android:textSize="@dimen/header_text_size"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/customer_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/header_back_btn_height"
+                            android:gravity="center"
+                            android:text="@string/or_enter_a_custom_amount"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/edt_textsize" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/txt_margin_lr"
+                            android:layout_marginBottom="@dimen/txt_margin_lr"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/aboutus_padding">
+
+                            <TextView
+                                android:id="@+id/dowler_symbol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:layout_marginRight="1dp"
+                                android:text="@string/doller"
+                                android:textColor="@color/colorlightkgray"
+                                android:textSize="@dimen/header_text_size"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etittext_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginLeft="@dimen/txt_margin_lr"
+                                android:layout_weight="1"
+                                android:background="@drawable/editext_baground"
+                                android:ellipsize="end"
+                                android:gravity="center|right"
+                                android:hint="@string/_0_00"
+                                android:inputType="numberDecimal|numberSigned"
+                                android:maxWidth="@dimen/add_fund_amount_min"
+                                android:maxLength="9"
+                                android:minWidth="@dimen/add_fund_amount_min"
+                                android:padding="@dimen/amount_filds"
+                                android:textColor="@color/colorlightkgray"
+                                android:textCursorDrawable="@drawable/black_cursor"
+                                android:textDirection="inherit"
+                                android:textSize="@dimen/text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/deposite_fund"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/login_margin"
+                android:layout_marginTop="@dimen/auction_item_width"
+                android:layout_marginRight="@dimen/login_margin"
+                android:layout_marginBottom="@dimen/linear_small"
+                android:background="@drawable/button_backgound"
+                android:stateListAnimator="@null"
+                android:text="@string/deposit_funds"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

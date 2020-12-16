@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuctionModel.NewLive_AuctionItem">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/edt_paddingleft"
+        tools:ignore="MissingConstraints">
+    <RelativeLayout
+        android:padding="@dimen/aboutus_padding"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backtouch"
+            android:layout_width="@dimen/header_back_btn_height"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:background="@drawable/cross"
+                android:id="@+id/cancel_purchage"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/txt_margin_lr"
+                android:padding="@dimen/txt_mrgn_right"
+                android:textColor="@color/colorwhite"
+                android:layout_width="@dimen/header_back_btn_txt_size"
+                android:layout_height="@dimen/header_back_btn_txt_size" />
+        </LinearLayout>
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/toolbar_title"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/txt_margin_lr"
+            android:padding="@dimen/txt_margin_lr"
+            android:textSize="@dimen/header_back_btn_txt_size"
+            android:text="@string/purchase_tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/menu_icon"
+            android:layout_width="@dimen/header_back_btn_height"
+            android:layout_height="@dimen/header_back_btn_height">
+            <TextView
+                android:layout_centerVertical="true"
+                android:background="@drawable/menu_item"
+                android:id="@+id/menu_item"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/txt_margin_lr"
+                android:padding="@dimen/txt_mrgn_right"
+                android:textColor="@color/colorwhite"
+                android:layout_width="@dimen/header_back_btn_txt_size"
+                android:layout_height="@dimen/header_back_btn_txt_size" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/items_scroll"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/viewpager_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_margin="@dimen/aboutus_padding"
+                            android:background="@drawable/auction_item_background"
+                            android:layout_width="@dimen/two_fifty"
+                            android:layout_height="@dimen/viewpager_hight">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="@dimen/two_fifty"
+                            android:layout_height="@dimen/viewpager_hight" />
+                        </android.support.v7.widget.CardView>
+
+                        <com.viewpagerindicator.CirclePageIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:padding="@dimen/edt_paddingleft"
+                            app:centered="true"
+                            android:textStyle="bold"
+                            app:fillColor="#0bb1de"
+                            app:strokeColor="#000000"
+                            app:snap="true" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:paddingLeft="@dimen/ss_text"
+                    android:paddingRight="@dimen/ss_text"
+                    android:background="@drawable/bg_auction"
+                    android:id="@+id/tv_item_number"
+                    android:layout_marginLeft="@dimen/small_text"
+                    android:textColor="@color/wallet_holo_blue_light"
+                    android:textSize="@dimen/small_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/items_titles"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="@dimen/small_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/aboutus_padding"
+                        android:layout_marginLeft="@dimen/edt_paddingleft"
+                        android:id="@+id/bid_type"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/custom_txt_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/edt_paddingleft"
+                        android:id="@+id/clock_img"
+                        android:background="@drawable/ic_access_time_black_24dp"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/custom_txt_size"
+                        android:layout_width="@dimen/gross_score_text"
+                        android:layout_height="@dimen/gross_score_text"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_marginTop="-3dp"
+                        android:id="@+id/bidding_row"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/linear_small"
+                        android:layout_marginLeft="@dimen/aboutus_padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relative">
+
+                    <LinearLayout
+                        android:gravity="center|left"
+                        android:layout_marginTop="@dimen/text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_text"
+                        android:layout_marginRight="@dimen/small_text"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/login_margin"
+                            android:id="@+id/item_amount"
+                            android:text="$10"
+                            android:textColor="@color/wallet_holo_blue_light"/>
+
+                        <TextView
+                            android:paddingStart="@dimen/three"
+                            android:paddingEnd="@dimen/aboutus_padding"
+                            android:layout_margin="@dimen/aboutus_padding"
+                            android:id="@+id/details_bid_counts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/login_margin"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/view"
+                            android:text="@string/no_bids"
+                            android:textColor="@color/wallet_holo_blue_light"
+                            android:textSize="@dimen/small_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/small_text"
+                        android:layout_marginTop="@dimen/text_size"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/watch_icon"
+                            android:layout_gravity="center|right"
+                            android:background="@drawable/ic_remove_red_eye_black_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/watch_bidcoutn"
+                            android:textSize="@dimen/login_margin"
+                            android:gravity="center"
+                            android:text="1"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="center|right"
+                            android:textColor="@color/wallet_holo_blue_light"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:paddingStart="@dimen/event_top_paddingbtm"
+                            android:paddingEnd="@dimen/aboutus_padding"
+                            android:layout_marginStart="@dimen/aboutus_padding"
+                            android:id="@+id/watch_firstlayout"
+                            android:layout_width="@dimen/how_it_works_text"
+                            android:layout_height="@dimen/login_margin"
+                            android:layout_gravity="center|right"
+                            android:gravity="center"
+                            android:clickable="false"
+                            android:background="@drawable/view"
+                            android:text="Click to watch"
+                            android:textColor="@color/wallet_holo_blue_light"
+                            android:textSize="@dimen/small_text"/>
+
+                    </LinearLayout>
+
+                    </RelativeLayout>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/small_text"
+                    android:layout_marginStart="@dimen/edt_paddingleft"
+                    android:layout_marginEnd="@dimen/edt_paddingleft"
+                    android:padding="@dimen/edt_paddingleft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bidding_msg"
+                    android:focusable="false"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorgray"/>
+
+                <Button
+                    android:textAllCaps="false"
+                    android:stateListAnimator="@null"
+                    android:visibility="gone"
+                    android:id="@+id/checkout_btn"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginTop="@dimen/text_size"
+                    android:background="@drawable/new_bottom_bg"
+                    android:textColor="@color/colorwhite"
+                    android:layout_marginRight="@dimen/edt_paddingleft"
+                    android:layout_marginLeft="@dimen/edt_paddingleft"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height" />
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size"
+                    android:orientation="horizontal">
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/edt_paddingleft"
+                    android:paddingBottom="@dimen/edt_paddingleft"
+                    android:id="@+id/palcebid"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/small_text"
+                    android:text="@string/place_bid"
+                    android:textSize="@dimen/linear_medium"
+                    android:background="@drawable/new_bottom_bg"
+                    android:textColor="@color/colorwhite"
+                    android:textAllCaps="true"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/add_fund_button_hight" />
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:id="@+id/button_buy_it_now"
+                    android:textSize="13dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/small_text"
+                    android:layout_marginLeft="@dimen/small_text"
+                    android:background="@drawable/auction_buy_btn"
+                    android:textColor="@color/colorwhite"
+                    android:textAllCaps="true"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/add_fund_button_hight" />
+                </LinearLayout>
+
+                <TextView
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/text_size"
+                    android:id="@+id/item_description"
+                    android:layout_marginLeft="@dimen/edt_paddingleft"
+                    android:textColor="@color/colorblack"
+                    android:text="@string/item_description"
+                    android:textSize="@dimen/medium_big_textsize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description_content"
+                    android:layout_marginLeft="@dimen/small_text"
+                    android:textSize="@dimen/linear_medium"
+                    app:trimExpandedText="@string/collapse"
+                    app:trimCollapsedText="@string/more"
+                    app:trimMode="trimModeLength"
+                    app:colorClickableText="@color/wallet_holo_blue_light"
+                    app:trimLength="100"/>
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/edt_paddingleft"
+                    android:layout_marginLeft="@dimen/edt_paddingleft"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textAllCaps="false"
+                        android:id="@+id/similar_item"
+                        android:textColor="@color/colorblack"
+                        android:text="@string/similar_items"
+                        android:textSize="@dimen/medium_big_textsize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.v7.widget.RecyclerView
+                            android:scrollbars="none"
+                            android:nestedScrollingEnabled="false"
+                            android:id="@+id/horizontal_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:minLines="3"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/colordarkgray"
+                            android:id="@+id/tv_auction_empty"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/no_similar_items_are_available" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

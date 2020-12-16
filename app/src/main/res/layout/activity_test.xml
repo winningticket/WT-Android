@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sample" />
+
+    <LinearLayout
+        android:background="@color/colorblack"
+        android:id="@+id/sample"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/colorblack"
+            android:layout_below="@+id/content_frame"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+    <LinearLayout
+        android:paddingTop="@dimen/edt_paddingleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+        <LinearLayout
+            android:id="@+id/home_layout"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:id="@+id/imag_home"
+                android:layout_gravity="center"
+                android:background="@drawable/home_bottom_logo"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="@dimen/custom_txt_size"
+                android:textAllCaps="true"
+                android:textColor="@color/colorwhite"
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home" />
+
+            <View
+                android:id="@+id/home_view"
+                android:background="@color/colorbtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aboutus_padding" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/event_layout"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/noti_count"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_gravity="top|right"
+                android:layout_marginBottom="-15dp"
+                android:background="@drawable/red_chat_count"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="0"
+                android:textSize="@dimen/small_text"/>
+
+            <ImageView
+                android:id="@+id/imag_event"
+                android:layout_gravity="center"
+                android:background="@drawable/home_event"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="@dimen/custom_txt_size"
+                android:textAllCaps="true"
+                android:textColor="@color/colorwhite"
+                android:id="@+id/event_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event" />
+
+            <View
+                android:id="@+id/event_view"
+                android:background="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aboutus_padding" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/course_layout"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:id="@+id/imag_course"
+                android:layout_gravity="center"
+                android:background="@drawable/home_corse"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="@dimen/custom_txt_size"
+                android:textAllCaps="true"
+                android:textColor="@color/colorwhite"
+                android:id="@+id/courses_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/course" />
+
+            <View
+                android:id="@+id/courses_view"
+                android:background="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aboutus_padding" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_layout"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:id="@+id/imag_my_account"
+                android:layout_gravity="center"
+                android:background="@drawable/home_user"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="@dimen/custom_txt_size"
+                android:textAllCaps="true"
+                android:textColor="@color/colorwhite"
+                android:id="@+id/user_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account" />
+
+            <View
+                android:id="@+id/euser_view"
+                android:background="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aboutus_padding" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

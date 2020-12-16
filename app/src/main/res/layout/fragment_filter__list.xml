@@ -1,0 +1,204 @@
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="com.winningticketproject.in.Fragments.Filter_List">
+ <LinearLayout
+     android:id="@+id/liner_layout"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="8dp"
+        android:background="@color/colorlightplusgray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/felter_text"
+            android:textColor="@color/colorblack"
+            android:padding="@dimen/event_top_paddingbtm"
+            android:textSize="@dimen/header_text_size"
+            android:layout_centerInParent="true"
+            android:text="@string/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="@drawable/cross_black"
+            android:id="@+id/cancel_button"
+            android:textColor="@color/colorblack"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/event_top_paddingbtm"
+            android:textSize="@dimen/text_size"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/txt_heading_size"
+            android:layout_height="@dimen/txt_heading_size" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="#1b757575"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/sate"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/by_state"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"
+                android:padding="@dimen/text_icon_padding"
+                android:textSize="@dimen/text_size"
+                android:text="@string/by_state"
+                android:lines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <!--<com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner-->
+                <!--android:id="@+id/android_material_design_spinner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:hint="Choose a state"-->
+                <!--android:background="@drawable/dropdownbg"-->
+                <!--android:textColorHint="#fff"-->
+                <!--app:met_floatingLabel="normal"-->
+                <!--app:met_textColor="@color/colorwhite"-->
+                <!--app:met_textColorHint="@color/mdtp_red"-->
+                <!--app:met_primaryColor="#F00"-->
+                <!--/>-->
+
+            <Spinner
+                android:paddingTop="@dimen/text_icon_padding"
+                android:paddingBottom="@dimen/text_icon_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_state"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size"
+                android:background="@drawable/textview_baground"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/sate"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/edt_hint_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/by_date"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"
+                android:padding="@dimen/text_icon_padding"
+                android:textSize="@dimen/text_size"
+                android:text="@string/by_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+           <!-- <TextView
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"
+                android:padding="@dimen/text_icon_padding"
+                android:textSize="@dimen/text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "/>-->
+
+            <TextView
+                android:textColor="@color/colorblack"
+                android:textColorHint="@color/colorgray"
+                android:layout_gravity="left|center"
+                android:layout_marginRight="@dimen/edt_hint_margin"
+                android:id="@+id/choose_from_date"
+                android:padding="@dimen/event_top_paddingbtm"
+                android:background="@drawable/textview_baground"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:textSize="@dimen/linear_small"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="@string/from"/>
+
+            <TextView
+                android:textColor="@color/colorblack"
+                android:textColorHint="@color/colorgray"
+                android:layout_gravity="left|center"
+                android:layout_marginRight="@dimen/edt_hint_margin"
+                android:layout_marginLeft="@dimen/text_icon_padding"
+                android:id="@+id/choose_to_date"
+                android:padding="@dimen/event_top_paddingbtm"
+                android:background="@drawable/textview_baground"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:textSize="@dimen/linear_small"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="@string/to"/>
+
+            <Button
+                android:stateListAnimator="@null"
+                android:id="@+id/appaly_button"
+                android:layout_marginLeft="@dimen/edt_hint_margin"
+                android:textColor="@color/colorwhite"
+                android:background="@drawable/button_backgound"
+                android:padding="@dimen/text_icon_padding"
+                android:textSize="@dimen/linear_mrgn"
+                android:layout_width="@dimen/filteer_width"
+                android:layout_height="@dimen/filter_height"
+                android:text="@string/apply"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+     <LinearLayout
+         android:layout_below="@+id/relative_bar"
+         android:layout_margin="@dimen/aboutus_padding"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+             <ListView
+                 android:scrollbars="none"
+                 android:divider="@null"
+                 android:dividerHeight="0dp"
+                 android:id="@+id/filter_viewevent_listview"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" />
+
+             <TextView
+                 android:layout_gravity="center"
+                 android:minLines="3"
+                 android:textSize="@dimen/text_size"
+                 android:textColor="@color/colordarkgray"
+                 android:id="@+id/view_all"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:visibility="gone"
+                 android:text="@string/no_events_found" />
+         </LinearLayout>
+
+     </LinearLayout>
+ </LinearLayout>
+</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

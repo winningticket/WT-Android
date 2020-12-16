@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="@dimen/aboutus_padding"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_notes"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/medium_big_textsize"
+            android:gravity="center"
+            android:text="Notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_hole_par"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/medium_big_textsize"
+            android:gravity="center"
+            android:text="(Hole - par)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:padding="@dimen/aboutus_padding"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:gravity="top"
+            android:hint="@string/add_notes"
+            android:id="@+id/et_add_note"
+            android:background="@drawable/editext_baground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"/>
+
+
+        <Button
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_gravity="center"
+            android:textSize="@dimen/btn_txt_size"
+            android:id="@+id/btn_save_notes"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/new_bottom_bg"
+            android:text="Save Note"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/button_height" />
+
+        <Button
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:layout_marginBottom="@dimen/big_big_text"
+            android:layout_gravity="center"
+            android:textSize="@dimen/btn_txt_size"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/new_gray_button_bacgound"
+            android:id="@+id/btn_note_cancel"
+            android:text="@string/cancel"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/button_height" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

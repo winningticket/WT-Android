@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/text_size"
+        android:layout_marginBottom="@dimen/edt_paddingleft"
+        android:padding="@dimen/edt_paddingleft"
+        android:background="@drawable/new_background_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_live_leaderboard"
+            android:padding="@dimen/aboutus_padding"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:textColor="@color/colorblack"
+            android:text="@string/live_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_addsense"
+            android:layout_margin="@dimen/edt_paddingleft"
+            android:background="@drawable/leader_board_bar_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.gms.ads.AdView
+                android:layout_margin="@dimen/header_text_size"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/ads_unit_id">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+    </LinearLayout>

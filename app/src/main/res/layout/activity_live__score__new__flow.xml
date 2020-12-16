@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/custome_tool_bar"/>
+
+    <LinearLayout
+        android:background="@color/colorblack"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/logo"/>
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/big_text_size"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Live Scoring + GPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/linear_medium"
+            android:text="ScoreCard and LeaderBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/layout_mrgn_leftright"
+            android:padding="@dimen/aboutus_padding"
+            android:layout_marginLeft="@dimen/medium_big_textsize"
+            android:layout_marginRight="@dimen/medium_big_textsize"
+            android:orientation="vertical"
+            android:background="@color/colordarkgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/text_size"
+                android:text="EVENT NAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/linear_medium"
+                android:text="Make a wish foundation of central floriad's Forth annual golf Event "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="@dimen/aboutus_padding"
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:layout_marginLeft="@dimen/medium_big_textsize"
+            android:layout_marginRight="@dimen/medium_big_textsize"
+            android:orientation="vertical"
+            android:background="@color/colordarkgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/text_size"
+                android:text="EVENT LOCATION"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/linear_medium"
+                android:text="Grand Cyper Country Club \n 1 Jacarand St,Orlando,FL,32836"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/aboutus_padding"
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:layout_marginLeft="@dimen/medium_big_textsize"
+            android:layout_marginRight="@dimen/medium_big_textsize"
+            android:orientation="vertical"
+            android:background="@color/colordarkgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/text_size"
+                android:text="EVENT TYPE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/linear_medium"
+                android:text="4-Men Scramble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="@dimen/aboutus_padding"
+            android:layout_marginTop="@dimen/aboutus_padding"
+            android:layout_marginLeft="@dimen/medium_big_textsize"
+            android:layout_marginRight="@dimen/medium_big_textsize"
+            android:orientation="vertical"
+            android:background="@color/colordarkgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/text_size"
+                android:text="GAME DESCRIPTION"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/linear_medium"
+                android:text="All member tee off and play the best ball.The team will enter one score for whole team.Handicap Disebled during this game type."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <Button
+            android:text="Start Playing"
+            android:background="@color/btn_color"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="@dimen/text_size"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height" />
+    </LinearLayout>
+
+</LinearLayout>

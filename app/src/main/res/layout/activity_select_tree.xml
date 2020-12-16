@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/select_hole_root"
+            android:background="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:padding="@dimen/edt_paddingleft"
+                android:id="@+id/tee_btn_back"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:textColor="@color/colorblack"
+                android:gravity="start|center"
+                android:background="@drawable/black_back_arrow"
+                android:layout_width="@dimen/mph_width"
+                android:layout_height="@dimen/mph_width" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@color/colorwhite"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:background="@drawable/logo"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_50sdp" />
+
+                <TextView
+                        android:id="@+id/player_name"
+                        android:layout_marginTop="@dimen/aboutus_padding"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/header_text_size"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/dummy_text"
+                        android:layout_marginTop="@dimen/aboutus_padding"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/header_text_size"
+                        android:gravity="center"
+                        android:text="@string/select_your_tee_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_marginTop="@dimen/aboutus_padding"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:background="@color/colorbtn"
+                    android:textColor="@color/colorwhite"
+                    android:text="@string/_continue"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:id="@+id/continu_button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+                <ScrollView
+                    android:layout_above="@+id/continu_button"
+                    android:scrollbars="none"
+                    android:id="@+id/scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ListView
+                            android:layout_margin="@dimen/event_top_paddingbtm"
+                            android:background="@color/colorwhite"
+                            android:divider="@android:color/transparent"
+                            android:dividerHeight="@dimen/event_top_paddingbtm"
+                            android:id="@+id/tee_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:minLines="3"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/colordarkgray"
+                            android:id="@+id/hole_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:text="@string/empty_tee" />
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>

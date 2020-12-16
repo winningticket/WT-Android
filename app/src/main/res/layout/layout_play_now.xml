@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:id="@+id/home_page_layout"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/linear_medium"
+            android:id="@+id/ll_your_round"
+            android:background="@drawable/bg_play_round"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height">
+
+            <TextView
+                android:layout_margin="@dimen/edt_textsize"
+                android:gravity="center|left"
+                android:id="@+id/tv_start_round"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/btn_txt_size"
+                android:text="@string/start_round"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+         </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/linear_medium"
+                android:layout_marginRight="@dimen/linear_medium"
+                android:id="@+id/ll_rournaments"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/bg_tournament"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height">
+
+                <TextView
+                    android:layout_margin="@dimen/edt_textsize"
+                    android:id="@+id/tv_tournament"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/btn_txt_size"
+                    android:text="@string/tournaments"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_courses"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/linear_medium"
+                android:background="@drawable/bg_course"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height">
+
+                <TextView
+                    android:layout_margin="@dimen/edt_textsize"
+                    android:id="@+id/tv_locator"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/btn_txt_size"
+                    android:text="@string/course_locator"
+                    android:gravity="left|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+</LinearLayout>

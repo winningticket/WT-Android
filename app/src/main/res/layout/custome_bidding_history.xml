@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_layouts">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout"
+        android:background="@color/colorwhite">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_margin="@dimen/txt_margin_lr"
+        android:padding="@dimen/txt_margin_lr">
+
+        <TextView
+            android:id="@+id/bidding_name"
+            android:padding="@dimen/text_icon_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorblack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bidding_date"
+            android:padding="@dimen/text_icon_padding"
+            android:textColor="@color/colorlightkgray"
+            android:textSize="@dimen/custom_txt_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/bidding_type"
+            android:padding="@dimen/text_icon_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorblack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/amount_text"
+        android:textColor="#000000"
+        android:layout_gravity="top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/txt_margin_lr"
+        android:padding="@dimen/txt_margin_lr"/>
+    </LinearLayout>
+    <View android:id="@+id/separator"
+        android:background="@color/colorlightplusgray"
+        android:layout_width = "fill_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical ="true"
+        android:layout_alignParentTop="true"/>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

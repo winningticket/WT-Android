@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/row_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow
+        android:id="@+id/table_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:background="@color/colorblack"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/layout_event_name"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center|left"
+                android:paddingRight="@dimen/txt_margin_lr"
+                android:paddingLeft="@dimen/txt_margin_lr"
+                android:layout_marginRight="@dimen/txt_margin_lr"
+                android:id="@+id/event_name"
+                android:textSize="@dimen/custom_txt_size"
+                android:paddingTop="@dimen/custom_txt_padding"
+                android:paddingBottom="@dimen/custom_txt_padding"
+                android:layout_marginLeft="@dimen/listview_padding"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_gravity="left|center"
+                />
+        </LinearLayout>
+
+        <View
+            android:background="@color/colorblack"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/layout_event_date"
+            android:layout_weight="1.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center|left"
+                android:lineSpacingExtra="2dp"
+                android:id="@+id/event_type"
+                android:textSize="@dimen/custom_txt_size"
+                android:textColor="@color/colorblack"
+                android:padding="@dimen/custom_txt_padding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="@dimen/txt_margin_lr"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_event_btn"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:textSize="@dimen/custom_button_height"
+                android:id="@+id/text_details"
+                android:layout_marginRight="@dimen/listview_padding"
+                android:textColor="#ff0000"
+                android:padding="@dimen/text_icon_padding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_gravity="center"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/colorblack"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <View
+        android:layout_marginRight="0.2dp"
+        android:id="@+id/bottom_view"
+        android:background="@color/colorblack"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:weightSum="12"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/leadebord_score_cardtxt_size"
+            android:id="@+id/tv_colunm_1"
+            android:layout_width="@dimen/bestballleaderboard_row_width"
+            android:textColor="@color/colorblack"
+            android:text="@string/child_hole"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/bestball_leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/tv_colunm_2"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/bestball_leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_3"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/bestball_leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_4"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/bestball_leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_5"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/bestball_leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_6"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_5"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/bestball_leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_7"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_6"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/bestball_leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_8"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_7"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/bestball_leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_9"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_8"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/bestball_leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_10"
+            android:layout_width="@dimen/leaderboardwidth"
+            android:textColor="@color/colorblack"
+            android:text="@string/_9"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_11"
+            android:layout_width="@dimen/big_big_text"
+            android:textColor="@color/colorblack"
+            android:text="@string/out"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/leadebord_score_cardtxt_size"
+            android:layout_weight="1"
+            android:id="@+id/tv_colunm_12"
+            android:layout_width="@dimen/big_big_text"
+            android:textColor="@color/colorblack"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/aboutus_padding"
+    android:background="@color/colorwhite"
+    android:weightSum="3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/regular_pie_chart"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/image_width"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:id="@+id/green_way_data_empty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Statics appears here after rounds are saved"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/text_size"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/gree_in_regular_lay"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_regular_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/aboutus_padding"
+            android:text="Greens in Regulation"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            android:padding="@dimen/aboutus_padding"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="@dimen/linear_medium"
+                        android:layout_height="@dimen/linear_medium"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_brightness_1_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/txt_regular_hit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/linear_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_regular_hit_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hit"
+                    android:textColor="@color/colorlightkgray"
+                    android:textSize="@dimen/linear_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/edt_paddingleft"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="@dimen/linear_medium"
+                        android:layout_height="@dimen/linear_medium"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_brightness_skyblue_dp" />
+
+                    <TextView
+                        android:id="@+id/txt_reular_miss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/linear_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_regular_miss_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Miss"
+                    android:textColor="@color/colorlightkgray"
+                    android:textSize="@dimen/linear_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="click2"
+        android:layout_weight=".2"
+        android:background="@drawable/ic_chevron_right_black_24dp" />
+</LinearLayout>

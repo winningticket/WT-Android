@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context="com.winningticketproject.in.AffiliatorModel.Referral_Details">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/custome_purchage" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/refferal_name"
+            android:padding="@dimen/text_icon_padding"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+
+
+        <TextView
+            android:id="@+id/sponsar_name"
+            android:padding="@dimen/text_icon_padding"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/settings_padding"
+            android:orientation="vertical"
+            android:background="@drawable/textview_baground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/phone_title"
+                android:textColor="@color/colorblack"
+                android:layout_marginTop="@dimen/edtxt_padding"
+                android:layout_marginLeft="@dimen/edtxt_padding"
+                android:textSize="@dimen/linear_small"
+                android:textStyle="bold"
+                android:text="@string/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/phone_values"
+                android:textColor="@color/colorblack"
+                android:layout_marginTop="@dimen/text_icon_padding"
+                android:layout_marginLeft="@dimen/edtxt_padding"
+                android:layout_marginBottom="@dimen/text_icon_padding"
+                android:textSize="@dimen/header_text_size"
+                android:paddingBottom="@dimen/text_icon_padding"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+            <View
+                android:background="@color/colorgraylittel"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:textAllCaps="true"
+                android:id="@+id/message_title"
+                android:textColor="@color/colorblack"
+                android:layout_marginTop="@dimen/edtxt_padding"
+                android:layout_marginLeft="@dimen/edtxt_padding"
+                android:textSize="@dimen/linear_small"
+                android:textStyle="bold"
+                android:text="@string/email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/massage_values"
+                android:textColor="@color/colorblack"
+                android:layout_marginTop="@dimen/text_icon_padding"
+                android:layout_marginLeft="@dimen/edtxt_padding"
+                android:textSize="@dimen/header_text_size"
+                android:layout_marginBottom="@dimen/text_icon_padding"
+                android:paddingBottom="@dimen/text_icon_padding"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/sponsars_title"
+            android:textColor="@color/colorblack"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/image_icon_height"
+            android:layout_marginBottom="@dimen/edtxt_padding"
+            android:layout_marginLeft="@dimen/edtxt_padding"
+            android:padding="@dimen/text_icon_padding"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/header_text_size"/>
+
+
+        <LinearLayout
+            android:layout_below="@+id/relative_bar"
+            android:layout_marginTop="@dimen/text_icon_padding"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:background="@color/colorblack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_layout_height">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:id="@+id/items_name"
+                    android:textSize="@dimen/btn_txt_size"
+                    android:padding="@dimen/event_top_paddingbtm"
+                    android:textColor="@color/colorwhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/referral_name"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.9" />
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/btn_txt_size"
+                    android:textColor="@color/colorwhite"
+                    android:padding="@dimen/event_top_paddingbtm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/user_role"
+                    android:layout_gravity="center"
+                    android:id="@+id/items_values"
+                    android:layout_weight="1.2" />
+            </TableRow>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ListView
+                        android:scrollbars="none"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:id="@+id/referal_list_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:minLines="3"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/colordarkgray"
+                        android:id="@+id/view_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:text="@string/no_donations_found" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

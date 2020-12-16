@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="7"
+    android:id="@+id/layout_row"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:id="@+id/serial_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:textStyle="bold"
+                android:id="@+id/hole_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:layout_weight=".8"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/distance1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+
+            <TextView
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:id="@+id/distance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:layout_weight="1.2"
+                android:gravity="center" />
+
+            <TextView
+                android:clickable="false"
+                android:id="@+id/distance2"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/distance3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+
+            <TextView
+                android:id="@+id/distance4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/linear_medium"
+                android:paddingTop="@dimen/edt_paddingleft"
+                android:paddingBottom="@dimen/edt_paddingleft"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+            android:id="@+id/edit_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorlightplusgray"
+            android:textSize="@dimen/header_text_size"
+            android:paddingTop="@dimen/edt_paddingleft"
+            android:paddingBottom="@dimen/edt_paddingleft"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+</LinearLayout>
+

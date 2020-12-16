@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/edt_paddingleft"
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/mar_left_fifthyt"
+                android:layout_marginRight="@dimen/mar_left_fifthyt"
+                android:textColor="@color/colorblack"
+                android:id="@+id/title_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/order_details" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/mar_left_fifthyt"
+                android:layout_marginRight="@dimen/mar_left_fifthyt"
+                android:textSize="@dimen/linear_medium"
+                android:id="@+id/title_desciption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_your_order_details_below" />
+
+            <LinearLayout
+                android:background="@drawable/event_corner"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/aboutus_padding"
+                        android:padding="@dimen/mar_left_fifthyt"
+                        android:background="@color/colorwhite"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="@dimen/aboutus_padding"
+                            android:layout_margin="@dimen/aboutus_padding"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/event_logo"
+                                android:layout_width="@dimen/logo_icon_hight"
+                                android:layout_height="@dimen/logo_icon_hight" />
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/edt_paddingleft"
+                                android:layout_weight="1.5"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorblack"
+                                    android:text="@string/event_access"
+                                    android:textSize="@dimen/text_size"
+                                    android:id="@+id/payment_access_name" />
+
+                                <TextView
+                                    android:textColor="@color/colorblack"
+                                    android:id="@+id/payment_event_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size" />
+
+                                <TextView
+                                    android:id="@+id/payment_include_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/includes"
+                                    android:textColor="@color/colorlightkgray"
+                                    android:textSize="@dimen/linear_medium" />
+
+                                <TextView
+                                    android:id="@+id/payment_include_data"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:textColor="@color/colorlightkgray"
+                                    android:textSize="@dimen/linear_medium" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/aboutus_padding"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/payment_price_title"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/linear_medium"
+                                android:layout_weight="1.5"
+                                android:text="@string/purchase_price"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/payment_amount"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/linear_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/layout_account_balnce"
+                            android:layout_margin="@dimen/aboutus_padding"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/Account_balance_text"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/linear_medium"
+                                android:layout_weight="1.5"
+                                android:text="@string/account_balance"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/account_balance_total_amount"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/linear_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/aboutus_padding"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/payment_processing_title"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/linear_medium"
+                                android:layout_weight="1.5"
+                                android:text="Processing &amp; Admin Fee (9.5%)"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/payment_processing_amount"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/linear_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    <View
+                        android:background="@color/colorblack"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/aboutus_padding"/>
+                        <LinearLayout
+                            android:layout_margin="@dimen/aboutus_padding"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/payment_total_title"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/text_size"
+                                android:layout_weight="1.5"
+                                android:text="@string/total_usd"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/payment_total_amount"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/text_size"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

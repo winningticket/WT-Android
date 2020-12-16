@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorwhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+           <ImageButton
+            android:padding="@dimen/edt_paddingleft"
+            android:id="@+id/btn_virtual_gift_back"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:textColor="@color/colorblack"
+            android:gravity="start|center"
+            android:background="@drawable/black_back_arrow"
+            android:layout_width="@dimen/mph_width"
+            android:layout_height="@dimen/mph_width" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:id="@+id/gift_bag_iamge"
+                android:layout_width="@dimen/live_auction_width"
+                android:layout_height="@dimen/live_auction_width"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Nike Sportswear - 25% off your online order"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:id="@+id/virtual_bag_title"
+                android:textSize="@dimen/big_text_size"
+                android:layout_marginTop="@dimen/text_icon_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:padding="@dimen/aboutus_padding"
+                android:id="@+id/offere_expire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Offer Expires: December 31, 2019"
+                android:textColor="@color/colorbtn"
+                android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:background="@drawable/event_corner"
+            android:padding="@dimen/aboutus_padding"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:layout_margin="@dimen/edt_paddingleft"
+                android:background="@android:color/transparent"
+                android:layerType="software"
+                android:id="@+id/offer_direction_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size"/>
+
+        </LinearLayout>
+
+</LinearLayout>

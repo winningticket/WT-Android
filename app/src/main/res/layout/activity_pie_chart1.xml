@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/player_stats_top_bar"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/aboutus_padding"
+        android:id="@+id/layout"
+        android:layout_marginBottom="@dimen/aboutus_padding"
+        android:layout_marginEnd="@dimen/text_size"
+        android:layout_marginStart="@dimen/text_size">
+
+        <LinearLayout
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:id="@+id/circle_hit"
+                    android:layout_width="@dimen/header_text_size"
+                    android:layout_height="@dimen/header_text_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_brightness_1_black_24dp" />
+
+                <TextView
+                    android:layout_weight="1.7"
+                    android:id="@+id/d_f_hits"
+                    android:layout_marginStart="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/header_text_size" />
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/d_fair_hint_center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorlightkgray"
+            android:text="Hit       "/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/aboutus_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/circle_left"
+                        android:layout_width="@dimen/header_text_size"
+                        android:layout_height="@dimen/header_text_size"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_brightness_skyblue_dp" />
+
+                    <TextView
+                        android:id="@+id/d_fair_left"
+                        android:layout_marginStart="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/header_text_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/d_fair_hint_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Miss Left"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/LightGrey" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/aboutus_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/circle_right"
+                        android:layout_width="@dimen/header_text_size"
+                        android:layout_height="@dimen/header_text_size"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_brightness_pink_24dp" />
+
+                    <TextView
+                        android:id="@+id/d_fai_right"
+                        android:layout_marginStart="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/header_text_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/d_fair_hint_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Miss Right"
+                    android:textSize="@dimen/linear_medium"
+                    android:textColor="@color/LightGrey" />
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/details_pie_chart"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_width" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/your_rounds"
+        android:id="@+id/you_round"
+        android:textColor="@color/black"
+        android:textSize="@dimen/header_text_size" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

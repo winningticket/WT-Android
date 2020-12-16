@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height"
+            android:id="@+id/first_name"
+            android:background="@drawable/add_referral">
+            <EditText android:id="@+id/receipant_fname"
+                android:hint="@string/first_name"
+                android:singleLine="true"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:textColorHint="@color/coloraddreferal"
+                android:gravity="start"
+                android:maxLength="30"
+                android:textSize="@dimen/edt_textsize"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height"
+            android:id="@+id/last_name"
+            android:background="@drawable/add_referral">
+            <EditText android:id="@+id/receipant_lname"
+                android:hint="@string/last_name"
+                android:singleLine="true"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:textColorHint="@color/coloraddreferal"
+                android:gravity="start"
+                android:maxLength="30"
+                android:textSize="@dimen/edt_textsize"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_text"
+            android:background="@drawable/add_referral"
+            android:layout_marginTop="10dp"
+            android:layout_margin="@dimen/edt_hint_margin"
+            android:paddingTop="@dimen/edt_hint_padingsstop"
+            android:paddingLeft="@dimen/edt_hint_padingleft"
+            android:theme="@style/TextLabel"
+            android:textColorHint="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_hint_height">
+            <EditText android:id="@+id/receipant_email"
+                android:hint="@string/email"
+                android:singleLine="true"
+                android:textColorHint="@color/coloraddreferal"
+                android:gravity="start"
+                android:maxLength="30"
+                android:textSize="@dimen/edt_textsize"
+                android:paddingLeft="@dimen/edt_paddingleft"
+                android:layout_marginRight="@dimen/edt_marg_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_padding"/>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/edt_paddingleft"
+    android:gravity="center"
+    android:layout_width="@dimen/add_funds_inside"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/edt_paddingleft"
+    android:layout_marginEnd="@dimen/edt_paddingleft"
+    android:layout_marginBottom="@dimen/aboutus_padding"
+    android:layout_marginTop="@dimen/aboutus_padding"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_back"
+    android:id="@+id/linear_row">
+
+    <TextView
+        android:paddingTop="@dimen/aboutus_padding"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/text1"
+        android:textSize="@dimen/header_text_size"
+        android:text="@string/_1"
+        android:gravity="center"
+        android:textColor="@color/colorblack"
+        android:textStyle="bold"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/text2"
+        android:gravity="center"
+        android:textSize="@dimen/colum_text_size"
+        android:textColor="@color/colorblack"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_margin="@dimen/edt_paddingleft"
+        android:src="@drawable/horizontal_dots"
+        android:layout_gravity="center"
+        android:id="@+id/bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

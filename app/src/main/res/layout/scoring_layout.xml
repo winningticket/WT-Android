@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/aboutus_padding"
+    android:weightSum="3">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/scoring_pie_chart_list"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/image_width"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:id="@+id/scorring_way_data_empty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Statics appears here after rounds are saved"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/scoring_lay"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scoring_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/aboutus_padding"
+            android:text="Scoring"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:gravity="center|start"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="@dimen/second_colum_text_size"
+                    android:layout_height="@dimen/second_colum_text_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_brightness_orange_24dp" />
+
+                <TextView
+                    android:layout_marginStart="2dp"
+                    android:id="@+id/score_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/linear_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/aboutus_padding"
+                android:layout_weight="1"
+                android:layout_gravity="center|start"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="@dimen/second_colum_text_size"
+                    android:layout_height="@dimen/second_colum_text_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_brightness_pink_24dp" />
+
+                <TextView
+                    android:layout_marginStart="2dp"
+                    android:id="@+id/score_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/linear_small" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/aboutus_padding"
+                android:layout_weight="1"
+                android:layout_gravity="center|start"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="@dimen/second_colum_text_size"
+                    android:layout_height="@dimen/second_colum_text_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_brightness_1_black_24dp" />
+
+                <TextView
+                    android:layout_marginStart="2dp"
+                    android:id="@+id/score_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/linear_small" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginLeft="@dimen/aboutus_padding"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="@dimen/second_colum_text_size"
+                    android:layout_height="@dimen/second_colum_text_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_brightness_skyblue_dp" />
+
+                <TextView
+                    android:layout_marginStart="2dp"
+                    android:id="@+id/score_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/linear_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/aboutus_padding"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="@dimen/second_colum_text_size"
+                    android:layout_height="@dimen/second_colum_text_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_brightness_blue_24dp" />
+
+                <TextView
+                    android:layout_marginStart="2dp"
+                    android:id="@+id/score_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/linear_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".2"
+        android:background="@drawable/ic_chevron_right_black_24dp"
+        android:onClick="click3" />
+
+</LinearLayout>

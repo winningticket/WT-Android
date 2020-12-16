@@ -1,0 +1,288 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:id="@+id/coordinatorLayout"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/even_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height">
+            <TextView
+                android:padding="@dimen/aboutus_padding"
+                android:id="@+id/tv_tournament"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/medium_big_textsize"
+                android:text="@string/tournaments"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"/>
+            <TextView
+                android:padding="@dimen/aboutus_padding"
+                android:id="@+id/tv_charity"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/linear_small"
+                android:text="@string/explore_all_charity_and_events"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"/>
+            </LinearLayout>
+
+        <!-- Your Scrollable View -->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested"
+            android:scrollbars="none"
+            android:background="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical">
+
+            <LinearLayout
+                android:id="@+id/event_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/home_event_enter_code"/>
+
+                    <View
+                        android:background="@color/colornotificqation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_paddingleft"/>
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/mar_left_fifthyt"
+                        android:layout_marginStart="@dimen/mar_left_fifthyt"
+                        android:layout_marginTop="@dimen/aboutus_padding"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginStart="@dimen/aboutus_padding"
+                            android:src="@drawable/event_flag"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/medium_big_textsize"
+                            android:layout_height="@dimen/medium_big_textsize" />
+                        <TextView
+                            android:layout_marginEnd="@dimen/mar_left_fifthyt"
+                            android:layout_marginStart="@dimen/mar_left_fifthyt"
+                            android:id="@+id/upcomming_event_title"
+                            android:textColor="@color/colorblack"
+                            android:textStyle="bold"
+                            android:text="@string/upcoming_events"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/header_text_size"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/mar_left_fifthyt"
+                        android:layout_marginStart="@dimen/mar_left_fifthyt"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/txt_margin_lr"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/upcomming_events"
+                            android:scrollbars="none"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:minLines="3"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/colordarkgray"
+                            android:id="@+id/upcomming_empty_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:text="@string/no_upcoming_events" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/aboutus_padding"
+                        android:layout_gravity="right"
+                        android:id="@+id/upcoming_view_all"
+                        android:textSize="@dimen/linear_medium"
+                        android:text="@string/expand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/btn_color"/>
+
+                    <View
+                        android:background="@color/colornotificqation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_paddingleft"/>
+
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/mar_left_fifthyt"
+                        android:layout_marginStart="@dimen/mar_left_fifthyt"
+                        android:layout_marginTop="@dimen/aboutus_padding"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginStart="@dimen/aboutus_padding"
+                            android:src="@drawable/todays_event"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/medium_big_textsize"
+                            android:layout_height="@dimen/medium_big_textsize" />
+                        <TextView
+                            android:id="@+id/allevent_title"
+                            android:textColor="@color/colorblack"
+                            android:textStyle="bold"
+                            android:layout_margin="@dimen/aboutus_padding"
+                            android:text="@string/today_s_events"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/header_text_size"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingStart="@dimen/aboutus_padding"
+                        android:layout_marginEnd="@dimen/mar_left_fifthyt"
+                        android:layout_marginStart="@dimen/mar_left_fifthyt"
+                        android:id="@+id/upcomming_event_desciption"
+                        android:textColor="@color/colorblack"
+                        android:text="@string/explore_public_charity_events"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/all_events"
+                            android:scrollbars="none"
+                            android:layout_marginStart="@dimen/mar_left_fifthyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:minLines="3"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/colordarkgray"
+                            android:id="@+id/all_events_empty_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:text="@string/todays_event" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/aboutus_padding"
+                        android:layout_gravity="end"
+                        android:id="@+id/unpurchased_view_all"
+                        android:textSize="@dimen/linear_medium"
+                        android:text="@string/expand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/btn_color"/>
+
+                    <View
+                        android:background="@color/colornotificqation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_paddingleft"/>
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/mar_left_fifthyt"
+                        android:layout_marginStart="@dimen/mar_left_fifthyt"
+                        android:layout_marginTop="@dimen/aboutus_padding"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginStart="@dimen/aboutus_padding"
+                            android:src="@drawable/passed_event"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/medium_big_textsize"
+                            android:layout_height="@dimen/medium_big_textsize" />
+                        <TextView
+                            android:id="@+id/passed_title"
+                            android:textColor="@color/colorblack"
+                            android:layout_margin="@dimen/aboutus_padding"
+                            android:text="@string/passed_events"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/header_text_size"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingStart="@dimen/aboutus_padding"
+                        android:layout_marginEnd="@dimen/mar_left_fifthyt"
+                        android:layout_marginStart="@dimen/mar_left_fifthyt"
+                        android:id="@+id/passed_desciption"
+                        android:textColor="@color/colorblack"
+                        android:text="@string/passed_event_decription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/passed_event"
+                            android:scrollbars="none"
+                            android:layout_marginStart="@dimen/mar_left_fifthyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:minLines="3"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="@color/colordarkgray"
+                            android:id="@+id/all_passed_events_empty_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:text="No Passed Events" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginBottom="@dimen/aboutus_padding"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/aboutus_padding"
+                        android:layout_gravity="right"
+                        android:id="@+id/passed_view_all"
+                        android:textSize="@dimen/linear_medium"
+                        android:text="@string/expand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/btn_color"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

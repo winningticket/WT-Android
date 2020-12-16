@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:background="@color/colorwhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:padding="@dimen/aboutus_padding"
+    android:gravity="center"
+    android:weightSum="4"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:textSize="@dimen/small_text"
+        android:id="@+id/btn_gps"
+        android:textColor="@color/colorwhite"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_weight=".6"
+        android:background="@drawable/gps_top_bar_color"
+        android:text="@string/text_gps"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/pro_logo_width"/>
+
+    <TextView
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/linear_medium"
+        android:id="@+id/tv_course_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_weight="2.8"
+        android:gravity="top|center"/>
+
+    <Button
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:textSize="@dimen/small_text"
+        android:id="@+id/btn_leader_board"
+        android:textColor="@color/colorblack"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_weight=".6"
+        android:background="@drawable/leader_board_bar_color"
+        android:text="Event"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/pro_logo_width"/>
+
+    <Button
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:textSize="@dimen/small_text"
+        android:id="@+id/btn_score_card"
+        android:textColor="@color/colorblack"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_weight=".6"
+        android:background="@drawable/leader_board_bar_color"
+        android:text="Score \nCard"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/pro_logo_width"/>
+
+
+</LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/image_view_scorecard"
+        android:src="@drawable/full_score_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pro_logo_width"/>
+
+
+    <include layout="@layout/layout_auction_chat"/>
+</LinearLayout>

@@ -1,0 +1,501 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_marginTop="@dimen/aboutus_padding"
+        android:padding="@dimen/edt_paddingleft"
+        android:id="@+id/btn_back"
+        android:textColor="@color/colorblack"
+        android:gravity="start|center"
+        android:background="@drawable/black_back_arrow"
+        android:layout_width="@dimen/mph_width"
+        android:layout_height="@dimen/mph_width" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/top_section_payment_flow"/>
+
+            <include layout="@layout/belling_address_payment"/>
+
+            <Button
+                android:id="@+id/preview_order2"
+                android:textColor="@color/colorwhite"
+                android:background="@color/public_color"
+                android:text="@string/confirm_purchase"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="@dimen/text_size"
+                android:layout_marginTop="@dimen/edt_paddingleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/preview_order"
+                android:textColor="@color/colorwhite"
+                android:background="@color/public_color"
+                android:text="@string/go_to_dashboard"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="@dimen/text_size"
+                android:layout_marginTop="@dimen/edt_paddingleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/grey_logo"
+                android:layout_marginTop="@dimen/image_icon_height"
+                android:layout_width="@dimen/logo_grey_width"
+                android:layout_height="@dimen/logo_grey_height"
+                android:layout_gravity="center"
+                android:background="@drawable/logo_grey"
+                android:layout_marginBottom="@dimen/image_icon_height" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/colorwhite"-->
+    <!--tools:context="com.winningticketproject.in.Fragments.Order_Preview">-->
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<include-->
+            <!--android:id="@+id/custore_top"-->
+            <!--layout="@layout/custome_purchage" />-->
+
+
+        <!--<ScrollView-->
+            <!--android:scrollbars="none"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_margin="@dimen/edt_paddingbtm"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/order_confirmation"-->
+            <!--android:textColor="@color/colorblack"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="@dimen/header_text_size"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/order_confirmation"/>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/order_email"-->
+            <!--android:layout_marginLeft="@dimen/edt_marg_right"-->
+            <!--android:textColor="@color/colorblack"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+
+
+        <!--<View-->
+            <!--android:layout_marginTop="@dimen/edt_paddingbtm"-->
+            <!--android:layout_marginBottom="@dimen/edt_paddingbtm"-->
+            <!--android:background="@color/colorblack"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/billing_address_title"-->
+            <!--android:textColor="@color/colorblack"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="@dimen/header_text_size"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/billing_address"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:id="@+id/full_address"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:lineSpacingExtra="1dp"-->
+                <!--android:textColor="@color/colorblack"-->
+                <!--android:textSize="@dimen/text_size"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+               <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:textColor="@color/colorblack"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/payment_info"-->
+            <!--android:textColor="@color/colorblack"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textSize="@dimen/header_text_size"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/payment_info"/>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/card_type"-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:textColor="@color/colorblack"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<View-->
+            <!--android:layout_marginTop="@dimen/edt_paddingbtm"-->
+            <!--android:layout_marginBottom="@dimen/edt_paddingbtm"-->
+            <!--android:background="@color/colorblack"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp" />-->
+
+
+
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/layout1"-->
+                    <!--android:layout_below="@+id/details_toolbar"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:src="@drawable/logo"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:id="@+id/preview_order_logo"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="0.0"-->
+                        <!--android:layout_width="@dimen/logo_icon_width"-->
+                        <!--android:layout_height="@dimen/logo_icon_hight" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/ticket_title"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:layout_marginLeft="@dimen/edt_paddingbtm"-->
+                            <!--android:layout_marginRight="@dimen/txt_margin_lr"-->
+                            <!--android:textSize="@dimen/header_text_size"-->
+                            <!--android:textColor="@color/colorblack"-->
+                            <!--android:text="@string/winning_ticket"-->
+                            <!--android:layout_gravity="center|left"-->
+                            <!--android:gravity="left"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/ticket_sub_title"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:layout_marginLeft="@dimen/edt_paddingbtm"-->
+                            <!--android:textSize="@dimen/text_size"-->
+                            <!--android:textColor="@color/colorblack"-->
+                            <!--android:layout_marginRight="@dimen/txt_margin_lr"-->
+                            <!--android:layout_gravity="center|left"-->
+                            <!--android:gravity="left"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_gravity="center|left"-->
+                            <!--android:id="@+id/ticket_code"-->
+                            <!--android:layout_marginLeft="@dimen/edt_paddingbtm"-->
+                            <!--android:textSize="@dimen/custom_txt_size"-->
+                            <!--android:textColor="@color/colorblack"-->
+                            <!--android:layout_marginRight="@dimen/txt_margin_lr"-->
+                            <!--android:gravity="left"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:visibility="gone"-->
+                            <!--android:id="@+id/donation_ticket_amounts"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:layout_marginRight="@dimen/txt_margin_lr"-->
+                            <!--android:layout_marginLeft="@dimen/edt_paddingbtm"-->
+                            <!--android:textSize="@dimen/text_size"-->
+                            <!--android:textColor="@color/colorblack"-->
+                            <!--android:layout_gravity="center|left"-->
+                            <!--android:gravity="left"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+
+                        <!--<TextView-->
+                            <!--android:visibility="gone"-->
+                            <!--android:id="@+id/donation_eveent_name"-->
+                            <!--android:layout_marginLeft="@dimen/edt_paddingbtm"-->
+                            <!--android:textSize="@dimen/custom_txt_size"-->
+                            <!--android:layout_marginRight="@dimen/txt_margin_lr"-->
+                            <!--android:textColor="@color/colorblack"-->
+                            <!--android:layout_gravity="center|left"-->
+                            <!--android:gravity="left"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/ticket_quantity"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:layout_marginLeft="@dimen/edt_paddingbtm"-->
+                            <!--android:textSize="@dimen/text_size"-->
+                            <!--android:layout_marginRight="@dimen/txt_margin_lr"-->
+                            <!--android:textColor="@color/colorblack"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:gravity="left"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content" />-->
+
+                    <!--</LinearLayout>-->
+                                   <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<View-->
+                <!--android:background="@color/colorgray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp" />-->
+
+            <!--<LinearLayout-->
+                <!--android:padding="@dimen/edt_paddingbtm"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/sub_total"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/colorblack"-->
+                    <!--android:textSize="@dimen/text_size"-->
+                    <!--android:text="@string/subtotal"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/sub_total_amount"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginRight="@dimen/large_text_size"-->
+                    <!--android:gravity="center|right"-->
+                    <!--android:padding="@dimen/text_icon_padding"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textSize="@dimen/text_size"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/colorblack"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/account_balance_layout"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<View-->
+                    <!--android:background="@color/colorgray"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:padding="@dimen/edt_paddingbtm"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/Account_balance_text"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/colorblack"-->
+                        <!--android:textSize="@dimen/text_size"-->
+                        <!--android:text="@string/account_balance"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/account_balance_total_amount"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginRight="@dimen/large_text_size"-->
+                        <!--android:gravity="center|right"-->
+                        <!--android:padding="@dimen/text_icon_padding"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textSize="@dimen/text_size"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/colorblack"/>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+
+            <!--<LinearLayout-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/discount_balance_layout"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<View-->
+                    <!--android:background="@color/colorgray"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:padding="@dimen/edt_paddingbtm"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/discount_text"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/colorblack"-->
+                        <!--android:textSize="@dimen/text_size"-->
+                        <!--android:text="@string/promotional_discount"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/discount_total_amount"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginRight="@dimen/large_text_size"-->
+                        <!--android:gravity="center|right"-->
+                        <!--android:padding="@dimen/text_icon_padding"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textSize="@dimen/text_size"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/colorblack"/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:background="@color/colorgray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp" />-->
+
+            <!--<LinearLayout-->
+                <!--android:padding="@dimen/edt_paddingbtm"-->
+                <!--android:layout_marginBottom="@dimen/aboutus_padding"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/total"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/colorblack"-->
+                    <!--android:textSize="@dimen/header_text_size"-->
+                    <!--android:text="@string/total"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginRight="@dimen/large_text_size"-->
+                    <!--android:gravity="center|right"-->
+                    <!--android:id="@+id/totla_amount"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textSize="@dimen/header_text_size"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/colorblack"/>-->
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <!--<Button-->
+            <!--android:stateListAnimator="@null"-->
+            <!--android:id="@+id/preview_order2"-->
+            <!--android:layout_marginBottom="@dimen/aboutus_padding"-->
+            <!--android:layout_marginLeft="@dimen/login_margin"-->
+            <!--android:layout_marginRight="@dimen/login_margin"-->
+            <!--android:layout_marginTop="@dimen/settings_padding"-->
+            <!--android:text="@string/place_order"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:textColor="@color/colorwhite"-->
+            <!--android:background="@drawable/button_backgound"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/button_height"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_marginBottom="@dimen/edt_marg_right"-->
+            <!--android:layout_marginTop="@dimen/aboutus_padding"-->
+            <!--android:lineSpacingExtra="2dp"-->
+            <!--android:id="@+id/bottom_content"-->
+            <!--android:textColor="@color/colorblack"-->
+            <!--android:textSize="@dimen/text_size"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/replace_order"/>-->
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+    <!--</LinearLayout>-->
+<!--</FrameLayout>-->
+</LinearLayout>

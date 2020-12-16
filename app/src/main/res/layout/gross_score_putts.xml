@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="@dimen/aboutus_padding"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/tv_putts"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/linear_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/putts"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@color/colorblack"
+                android:gravity="center"
+                android:background="@drawable/gross_score_selecter"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:id="@+id/two_one"
+                android:textSize="@dimen/gross_score_text"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height"
+                android:text="@string/_0"/>
+
+
+            <Button
+                android:textColor="@color/colorblack"
+                android:gravity="center"
+                android:background="@drawable/gross_score_selecter"
+                android:id="@+id/two_two"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:textSize="@dimen/gross_score_text"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height"
+                android:text="@string/_1"/>
+
+
+            <Button
+                android:textColor="@color/colorblack"
+                android:gravity="center"
+                android:background="@drawable/gross_score_selecter"
+                android:id="@+id/two_three"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:textSize="@dimen/gross_score_text"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height"
+                android:text="@string/_2"/>
+
+            <Button
+                android:textColor="@color/colorblack"
+                android:gravity="center"
+                android:background="@drawable/gross_score_selecter"
+                android:id="@+id/two_four"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:textSize="@dimen/linear_medium"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height"
+                android:text="@string/_3"/>
+
+
+            <Button
+                android:textColor="@color/colorblack"
+                android:gravity="center"
+                android:background="@drawable/gross_score_selecter"
+                android:id="@+id/two_five"
+                android:layout_margin="@dimen/aboutus_padding"
+                android:textSize="@dimen/gross_score_text"
+                android:layout_width="@dimen/text_icon_height"
+                android:layout_height="@dimen/text_icon_height"
+                android:text="@string/_4_"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

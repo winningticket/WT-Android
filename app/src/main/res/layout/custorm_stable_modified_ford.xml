@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- PARENT -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorblack"
+            android:id="@+id/leadrbord_all_team"
+            android:textSize="@dimen/linear_small"
+            android:padding="@dimen/aboutus_padding"
+            android:layout_marginRight="@dimen/linear_small"
+            android:layout_marginLeft="@dimen/linear_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:padding="@dimen/aboutus_padding"
+            android:layout_marginBottom="@dimen/aboutus_padding"
+            android:layout_marginRight="@dimen/linear_small"
+            android:layout_marginLeft="@dimen/linear_small"
+            android:id="@+id/childrow"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_handicap"
+                android:textSize="@dimen/linear_small"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:layout_weight="1.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_pos_t"
+                android:textSize="@dimen/linear_small"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_par_score"
+                android:textSize="@dimen/linear_small"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:layout_weight=".8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_gross_score"
+                android:textSize="@dimen/linear_small"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorblack"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <include
+            android:layout_marginTop="@dimen/edt_paddingbtm"
+            android:layout_marginBottom="@dimen/edt_paddingbtm"
+            android:layout_marginLeft="@dimen/linear_small"
+            android:layout_marginRight="@dimen/linear_small"
+            layout="@layout/custome_stable_ford_child_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include
+            android:id="@+id/second_row"
+            android:layout_marginTop="@dimen/edt_paddingbtm"
+            android:layout_marginBottom="@dimen/edt_paddingbtm"
+            android:layout_marginLeft="@dimen/linear_small"
+            android:layout_marginRight="@dimen/linear_small"
+            layout="@layout/custome_stable_ford_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/stable_modify_score_board_mid_sec"/>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/small_text"
+        android:background="@drawable/auction_item_background"
+        android:layout_width="@dimen/pop_up_width"
+        android:layout_height="@dimen/pop_up_width">
+
+        <ImageView
+            android:layout_margin="@dimen/small_text"
+            android:src="@drawable/logo"
+            android:padding="@dimen/edt_paddingleft"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:id="@+id/imageview"
+            android:layout_width="@dimen/pop_up_width"
+            android:layout_height="@dimen/pop_up_width" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_margin="@dimen/aboutus_padding"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/gv_tag_category"
+            android:overScrollMode="always"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"/>
+
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="@dimen/edt_paddingbtm"
+            android:paddingRight="@dimen/edt_paddingbtm"
+            android:background="@drawable/bg_auction"
+            android:id="@+id/tv_item_number"
+            android:textColor="@color/wallet_holo_blue_light"
+            android:textSize="@dimen/small_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtview"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/header_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/clock_img"
+                android:background="@drawable/ic_access_time_black_24dp"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/custom_txt_size"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/bidding_row"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size_score_event_new"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/small_text"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/liner_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/amount_filds"
+                android:paddingLeft="@dimen/edt_paddingbtm"
+                android:paddingRight="@dimen/edt_paddingbtm"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:id="@+id/txtviewamount"
+                android:layout_weight="1"
+                android:textColor="@color/mdtp_white"
+                android:background="@drawable/new_bottom_bg"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/amount_filds"
+                android:gravity="center"
+                android:paddingLeft="@dimen/edt_paddingbtm"
+                android:paddingRight="@dimen/edt_paddingbtm"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:id="@+id/txtamount"
+                android:layout_weight="1"
+                android:textColor="@color/mdtp_white"
+                android:background="@drawable/auction_buy_btn"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="Auction closed"
+            android:background="@drawable/auction_upcoming_bg"
+            android:textSize="@dimen/small_text"
+            android:textColor="#ef4363"
+            android:id="@+id/sold"
+            android:layout_gravity="start"/>
+    </LinearLayout>
+</LinearLayout>

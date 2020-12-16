@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/auction_item_width"
+    android:padding="@dimen/aboutus_padding"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorwhite" >
+
+    <TextView
+        android:singleLine="true"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/tv_course_name"
+        android:layout_width="@dimen/barder"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorblack"/>
+
+    <TextView
+        android:textSize="@dimen/linear_medium"
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorblack"/>
+</LinearLayout>

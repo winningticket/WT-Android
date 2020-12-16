@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:padding="@dimen/edt_paddingleft"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhite"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/add_funds"
+        layout="@layout/privacy_policy_termsof_use" />
+
+    <View
+        android:background="@color/coloraddreferal"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/txt_margin_lr"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:autoLink="all"
+                    android:autoSizeTextType="uniform"
+                    android:id="@+id/work_description"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorgraylittel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

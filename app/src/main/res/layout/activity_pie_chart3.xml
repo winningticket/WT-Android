@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorwhite"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/player_stats_top_bar"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Net  "
+            android:id="@+id/btn_net"
+            android:textSize="@dimen/linear_small"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/gross_score_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_icon_height" />
+
+        <Button
+            android:textColor="@color/btn_color"
+            android:text="@string/gross"
+            android:id="@+id/btn_gross"
+            android:textSize="@dimen/linear_small"
+            android:background="@drawable/neft_baground"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_icon_height" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/aboutus_padding"
+                android:id="@+id/layout">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/aboutus_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/text_size"
+                            android:layout_height="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_brightness_orange_24dp" />
+
+                        <TextView
+                            android:id="@+id/scoring_eagle_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/edt_paddingleft"
+                        android:id="@+id/scoring_eagle_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/linear_medium"
+                        android:textColor="@color/LightGrey"
+                        android:text="Eagle"/>
+
+                    <LinearLayout
+                        android:layout_gravity="start"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/text_size"
+                            android:layout_height="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_brightness_pink_24dp" />
+
+                        <TextView
+                            android:id="@+id/scoring_bride_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/edt_paddingleft"
+                        android:id="@+id/scoring_bride_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Birdle"
+                        android:textSize="@dimen/linear_medium"
+                        android:textColor="@color/LightGrey" />
+
+                    <LinearLayout
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/text_size"
+                            android:layout_height="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_brightness_1_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/scoring_par_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_gravity="start"
+                        android:id="@+id/scoring_par_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Par"
+                        android:layout_marginStart="@dimen/edt_paddingleft"
+                        android:textSize="@dimen/linear_medium"
+                        android:textColor="@color/LightGrey" />
+
+                    <LinearLayout
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/text_size"
+                            android:layout_height="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_brightness_skyblue_dp" />
+
+                        <TextView
+                            android:id="@+id/scoring_bogey_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/scoring_bogey_hint"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/edt_paddingleft"
+                        android:text="Bogey"
+                        android:textSize="@dimen/linear_medium"
+                        android:textColor="@color/LightGrey" />
+
+
+                    <LinearLayout
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="@dimen/text_size"
+                            android:layout_height="@dimen/text_size"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_brightness_blue_24dp" />
+
+                        <TextView
+                            android:id="@+id/scoring_double_bogey_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/scoring_double_bogey_hint"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/edt_paddingleft"
+                        android:text="Double Bogey"
+                        android:textSize="@dimen/linear_medium"
+                        android:textColor="@color/LightGrey" />
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/regular_pie_chart"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/login_button_width"
+                    android:layout_height="@dimen/login_button_width" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:layout_margin="@dimen/aboutus_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/your_rounds"
+                android:id="@+id/scoring_your_round"
+                android:textColor="@color/black"
+                android:textSize="@dimen/header_text_size" />
+
+            <ListView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scoring_list" />
+
+        </LinearLayout>
+
+</LinearLayout>

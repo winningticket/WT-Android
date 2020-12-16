@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingEnd="@dimen/aboutus_padding"
+        android:paddingStart="@dimen/aboutus_padding"
+        android:background="@drawable/new_scorecard_scores_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_margin="@dimen/aboutus_padding"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/team_name_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/linear_medium"/>
+
+            <TextView
+                android:id="@+id/tv_tee_hole_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/linear_medium"/>
+
+            </LinearLayout>
+
+        <TextView
+            android:padding="@dimen/aboutus_padding"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvtotal_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:gravity="center|end"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/linear_medium"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

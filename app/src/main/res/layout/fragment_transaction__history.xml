@@ -1,0 +1,34 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="com.winningticketproject.in.Fragments.Transaction_History">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <include
+          android:id="@+id/history_details"
+          layout="@layout/custome_profile_toolbarpage" />
+
+            <ListView
+                android:scrollbars="none"
+                android:layout_marginBottom="@dimen/aboutus_padding"
+                android:layout_marginTop="@dimen/aboutus_padding"
+                android:id="@+id/transaction_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

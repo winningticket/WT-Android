@@ -1,0 +1,1342 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.winningticketproject.in"
+4    android:versionCode="23"
+5    android:versionName="1.23" >
+6
+7    <uses-sdk
+7-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:6:5-89
+8        android:minSdkVersion="19"
+8-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:6:5-89
+9        android:targetSdkVersion="28" />
+9-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:6:5-89
+10
+11    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+11-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:8:5-76
+11-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:8:22-73
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:9:5-67
+12-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:9:22-64
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:10:5-66
+13-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:10:22-63
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:11:5-79
+14-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:11:22-76
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:12:5-79
+15-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:12:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:13:5-81
+16-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:13:22-78
+17    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+17-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:14:5-98
+17-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:14:22-95
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:15:5-81
+18-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:15:22-78
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:16:5-68
+19-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:16:22-65
+20    <uses-permission android:name="com.android.vending.BILLING" />
+20-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:17:5-67
+20-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:17:22-64
+21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+21-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:18:5-82
+21-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:18:22-79
+22    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+22-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:19:5-95
+22-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:19:22-92
+23    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+23-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:20:5-71
+23-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:20:22-68
+24    <uses-permission android:name="android.permission.STORAGE" />
+24-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:21:5-66
+24-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:21:22-63
+25
+26    <uses-feature
+26-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:22:5-24:35
+27        android:name="android.hardware.camera"
+27-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:23:9-47
+28        android:required="true" />
+28-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:24:9-32
+29    <uses-feature
+29-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:25:5-27:35
+30        android:glEsVersion="0x00020000"
+30-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:26:9-41
+31        android:required="true" />
+31-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:27:9-32
+32
+33    <permission
+33-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:29:5-31:47
+34        android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE"
+34-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:30:9-77
+35        android:protectionLevel="signature" />
+35-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:31:9-44
+36
+37    <uses-permission android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE" />
+37-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:33:5-93
+37-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:33:22-90
+38    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+38-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:34:5-75
+38-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:34:22-72
+39    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+39-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:35:5-80
+39-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:35:22-77
+40
+41    <permission
+41-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:24:5-109
+42        android:name="com.winningticketproject.in.permission.C2D_MESSAGE"
+42-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:24:17-71
+43        android:protectionLevel="signature" />
+43-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:24:72-107
+44
+45    <uses-permission android:name="com.winningticketproject.in.permission.C2D_MESSAGE" />
+45-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:26:5-78
+45-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:26:22-76
+46    <uses-permission android:name="android.permission.CAMERA" />
+46-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:9:5-65
+46-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:9:22-62
+47
+48    <uses-feature
+48-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:15:5-17:36
+49        android:name="android.hardware.camera.autofocus"
+49-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:16:9-57
+50        android:required="false" />
+50-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:17:9-33
+51
+52    <application
+52-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:37:5-522:19
+53        android:name="com.winningticketproject.in.AppInfo.AppController"
+53-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:38:9-46
+54        android:allowBackup="false"
+54-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:39:9-36
+55        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+55-->[com.android.support:support-compat:28.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/15b22cc4e20a3d76c05494ea60673cb6/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+56        android:debuggable="true"
+57        android:icon="@mipmap/app_icon"
+57-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:40:9-40
+58        android:label="@string/app_name"
+58-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:41:9-41
+59        android:largeHeap="true"
+59-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:42:9-33
+60        android:screenOrientation="portrait"
+60-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:43:9-45
+61        android:supportsRtl="true"
+61-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:44:9-35
+62        android:testOnly="true"
+63        android:theme="@style/AppTheme"
+63-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:45:9-40
+64        android:usesCleartextTraffic="true"
+64-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:46:9-44
+65        android:windowSoftInputMode="stateAlwaysHidden" >
+65-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:47:9-56
+66        <activity
+66-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:50:9-53:46
+67            android:name="com.winningticketproject.in.Stable_modify_stroke_Flow.Stable_modify_leader_board"
+67-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:51:13-81
+68            android:screenOrientation="portrait"
+68-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:52:13-49
+69            android:theme="@style/NoTitle" />
+69-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:53:13-43
+70        <activity
+70-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:55:9-58:46
+71            android:name="com.winningticketproject.in.BestBallFlow.Bestbal_Leader_Board"
+71-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:56:13-62
+72            android:screenOrientation="portrait"
+72-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:57:13-49
+73            android:theme="@style/NoTitle" />
+73-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:58:13-43
+74        <activity
+74-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:60:9-63:46
+75            android:name="com.winningticketproject.in.Stable_modify_stroke_Flow.Stable_ford_Leaderboard"
+75-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:61:13-78
+76            android:screenOrientation="portrait"
+76-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:62:13-49
+77            android:theme="@style/NoTitle" />
+77-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:63:13-43
+78        <activity
+78-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:65:9-82:20
+79            android:name="com.winningticketproject.in.AuctionModel.NewLive_Auction"
+79-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:66:13-57
+80            android:screenOrientation="portrait"
+80-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:67:13-49
+81            android:theme="@style/NoTitle" >
+81-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:68:13-43
+82            <intent-filter android:autoVerify="true" >
+82-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:71:13-81:29
+82-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:71:28-53
+83                <action android:name="android.intent.action.VIEW" />
+83-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:72:17-69
+83-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:72:25-66
+84
+85                <category android:name="android.intent.category.DEFAULT" />
+85-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:74:17-76
+85-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:74:27-73
+86                <category android:name="android.intent.category.BROWSABLE" />
+86-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:75:17-78
+86-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:75:27-75
+87
+88                <data
+88-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:77:17-80:59
+89                    android:host="staging.winningticket.com"
+89-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:78:21-61
+90                    android:pathPrefix="/auction_list/"
+90-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:80:21-56
+91                    android:scheme="https" />
+91-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:79:21-43
+92            </intent-filter>
+93        </activity>
+94        <activity
+94-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:84:9-101:20
+95            android:name="com.winningticketproject.in.AuctionModel.NewLive_AuctionItem"
+95-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:85:13-61
+96            android:screenOrientation="portrait"
+96-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:86:13-49
+97            android:theme="@style/NoTitle" >
+97-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:87:13-43
+98            <intent-filter>
+98-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:90:13-100:29
+99                <action android:name="android.intent.action.VIEW" />
+99-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:72:17-69
+99-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:72:25-66
+100
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:74:17-76
+101-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:74:27-73
+102                <category android:name="android.intent.category.BROWSABLE" />
+102-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:75:17-78
+102-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:75:27-75
+103
+104                <data
+104-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:77:17-80:59
+105                    android:host="staging.winningticket.com"
+105-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:78:21-61
+106                    android:pathPrefix="/auction_item/"
+106-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:80:21-56
+107                    android:scheme="https" />
+107-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:79:21-43
+108            </intent-filter>
+109        </activity>
+110        <activity
+110-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:103:9-106:46
+111            android:name="com.winningticketproject.in.BestBallFlow.BestBall_Scorecard"
+111-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:104:13-60
+112            android:screenOrientation="portrait"
+112-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:105:13-49
+113            android:theme="@style/NoTitle" />
+113-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:106:13-43
+114        <activity
+114-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:107:9-110:46
+115            android:name="com.winningticketproject.in.Stable_modify_stroke_Flow.Stable_modify_ScoreCard"
+115-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:108:13-78
+116            android:screenOrientation="portrait"
+116-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:109:13-49
+117            android:theme="@style/NoTitle" />
+117-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:110:13-43
+118        <activity
+118-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:111:9-114:46
+119            android:name="com.winningticketproject.in.Stable_modify_stroke_Flow.StableFord_Score_Card"
+119-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:112:13-76
+120            android:screenOrientation="portrait"
+120-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:113:13-49
+121            android:theme="@style/NoTitle" />
+121-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:114:13-43
+122        <activity
+122-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:115:9-118:46
+123            android:name="com.winningticketproject.in.NewMapEvenFLOW.NormalLeaderoard"
+123-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:116:13-60
+124            android:screenOrientation="portrait"
+124-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:117:13-49
+125            android:theme="@style/NoTitle" />
+125-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:118:13-43
+126        <activity
+126-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:119:9-122:46
+127            android:name="com.winningticketproject.in.NewMapEvenFLOW.NormalScorreboard"
+127-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:120:13-61
+128            android:screenOrientation="portrait"
+128-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:121:13-49
+129            android:theme="@style/NoTitle" />
+129-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:122:13-43
+130        <activity
+130-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:123:9-126:46
+131            android:name="com.winningticketproject.in.CourseTab.Search_Course_Result"
+131-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:124:13-59
+132            android:screenOrientation="portrait"
+132-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:125:13-49
+133            android:theme="@style/NoTitle" />
+133-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:126:13-43
+134        <activity
+134-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:127:9-130:46
+135            android:name="com.winningticketproject.in.OrganizerFlow.Organiser_Billing_Add"
+135-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:128:13-64
+136            android:screenOrientation="portrait"
+136-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:129:13-49
+137            android:theme="@style/NoTitle" />
+137-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:130:13-43
+138        <activity
+138-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:131:9-134:46
+139            android:name="com.winningticketproject.in.OrganizerFlow.OrgPurchaseConf"
+139-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:132:13-58
+140            android:screenOrientation="portrait"
+140-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:133:13-49
+141            android:theme="@style/NoTitle" />
+141-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:134:13-43
+142        <activity
+142-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:135:9-138:46
+143            android:name="com.winningticketproject.in.OrganizerFlow.OrganizerAuctioItems"
+143-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:136:13-63
+144            android:screenOrientation="portrait"
+144-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:137:13-49
+145            android:theme="@style/NoTitle" />
+145-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:138:13-43
+146        <activity
+146-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:139:9-142:46
+147            android:name="com.winningticketproject.in.OrganizerFlow.EventListFlow"
+147-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:140:13-56
+148            android:screenOrientation="portrait"
+148-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:141:13-49
+149            android:theme="@style/NoTitle" />
+149-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:142:13-43
+150        <activity
+150-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:143:9-146:46
+151            android:name="com.winningticketproject.in.OrganizerFlow.ScanAndPay"
+151-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:144:13-53
+152            android:screenOrientation="portrait"
+152-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:145:13-49
+153            android:theme="@style/NoTitle" />
+153-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:146:13-43
+154        <activity
+154-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:147:9-150:46
+155            android:name="com.winningticketproject.in.AllUsersLogin.VerifyGuestUser"
+155-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:148:13-58
+156            android:screenOrientation="portrait"
+156-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:149:13-49
+157            android:theme="@style/NoTitle" />
+157-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:150:13-43
+158        <activity
+158-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:151:9-154:46
+159            android:name="com.winningticketproject.in.AllUsersLogin.Enter_Player_Code"
+159-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:152:13-60
+160            android:screenOrientation="portrait"
+160-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:153:13-49
+161            android:theme="@style/NoTitle" />
+161-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:154:13-43
+162        <activity
+162-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:155:9-158:46
+163            android:name="com.winningticketproject.in.AllUsersLogin.AllUserLogin"
+163-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:156:13-55
+164            android:screenOrientation="portrait"
+164-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:157:13-49
+165            android:theme="@style/NoTitle" />
+165-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:158:13-43
+166        <activity
+166-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:159:9-162:46
+167            android:name="com.winningticketproject.in.TeeHandicapHole.Hole_Tee_Handicap"
+167-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:160:13-62
+168            android:screenOrientation="portrait"
+168-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:161:13-49
+169            android:theme="@style/NoTitle" />
+169-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:162:13-43
+170        <activity
+170-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:163:9-166:46
+171            android:name="com.winningticketproject.RoundNotes.Round_notes_details"
+171-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:164:13-83
+172            android:screenOrientation="portrait"
+172-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:165:13-49
+173            android:theme="@style/NoTitle" />
+173-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:166:13-43
+174        <activity
+174-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:167:9-170:46
+175            android:name="com.winningticketproject.RoundNotes.RoundNotesList"
+175-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:168:13-78
+176            android:screenOrientation="portrait"
+176-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:169:13-49
+177            android:theme="@style/NoTitle" />
+177-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:170:13-43
+178
+179        <uses-library
+179-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:172:9-174:40
+180            android:name="org.apache.http.legacy"
+180-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:173:13-50
+181            android:required="false" />
+181-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:174:13-37
+182
+183        <activity
+183-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:176:9-179:46
+184            android:name="com.winningticketproject.in.Stripe_GetWay.Stripe_Main_Page"
+184-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:177:13-59
+185            android:screenOrientation="portrait"
+185-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:178:13-49
+186            android:theme="@style/NoTitle" />
+186-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:179:13-43
+187        <activity
+187-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:180:9-183:46
+188            android:name="com.winningticketproject.in.EventTab.NewEventDetailPage"
+188-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:181:13-56
+189            android:screenOrientation="portrait"
+189-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:182:13-49
+190            android:theme="@style/NoTitle" />
+190-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:183:13-43
+191        <activity
+191-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:184:9-188:63
+192            android:name="com.winningticketproject.in.SignInSingup.Login_Screen"
+192-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:185:13-54
+193            android:screenOrientation="portrait"
+193-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:186:13-49
+194            android:theme="@style/NoTitle"
+194-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:187:13-43
+195            android:windowSoftInputMode="stateAlwaysHidden" />
+195-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:188:13-60
+196        <activity
+196-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:189:9-192:46
+197            android:name="com.winningticketproject.in.SignInSingup.Registration_form"
+197-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:190:13-59
+198            android:screenOrientation="portrait"
+198-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:191:13-49
+199            android:theme="@style/NoTitle" />
+199-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:192:13-43
+200        <activity
+200-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:193:9-196:46
+201            android:name="com.winningticketproject.in.CourseTab.Course_Detail_Page"
+201-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:194:13-57
+202            android:screenOrientation="portrait"
+202-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:195:13-49
+203            android:theme="@style/NoTitle" />
+203-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:196:13-43
+204        <activity
+204-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:197:9-200:46
+205            android:name="com.winningticketproject.in.CourseTab.Course_Search_Page"
+205-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:198:13-57
+206            android:screenOrientation="portrait"
+206-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:199:13-49
+207            android:theme="@style/NoTitle" />
+207-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:200:13-43
+208        <activity
+208-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:202:9-205:46
+209            android:name="com.winningticketproject.in.Live_Score_New_Flow.View_course_map"
+209-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:203:13-64
+210            android:screenOrientation="portrait"
+210-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:204:13-49
+211            android:theme="@style/NoTitle" />
+211-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:205:13-43
+212        <activity
+212-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:207:9-217:20
+213            android:name="com.winningticketproject.in.SignInSingup.Splash_screen"
+213-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:208:13-55
+214            android:launchMode="standard"
+214-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:209:13-42
+215            android:screenOrientation="portrait"
+215-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:210:13-49
+216            android:theme="@style/SplashTheme" >
+216-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:211:13-47
+217            <intent-filter>
+217-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:212:13-216:29
+218                <action android:name="android.intent.action.MAIN" />
+218-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:213:17-69
+218-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:213:25-66
+219
+220                <category android:name="android.intent.category.LAUNCHER" />
+220-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:215:17-77
+220-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:215:27-74
+221            </intent-filter>
+222        </activity>
+223        <activity
+223-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:218:9-221:46
+224            android:name="com.winningticketproject.in.MyAccountTab.SubcriptionInAppPurchase"
+224-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:219:13-66
+225            android:screenOrientation="portrait"
+225-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:220:13-49
+226            android:theme="@style/NoTitle" />
+226-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:221:13-43
+227
+228        <service
+228-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:223:9-231:19
+229            android:name="com.winningticketproject.in.AppInfo.MyAndroidFirebaseMsgService"
+229-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:224:13-64
+230            android:enabled="true"
+230-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:225:13-35
+231            android:exported="true" >
+231-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:226:13-36
+232            <intent-filter>
+232-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:227:13-230:29
+233                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+233-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:228:17-78
+233-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:228:25-75
+234                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+234-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:229:17-84
+234-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:229:25-81
+235            </intent-filter>
+236        </service>
+237        <service android:name="com.winningticketproject.in.AppInfo.MyFirebaseInstanceIdService" >
+237-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:232:9-236:19
+237-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:232:18-69
+238            <intent-filter>
+238-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:233:13-235:29
+239                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+239-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:234:17-80
+239-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:234:25-77
+240            </intent-filter>
+241        </service>
+242
+243        <meta-data
+243-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:238:9-240:62
+244            android:name="com.google.firebase.messaging.default_notification_icon"
+244-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:239:13-83
+245            android:resource="@drawable/notification_icon" />
+245-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:240:13-59
+246        <meta-data
+246-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:241:9-243:52
+247            android:name="com.google.firebase.messaging.default_notification_color"
+247-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:242:13-84
+248            android:resource="@color/colorblack" />
+248-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:243:13-49
+249
+250        <activity
+250-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:245:9-248:46
+251            android:name="com.winningticketproject.in.CourseTab.Courses_list_flow"
+251-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:246:13-56
+252            android:screenOrientation="portrait"
+252-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:247:13-49
+253            android:theme="@style/NoTitle" />
+253-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:248:13-43
+254        <!-- <activity -->
+255        <!-- android:name=".SignInSingup.NewBefore_login" -->
+256        <!-- android:screenOrientation="portrait" -->
+257        <!-- android:theme="@style/before_login" /> -->
+258        <activity
+258-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:253:9-256:46
+259            android:name="com.winningticketproject.in.EventPurchase.Checkout_Page"
+259-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:254:13-56
+260            android:screenOrientation="portrait"
+260-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:255:13-49
+261            android:theme="@style/NoTitle" />
+261-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:256:13-43
+262        <activity
+262-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:257:9-260:46
+263            android:name="com.winningticketproject.in.EventTab.Purchage_Winning_Ticket"
+263-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:258:13-61
+264            android:screenOrientation="portrait"
+264-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:259:13-49
+265            android:theme="@style/NoTitle" />
+265-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:260:13-43
+266        <activity
+266-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:261:9-264:46
+267            android:name="com.winningticketproject.in.EventTab.Order_Preview"
+267-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:262:13-51
+268            android:screenOrientation="portrait"
+268-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:263:13-49
+269            android:theme="@style/NoTitle" />
+269-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:264:13-43
+270        <activity
+270-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:265:9-269:55
+271            android:name="com.winningticketproject.in.MyAccountTab.Add_Funds"
+271-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:266:13-51
+272            android:screenOrientation="portrait"
+272-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:267:13-49
+273            android:theme="@style/NoTitle"
+273-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:268:13-43
+274            android:windowSoftInputMode="adjustPan" />
+274-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:269:13-52
+275        <activity
+275-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:270:9-273:46
+276            android:name="com.winningticketproject.in.MyAccountTab.Donate_Funds"
+276-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:271:13-54
+277            android:screenOrientation="portrait"
+277-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:272:13-49
+278            android:theme="@style/NoTitle" />
+278-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:273:13-43
+279        <activity
+279-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:274:9-277:46
+280            android:name="com.winningticketproject.in.MyAccountTab.Transaction_History"
+280-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:275:13-61
+281            android:screenOrientation="portrait"
+281-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:276:13-49
+282            android:theme="@style/NoTitle" />
+282-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:277:13-43
+283        <activity
+283-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:278:9-281:46
+284            android:name="com.winningticketproject.in.MyAccountTab.WIthdrawal"
+284-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:279:13-52
+285            android:screenOrientation="portrait"
+285-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:280:13-49
+286            android:theme="@style/NoTitle" />
+286-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:281:13-43
+287        <activity
+287-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:282:9-285:46
+288            android:name="com.winningticketproject.in.MyAccountTab.EditAccount_Details"
+288-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:283:13-61
+289            android:screenOrientation="portrait"
+289-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:284:13-49
+290            android:theme="@style/NoTitle" />
+290-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:285:13-43
+291        <activity
+291-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:286:9-289:46
+292            android:name="com.winningticketproject.in.MyAccountTab.Contact_us"
+292-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:287:13-52
+293            android:screenOrientation="portrait"
+293-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:288:13-49
+294            android:theme="@style/NoTitle" />
+294-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:289:13-43
+295        <activity
+295-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:290:9-293:46
+296            android:name="com.winningticketproject.in.MyAccountTab.Notification_Settings"
+296-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:291:13-63
+297            android:screenOrientation="portrait"
+297-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:292:13-49
+298            android:theme="@style/NoTitle" />
+298-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:293:13-43
+299        <activity
+299-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:294:9-297:46
+300            android:name="com.winningticketproject.in.MyAccountTab.About_Us"
+300-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:295:13-50
+301            android:screenOrientation="portrait"
+301-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:296:13-49
+302            android:theme="@style/NoTitle" />
+302-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:297:13-43
+303        <activity
+303-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:298:9-301:46
+304            android:name="com.winningticketproject.in.MyAccountTab.Change_Password"
+304-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:299:13-57
+305            android:screenOrientation="portrait"
+305-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:300:13-49
+306            android:theme="@style/NoTitle" />
+306-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:301:13-43
+307        <activity
+307-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:302:9-305:46
+308            android:name="com.winningticketproject.in.AffiliatorModel.Affiliate_sign_up"
+308-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:303:13-62
+309            android:screenOrientation="portrait"
+309-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:304:13-49
+310            android:theme="@style/NoTitle" />
+310-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:305:13-43
+311        <activity
+311-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:306:9-309:46
+312            android:name="com.winningticketproject.in.SignInSingup.DeepLinkLogin"
+312-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:307:13-55
+313            android:screenOrientation="portrait"
+313-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:308:13-49
+314            android:theme="@style/NoTitle" />
+314-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:309:13-43
+315        <activity
+315-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:310:9-327:20
+316            android:name="com.winningticketproject.in.AuctionModel.LiveAction_Items"
+316-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:311:13-58
+317            android:screenOrientation="portrait"
+317-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:312:13-49
+318            android:theme="@style/NoTitle" >
+318-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:313:13-43
+319
+320            <!-- <tools:validation testUrl="https://www.winningticket.com/auction_item/" /> -->
+321
+322
+323            <!-- <intent-filter> -->
+324            <!-- <action android:name="android.intent.action.VIEW" /> -->
+325
+326
+327            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+328            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+329
+330
+331            <!-- <data -->
+332            <!-- android:host="www.winningticket.com" -->
+333            <!-- android:pathPrefix="/auction_item/" -->
+334            <!-- android:scheme="https" /> -->
+335            <!-- </intent-filter> -->
+336        </activity>
+337        <activity
+337-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:328:9-345:20
+338            android:name="com.winningticketproject.in.AuctionModel.Live_Auction"
+338-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:329:13-54
+339            android:screenOrientation="portrait"
+339-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:330:13-49
+340            android:theme="@style/NoTitle" >
+340-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:331:13-43
+341
+342            <!-- <tools:validation testUrl="https://www.winningticket.com/auction_list/" /> -->
+343
+344
+345            <!-- <intent-filter> -->
+346            <!-- <action android:name="android.intent.action.VIEW" /> -->
+347
+348
+349            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+350            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+351
+352
+353            <!-- <data -->
+354            <!-- android:host="www.winningticket.com" -->
+355            <!-- android:pathPrefix="/auction_list/" -->
+356            <!-- android:scheme="https" /> -->
+357            <!-- </intent-filter> -->
+358        </activity>
+359
+360        <provider
+360-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:347:9-355:20
+361            android:name="android.support.v4.content.FileProvider"
+361-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:348:13-67
+362            android:authorities="com.winningticketproject.in.fileprovider"
+362-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:349:13-75
+363            android:exported="false"
+363-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:350:13-37
+364            android:grantUriPermissions="true" >
+364-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:351:13-47
+365            <meta-data
+365-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:352:13-354:53
+366                android:name="android.support.FILE_PROVIDER_PATHS"
+366-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:353:17-67
+367                android:resource="@xml/file_path" />
+367-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:354:17-50
+368        </provider>
+369
+370        <activity
+370-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:357:9-360:46
+371            android:name="com.winningticketproject.in.AuctionModel.Bidding_History"
+371-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:358:13-57
+372            android:screenOrientation="portrait"
+372-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:359:13-49
+373            android:theme="@style/NoTitle" />
+373-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:360:13-43
+374        <activity
+374-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:361:9-364:46
+375            android:name="com.winningticketproject.in.AffiliatorModel.Bottom_Tabs_For_afffiliate"
+375-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:362:13-71
+376            android:screenOrientation="portrait"
+376-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:363:13-49
+377            android:theme="@style/NoTitle" />
+377-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:364:13-43
+378        <activity
+378-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:365:9-368:46
+379            android:name="com.winningticketproject.in.AffiliatorModel.Referral_Details"
+379-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:366:13-61
+380            android:screenOrientation="portrait"
+380-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:367:13-49
+381            android:theme="@style/NoTitle" />
+381-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:368:13-43
+382        <activity
+382-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:369:9-372:46
+383            android:name="com.winningticketproject.in.AffiliatorModel.EditReferal_list"
+383-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:370:13-61
+384            android:screenOrientation="portrait"
+384-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:371:13-49
+385            android:theme="@style/NoTitle" />
+385-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:372:13-43
+386        <activity
+386-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:373:9-376:46
+387            android:name="com.winningticketproject.in.AffiliatorModel.Add_Referral_list"
+387-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:374:13-62
+388            android:screenOrientation="portrait"
+388-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:375:13-49
+389            android:theme="@style/NoTitle" />
+389-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:376:13-43
+390        <activity
+390-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:377:9-380:46
+391            android:name="com.winningticketproject.in.AffiliatorModel.Search_affiliate_list"
+391-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:378:13-66
+392            android:screenOrientation="portrait"
+392-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:379:13-49
+393            android:theme="@style/NoTitle" />
+393-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:380:13-43
+394        <activity
+394-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:381:9-384:46
+395            android:name="com.winningticketproject.in.EventPurchase.ExtraTickets"
+395-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:382:13-55
+396            android:screenOrientation="portrait"
+396-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:383:13-49
+397            android:theme="@style/NoTitle" />
+397-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:384:13-43
+398        <activity
+398-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:385:9-388:46
+399            android:name="com.winningticketproject.in.MyAccountTab.How_it_works"
+399-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:386:13-54
+400            android:screenOrientation="portrait"
+400-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:387:13-49
+401            android:theme="@style/NoTitle" />
+401-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:388:13-43
+402        <activity
+402-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:389:9-392:46
+403            android:name="com.winningticketproject.in.EventTab.Event_Code_valid"
+403-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:390:13-54
+404            android:screenOrientation="portrait"
+404-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:391:13-49
+405            android:theme="@style/NoTitle" />
+405-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:392:13-43
+406        <activity
+406-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:393:9-396:46
+407            android:name="com.winningticketproject.in.AffiliatorModel.Edit_Referral_Details"
+407-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:394:13-66
+408            android:screenOrientation="portrait"
+408-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:395:13-49
+409            android:theme="@style/NoTitle" />
+409-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:396:13-43
+410        <activity
+410-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:397:9-400:46
+411            android:name="com.winningticketproject.in.AffiliatorModel.Afiliate_Filter"
+411-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:398:13-60
+412            android:screenOrientation="portrait"
+412-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:399:13-49
+413            android:theme="@style/NoTitle" />
+413-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:400:13-43
+414        <activity
+414-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:401:9-404:46
+415            android:name="com.winningticketproject.in.MyAccountTab.Profile_Image"
+415-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:402:13-55
+416            android:screenOrientation="portrait"
+416-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:403:13-49
+417            android:theme="@style/NoTitle" />
+417-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:404:13-43
+418        <activity
+418-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:405:9-408:46
+419            android:name="com.winningticketproject.in.EventTab.View_All_Events"
+419-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:406:13-53
+420            android:screenOrientation="portrait"
+420-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:407:13-49
+421            android:theme="@style/toolbar" />
+421-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:408:13-43
+422        <activity
+422-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:409:9-412:46
+423            android:name="com.winningticketproject.in.EventTab.Filter_List"
+423-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:410:13-49
+424            android:screenOrientation="portrait"
+424-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:411:13-49
+425            android:theme="@style/NoTitle" />
+425-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:412:13-43
+426        <activity
+426-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:413:9-416:46
+427            android:name="com.winningticketproject.in.AffiliatorModel.Afiliate_Referal_List"
+427-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:414:13-66
+428            android:screenOrientation="portrait"
+428-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:415:13-49
+429            android:theme="@style/NoTitle" />
+429-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:416:13-43
+430        <activity
+430-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:417:9-420:46
+431            android:name="com.winningticketproject.in.AuctionModel.LiveAuction_purchaseCheckout"
+431-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:418:13-70
+432            android:screenOrientation="portrait"
+432-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:419:13-49
+433            android:theme="@style/NoTitle" />
+433-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:420:13-43
+434        <activity
+434-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:421:9-424:46
+435            android:name="com.winningticketproject.in.IndividulaGameType.Location_Services"
+435-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:422:13-65
+436            android:screenOrientation="portrait"
+436-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:423:13-49
+437            android:theme="@style/NoTitle" />
+437-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:424:13-43
+438        <activity
+438-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:425:9-428:46
+439            android:name="com.winningticketproject.in.IndividulaGameType.AddScoresToScorecard"
+439-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:426:13-68
+440            android:screenOrientation="portrait"
+440-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:427:13-49
+441            android:theme="@style/NoTitle" />
+441-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:428:13-43
+442
+443        <meta-data
+443-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:430:9-432:67
+444            android:name="android.app.default_searchable"
+444-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:431:13-58
+445            android:value="com.apkgetter.SearchResultsActivity" />
+445-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:432:13-64
+446        <meta-data
+446-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:433:9-435:69
+447            android:name="com.google.android.gms.version"
+447-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:434:13-58
+448            android:value="@integer/google_play_services_version" />
+448-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:435:13-66
+449        <meta-data
+449-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:436:9-438:47
+450            android:name="com.google.android.maps.v2.API_KEY"
+450-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:437:13-62
+451            android:value="@string/map_key" />
+451-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:438:13-44
+452        <meta-data
+452-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:439:9-441:37
+453            android:name="firebase_crashlytics_collection_enabled"
+453-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:440:13-67
+454            android:value="false" />
+454-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:441:13-34
+455        <meta-data
+455-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:442:9-444:36
+456            android:name="firebase_performance_logcat_enabled"
+456-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:443:13-63
+457            android:value="true" />
+457-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:444:13-33
+458
+459        <activity
+459-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:446:9-449:46
+460            android:name="com.winningticketproject.in.MyAccountTab.Transaction_histrory_Details"
+460-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:447:13-70
+461            android:screenOrientation="portrait"
+461-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:448:13-49
+462            android:theme="@style/NoTitle" />
+462-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:449:13-43
+463        <activity
+463-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:450:9-453:46
+464            android:name="com.winningticketproject.in.EventTab.Score_board_new"
+464-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:451:13-53
+465            android:screenOrientation="portrait"
+465-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:452:13-49
+466            android:theme="@style/NoTitle" />
+466-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:453:13-43
+467        <activity
+467-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:454:9-457:46
+468            android:name="com.winningticketproject.in.EventTab.Virtual_gift_bag"
+468-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:455:13-54
+469            android:screenOrientation="portrait"
+469-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:456:13-49
+470            android:theme="@style/NoTitle" />
+470-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:457:13-43
+471        <activity
+471-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:458:9-461:46
+472            android:name="com.winningticketproject.in.EventTab.Virtual_bag_details"
+472-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:459:13-57
+473            android:screenOrientation="portrait"
+473-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:460:13-49
+474            android:theme="@style/NoTitle" />
+474-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:461:13-43
+475        <activity
+475-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:462:9-465:46
+476            android:name="com.winningticketproject.in.EventPurchase.Winning_ticket_detail"
+476-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:463:13-64
+477            android:screenOrientation="portrait"
+477-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:464:13-49
+478            android:theme="@style/NoTitle" />
+478-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:465:13-43
+479        <activity
+479-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:466:9-469:46
+480            android:name="com.winningticketproject.in.Activity.Select_hole"
+480-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:467:13-49
+481            android:screenOrientation="portrait"
+481-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:468:13-49
+482            android:theme="@style/NoTitle" />
+482-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:469:13-43
+483        <activity
+483-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:470:9-473:46
+484            android:name="com.winningticketproject.in.IndividulaGameType.Individul_play_course_list"
+484-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:471:13-74
+485            android:screenOrientation="portrait"
+485-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:472:13-49
+486            android:theme="@style/NoTitle" />
+486-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:473:13-43
+487        <activity
+487-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:474:9-477:46
+488            android:name="com.winningticketproject.in.IndividulaGameType.Grass_score_Update_from_Map"
+488-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:475:13-75
+489            android:screenOrientation="portrait"
+489-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:476:13-49
+490            android:theme="@style/NoTitle" />
+490-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:477:13-43
+491        <activity
+491-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:478:9-481:46
+492            android:name="com.winningticketproject.in.Activity.Select_tree"
+492-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:479:13-49
+493            android:screenOrientation="portrait"
+493-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:480:13-49
+494            android:theme="@style/NoTitle" />
+494-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:481:13-43
+495        <activity
+495-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:482:9-485:46
+496            android:name="com.winningticketproject.in.ChatWithOther.User_List"
+496-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:483:13-52
+497            android:screenOrientation="portrait"
+497-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:484:13-49
+498            android:theme="@style/NoTitle" />
+498-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:485:13-43
+499        <activity
+499-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:486:9-489:46
+500            android:name="com.winningticketproject.in.ChatWithOther.Chat_With_Other"
+500-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:487:13-58
+501            android:screenOrientation="portrait"
+501-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:488:13-49
+502            android:theme="@style/NoTitle" />
+502-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:489:13-43
+503        <activity
+503-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:490:9-493:46
+504            android:name="com.winningticketproject.in.Shamble_flow.Shamble_Player_list_activity"
+504-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:491:13-70
+505            android:screenOrientation="portrait"
+505-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:492:13-49
+506            android:theme="@style/NoTitle" />
+506-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:493:13-43
+507        <activity
+507-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:494:9-497:46
+508            android:name="com.winningticketproject.in.Shamble_flow.Shamble_Bestball_Map_GS_activity"
+508-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:495:13-74
+509            android:screenOrientation="portrait"
+509-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:496:13-49
+510            android:theme="@style/NoTitle" />
+510-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:497:13-43
+511        <activity
+511-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:498:9-501:46
+512            android:name="com.winningticketproject.in.Player_stats.graphExample"
+512-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:499:13-54
+513            android:screenOrientation="portrait"
+513-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:500:13-49
+514            android:theme="@style/NoTitle" />
+514-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:501:13-43
+515        <activity
+515-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:502:9-505:46
+516            android:name="com.winningticketproject.in.Player_stats.BarChartActivity"
+516-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:503:13-58
+517            android:screenOrientation="portrait"
+517-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:504:13-49
+518            android:theme="@style/NoTitle" />
+518-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:505:13-43
+519        <activity
+519-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:506:9-509:46
+520            android:name="com.winningticketproject.in.Player_stats.pieChart1"
+520-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:507:13-51
+521            android:screenOrientation="portrait"
+521-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:508:13-49
+522            android:theme="@style/NoTitle" />
+522-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:509:13-43
+523        <activity
+523-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:510:9-513:46
+524            android:name="com.winningticketproject.in.Player_stats.pieChart2"
+524-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:511:13-51
+525            android:screenOrientation="portrait"
+525-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:512:13-49
+526            android:theme="@style/NoTitle" />
+526-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:513:13-43
+527        <activity
+527-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:514:9-517:46
+528            android:name="com.winningticketproject.in.Player_stats.pieChart3"
+528-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:515:13-51
+529            android:screenOrientation="portrait"
+529-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:516:13-49
+530            android:theme="@style/NoTitle" />
+530-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:517:13-43
+531
+532        <service
+532-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:519:9-521:40
+533            android:name="com.winningticketproject.in.AppInfo.GPSTracker"
+533-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:520:13-47
+534            android:exported="false" />
+534-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:521:13-37
+535
+536        <activity
+536-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:12:9-15:58
+537            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+537-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:13:13-76
+538            android:theme="@style/StripeDefaultTheme"
+538-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:14:13-54
+539            android:windowSoftInputMode="stateVisible" />
+539-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:15:13-55
+540        <activity
+540-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:16:9-18:57
+541            android:name="com.stripe.android.view.PaymentMethodsActivity"
+541-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:17:13-74
+542            android:theme="@style/StripeDefaultTheme" />
+542-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:18:13-54
+543        <activity
+543-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:19:9-21:57
+544            android:name="com.stripe.android.view.PaymentFlowActivity"
+544-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:20:13-71
+545            android:theme="@style/StripeDefaultTheme" />
+545-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:21:13-54
+546        <activity
+546-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:22:9-24:57
+547            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+547-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:23:13-78
+548            android:theme="@style/StripeDefaultTheme" />
+548-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:24:13-54
+549        <activity
+549-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:25:9-27:57
+550            android:name="com.stripe.android.view.PaymentRelayActivity"
+550-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:26:13-72
+551            android:theme="@style/StripeDefaultTheme" />
+551-->[com.stripe:stripe-android:9.3.5] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/b4cec128ba2f4d0dcb402006d8498c5a/stripe-android-9.3.5/AndroidManifest.xml:27:13-54
+552        <activity
+552-->[com.stripe:stripe-3ds2-android:0.0.17] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/02f0763c07754c7c4d002c04be30976c/stripe-3ds2-android-0.0.17/AndroidManifest.xml:12:9-14:52
+553            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+553-->[com.stripe:stripe-3ds2-android:0.0.17] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/02f0763c07754c7c4d002c04be30976c/stripe-3ds2-android-0.0.17/AndroidManifest.xml:13:13-81
+554            android:theme="@style/Theme.Default" />
+554-->[com.stripe:stripe-3ds2-android:0.0.17] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/02f0763c07754c7c4d002c04be30976c/stripe-3ds2-android-0.0.17/AndroidManifest.xml:14:13-49
+555        <activity
+555-->[com.stripe:stripe-3ds2-android:0.0.17] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/02f0763c07754c7c4d002c04be30976c/stripe-3ds2-android-0.0.17/AndroidManifest.xml:15:9-17:52
+556            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressDialogActivity"
+556-->[com.stripe:stripe-3ds2-android:0.0.17] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/02f0763c07754c7c4d002c04be30976c/stripe-3ds2-android-0.0.17/AndroidManifest.xml:16:13-95
+557            android:theme="@style/Theme.Default" />
+557-->[com.stripe:stripe-3ds2-android:0.0.17] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/02f0763c07754c7c4d002c04be30976c/stripe-3ds2-android-0.0.17/AndroidManifest.xml:17:13-49
+558
+559        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+559-->[com.google.android.gms:play-services-cast-framework:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/91ed66b52fd32d06f7a4614c0328c2fc/play-services-cast-framework-11.0.0/AndroidManifest.xml:5:9-99
+559-->[com.google.android.gms:play-services-cast-framework:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/91ed66b52fd32d06f7a4614c0328c2fc/play-services-cast-framework-11.0.0/AndroidManifest.xml:5:19-97
+560
+561        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+561-->[com.google.android.gms:play-services-cast-framework:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/91ed66b52fd32d06f7a4614c0328c2fc/play-services-cast-framework-11.0.0/AndroidManifest.xml:6:9-103
+561-->[com.google.android.gms:play-services-cast-framework:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/91ed66b52fd32d06f7a4614c0328c2fc/play-services-cast-framework-11.0.0/AndroidManifest.xml:6:18-101
+562        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+562-->[com.google.android.gms:play-services-cast-framework:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/91ed66b52fd32d06f7a4614c0328c2fc/play-services-cast-framework-11.0.0/AndroidManifest.xml:7:9-92
+562-->[com.google.android.gms:play-services-cast-framework:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/91ed66b52fd32d06f7a4614c0328c2fc/play-services-cast-framework-11.0.0/AndroidManifest.xml:7:18-90
+563        <!--
+564 FirebaseMessagingService performs security checks at runtime,
+565             no need for explicit permissions despite exported="true"
+566        -->
+567        <service
+567-->[com.google.firebase:firebase-messaging:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d2576bbc62eae85a086448b394513464/firebase-messaging-11.0.0/AndroidManifest.xml:23:9-27:19
+568            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+568-->[com.google.firebase:firebase-messaging:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d2576bbc62eae85a086448b394513464/firebase-messaging-11.0.0/AndroidManifest.xml:23:18-87
+569            android:exported="true" >
+569-->[com.google.firebase:firebase-messaging:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d2576bbc62eae85a086448b394513464/firebase-messaging-11.0.0/AndroidManifest.xml:23:88-111
+570            <intent-filter android:priority="-500" >
+570-->[com.google.firebase:firebase-messaging:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d2576bbc62eae85a086448b394513464/firebase-messaging-11.0.0/AndroidManifest.xml:24:13-26:29
+570-->[com.google.firebase:firebase-messaging:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d2576bbc62eae85a086448b394513464/firebase-messaging-11.0.0/AndroidManifest.xml:24:28-51
+571                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+571-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:228:17-78
+571-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:228:25-75
+572            </intent-filter>
+573        </service>
+574
+575        <provider
+575-->[com.google.firebase:firebase-perf:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5220e5369edce9f9c791c66cadf0b9b6/firebase-perf-11.0.0/AndroidManifest.xml:24:9-199
+576            android:name="com.google.firebase.perf.provider.FirebasePerfProvider"
+576-->[com.google.firebase:firebase-perf:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5220e5369edce9f9c791c66cadf0b9b6/firebase-perf-11.0.0/AndroidManifest.xml:24:79-148
+577            android:authorities="com.winningticketproject.in.firebaseperfprovider"
+577-->[com.google.firebase:firebase-perf:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5220e5369edce9f9c791c66cadf0b9b6/firebase-perf-11.0.0/AndroidManifest.xml:24:19-78
+578            android:exported="false"
+578-->[com.google.firebase:firebase-perf:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5220e5369edce9f9c791c66cadf0b9b6/firebase-perf-11.0.0/AndroidManifest.xml:24:149-173
+579            android:initOrder="101" />
+579-->[com.google.firebase:firebase-perf:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5220e5369edce9f9c791c66cadf0b9b6/firebase-perf-11.0.0/AndroidManifest.xml:24:174-197
+580
+581        <activity
+581-->[com.google.android.gms:play-services-appinvite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/589c6e07146e64f864ef69780b5d8c47/play-services-appinvite-11.0.0/AndroidManifest.xml:20:9-25:20
+582            android:name="com.google.android.gms.appinvite.PreviewActivity"
+582-->[com.google.android.gms:play-services-appinvite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/589c6e07146e64f864ef69780b5d8c47/play-services-appinvite-11.0.0/AndroidManifest.xml:20:19-50
+583            android:exported="true"
+583-->[com.google.android.gms:play-services-appinvite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/589c6e07146e64f864ef69780b5d8c47/play-services-appinvite-11.0.0/AndroidManifest.xml:20:51-74
+584            android:theme="@style/Theme.AppInvite.Preview" >
+584-->[com.google.android.gms:play-services-appinvite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/589c6e07146e64f864ef69780b5d8c47/play-services-appinvite-11.0.0/AndroidManifest.xml:20:75-121
+585            <intent-filter>
+585-->[com.google.android.gms:play-services-appinvite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/589c6e07146e64f864ef69780b5d8c47/play-services-appinvite-11.0.0/AndroidManifest.xml:21:13-24:29
+586                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+586-->[com.google.android.gms:play-services-appinvite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/589c6e07146e64f864ef69780b5d8c47/play-services-appinvite-11.0.0/AndroidManifest.xml:22:17-89
+586-->[com.google.android.gms:play-services-appinvite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/589c6e07146e64f864ef69780b5d8c47/play-services-appinvite-11.0.0/AndroidManifest.xml:22:25-87
+587
+588                <category android:name="android.intent.category.DEFAULT" />
+588-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:74:17-76
+588-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:74:27-73
+589            </intent-filter>
+590        </activity>
+591        <activity
+591-->[com.google.android.gms:play-services-auth:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f5d44b8bdfd8fa9292c2aaf8289d1be5/play-services-auth-11.0.0/AndroidManifest.xml:20:9-189
+592            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+592-->[com.google.android.gms:play-services-auth:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f5d44b8bdfd8fa9292c2aaf8289d1be5/play-services-auth-11.0.0/AndroidManifest.xml:20:19-68
+593            android:excludeFromRecents="true"
+593-->[com.google.android.gms:play-services-auth:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f5d44b8bdfd8fa9292c2aaf8289d1be5/play-services-auth-11.0.0/AndroidManifest.xml:20:129-162
+594            android:exported="false"
+594-->[com.google.android.gms:play-services-auth:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f5d44b8bdfd8fa9292c2aaf8289d1be5/play-services-auth-11.0.0/AndroidManifest.xml:20:163-187
+595            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+595-->[com.google.android.gms:play-services-auth:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f5d44b8bdfd8fa9292c2aaf8289d1be5/play-services-auth-11.0.0/AndroidManifest.xml:20:69-128
+596        <!--
+597Service handling Google Sign-In user revocation. For apps that do not integrate with
+598            Google Sign-In, this service will never be started.
+599        -->
+600        <service
+600-->[com.google.android.gms:play-services-auth:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f5d44b8bdfd8fa9292c2aaf8289d1be5/play-services-auth-11.0.0/AndroidManifest.xml:24:9-184
+601            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+601-->[com.google.android.gms:play-services-auth:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f5d44b8bdfd8fa9292c2aaf8289d1be5/play-services-auth-11.0.0/AndroidManifest.xml:24:18-63
+602            android:exported="true"
+602-->[com.google.android.gms:play-services-auth:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f5d44b8bdfd8fa9292c2aaf8289d1be5/play-services-auth-11.0.0/AndroidManifest.xml:24:64-87
+603            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+603-->[com.google.android.gms:play-services-auth:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f5d44b8bdfd8fa9292c2aaf8289d1be5/play-services-auth-11.0.0/AndroidManifest.xml:24:88-182
+604
+605        <activity
+605-->[com.google.android.gms:play-services-base:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f346eb081157cfc69267fdfbd2a65b08/play-services-base-11.0.0/AndroidManifest.xml:19:9-172
+606            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+606-->[com.google.android.gms:play-services-base:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f346eb081157cfc69267fdfbd2a65b08/play-services-base-11.0.0/AndroidManifest.xml:19:19-85
+607            android:exported="false"
+607-->[com.google.android.gms:play-services-base:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f346eb081157cfc69267fdfbd2a65b08/play-services-base-11.0.0/AndroidManifest.xml:19:146-170
+608            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+608-->[com.google.android.gms:play-services-base:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/f346eb081157cfc69267fdfbd2a65b08/play-services-base-11.0.0/AndroidManifest.xml:19:86-145
+609
+610        <service
+610-->[com.google.android.gms:play-services-tagmanager-api:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/025f138dc1a51ce16d7525b95495f4e3/play-services-tagmanager-api-11.0.0/AndroidManifest.xml:24:9-134
+611            android:name="com.google.android.gms.tagmanager.TagManagerService"
+611-->[com.google.android.gms:play-services-tagmanager-api:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/025f138dc1a51ce16d7525b95495f4e3/play-services-tagmanager-api-11.0.0/AndroidManifest.xml:24:18-84
+612            android:enabled="true"
+612-->[com.google.android.gms:play-services-tagmanager-api:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/025f138dc1a51ce16d7525b95495f4e3/play-services-tagmanager-api-11.0.0/AndroidManifest.xml:24:110-132
+613            android:exported="false" />
+613-->[com.google.android.gms:play-services-tagmanager-api:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/025f138dc1a51ce16d7525b95495f4e3/play-services-tagmanager-api-11.0.0/AndroidManifest.xml:24:85-109
+614
+615        <activity
+615-->[com.google.android.gms:play-services-tagmanager-api:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/025f138dc1a51ce16d7525b95495f4e3/play-services-tagmanager-api-11.0.0/AndroidManifest.xml:25:9-32:20
+616            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+616-->[com.google.android.gms:play-services-tagmanager-api:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/025f138dc1a51ce16d7525b95495f4e3/play-services-tagmanager-api-11.0.0/AndroidManifest.xml:25:19-93
+617            android:exported="true"
+617-->[com.google.android.gms:play-services-tagmanager-api:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/025f138dc1a51ce16d7525b95495f4e3/play-services-tagmanager-api-11.0.0/AndroidManifest.xml:25:94-117
+618            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+618-->[com.google.android.gms:play-services-tagmanager-api:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/025f138dc1a51ce16d7525b95495f4e3/play-services-tagmanager-api-11.0.0/AndroidManifest.xml:25:118-142
+619            <intent-filter>
+619-->[com.google.android.gms:play-services-tagmanager-api:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/025f138dc1a51ce16d7525b95495f4e3/play-services-tagmanager-api-11.0.0/AndroidManifest.xml:26:13-31:29
+620                <data android:scheme="tagmanager.c.com.winningticketproject.in" />
+620-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:77:17-80:59
+620-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:79:21-43
+621
+622                <action android:name="android.intent.action.VIEW" />
+622-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:72:17-69
+622-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:72:25-66
+623
+624                <category android:name="android.intent.category.DEFAULT" />
+624-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:74:17-76
+624-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:74:27-73
+625                <category android:name="android.intent.category.BROWSABLE" />
+625-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:75:17-78
+625-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:75:27-75
+626            </intent-filter>
+627        </activity>
+628
+629        <receiver
+629-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:25:7-26:18
+630            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+630-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:25:17-89
+631            android:enabled="true"
+631-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:25:90-112
+632            android:exported="false" >
+632-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:25:113-137
+633        </receiver>
+634        <receiver
+634-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:27:7-31:18
+635            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+635-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:27:17-104
+636            android:enabled="true"
+636-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:27:162-184
+637            android:exported="true"
+637-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:27:185-208
+638            android:permission="android.permission.INSTALL_PACKAGES" >
+638-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:27:105-161
+639            <intent-filter>
+639-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:28:11-30:27
+640                <action android:name="com.android.vending.INSTALL_REFERRER" />
+640-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:29:15-76
+640-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:29:23-74
+641            </intent-filter>
+642        </receiver>
+643
+644        <service
+644-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:32:7-137
+645            android:name="com.google.android.gms.measurement.AppMeasurementService"
+645-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:32:16-87
+646            android:enabled="true"
+646-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:32:88-110
+647            android:exported="false" />
+647-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:32:111-135
+648        <service
+648-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:33:7-197
+649            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+649-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:33:16-90
+650            android:enabled="true"
+650-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:33:148-170
+651            android:exported="false"
+651-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:33:171-195
+652            android:permission="android.permission.BIND_JOB_SERVICE" />
+652-->[com.google.firebase:firebase-analytics:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/c5ef69b14b63bce1c8a44901f409dafe/firebase-analytics-11.0.0/AndroidManifest.xml:33:91-147
+653
+654        <receiver
+654-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:30:9-35:20
+655            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+655-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:30:19-84
+656            android:exported="true"
+656-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:30:85-108
+657            android:permission="com.google.android.c2dm.permission.SEND" >
+657-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:30:109-169
+658            <intent-filter>
+658-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:31:13-34:29
+659                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+659-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:32:17-80
+659-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:32:25-78
+660
+661                <category android:name="com.winningticketproject.in" />
+661-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:33:17-60
+661-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:33:27-58
+662            </intent-filter>
+663        </receiver>
+664        <!--
+665 Internal (not exported) receiver used by the app to start its own exported services
+666             without risk of being spoofed.
+667        -->
+668        <receiver
+668-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:39:9-119
+669            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+669-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:39:19-92
+670            android:exported="false" />
+670-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:39:93-117
+671        <!--
+672 FirebaseInstanceIdService performs security checks at runtime,
+673             no need for explicit permissions despite exported="true"
+674        -->
+675        <service
+675-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:43:9-47:19
+676            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+676-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:43:18-82
+677            android:exported="true" >
+677-->[com.google.firebase:firebase-iid:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/d8fc8d592dda8aaee1f3e54a58455ec9/firebase-iid-11.0.0/AndroidManifest.xml:43:83-106
+678            <intent-filter android:priority="-500" >
+678-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:233:13-235:29
+679                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+679-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:234:17-80
+679-->/home/rsl-10/RSL Project /winningtickete/app/src/main/AndroidManifest.xml:234:25-77
+680            </intent-filter>
+681        </service>
+682
+683        <provider
+683-->[com.google.firebase:firebase-common:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/bf75c8b216a78a94ce5c9fd05333b5d9/firebase-common-11.0.0/AndroidManifest.xml:6:9-194
+684            android:name="com.google.firebase.provider.FirebaseInitProvider"
+684-->[com.google.firebase:firebase-common:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/bf75c8b216a78a94ce5c9fd05333b5d9/firebase-common-11.0.0/AndroidManifest.xml:6:79-143
+685            android:authorities="com.winningticketproject.in.firebaseinitprovider"
+685-->[com.google.firebase:firebase-common:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/bf75c8b216a78a94ce5c9fd05333b5d9/firebase-common-11.0.0/AndroidManifest.xml:6:19-78
+686            android:exported="false"
+686-->[com.google.firebase:firebase-common:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/bf75c8b216a78a94ce5c9fd05333b5d9/firebase-common-11.0.0/AndroidManifest.xml:6:144-168
+687            android:initOrder="100" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+687-->[com.google.firebase:firebase-common:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/bf75c8b216a78a94ce5c9fd05333b5d9/firebase-common-11.0.0/AndroidManifest.xml:6:169-192
+688        <activity
+688-->[com.google.android.gms:play-services-ads-lite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/003acc7e4cfe32a506a4a486174e238b/play-services-ads-lite-11.0.0/AndroidManifest.xml:25:9-232
+689            android:name="com.google.android.gms.ads.AdActivity"
+689-->[com.google.android.gms:play-services-ads-lite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/003acc7e4cfe32a506a4a486174e238b/play-services-ads-lite-11.0.0/AndroidManifest.xml:25:19-71
+690            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+690-->[com.google.android.gms:play-services-ads-lite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/003acc7e4cfe32a506a4a486174e238b/play-services-ads-lite-11.0.0/AndroidManifest.xml:25:72-181
+691            android:theme="@android:style/Theme.Translucent" />
+691-->[com.google.android.gms:play-services-ads-lite:11.0.0] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/003acc7e4cfe32a506a4a486174e238b/play-services-ads-lite-11.0.0/AndroidManifest.xml:25:182-230
+692
+693        <provider
+693-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/ab19a4d4588c0f2762e4010a8bc9b260/crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+694            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+694-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/ab19a4d4588c0f2762e4010a8bc9b260/crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+695            android:authorities="com.winningticketproject.in.crashlyticsinitprovider"
+695-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/ab19a4d4588c0f2762e4010a8bc9b260/crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+696            android:exported="false"
+696-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/ab19a4d4588c0f2762e4010a8bc9b260/crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+697            android:initOrder="90" />
+697-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/ab19a4d4588c0f2762e4010a8bc9b260/crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+698
+699        <activity
+699-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:20:9-22:66
+700            android:name="io.card.payment.CardIOActivity"
+700-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:21:13-58
+701            android:configChanges="keyboardHidden|orientation" />
+701-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:22:13-63
+702        <activity android:name="io.card.payment.DataEntryActivity" />
+702-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:23:9-70
+702-->[io.card:android-sdk:5.5.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/9ee28caae85648534abc069db4f1a162/android-sdk-5.5.1/AndroidManifest.xml:23:19-67
+703
+704        <meta-data
+704-->[com.android.billingclient:billing:2.0.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5efee4f667682629b35a0a36aea60514/billing-2.0.1/AndroidManifest.xml:13:9-15:37
+705            android:name="com.google.android.play.billingclient.version"
+705-->[com.android.billingclient:billing:2.0.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5efee4f667682629b35a0a36aea60514/billing-2.0.1/AndroidManifest.xml:14:13-73
+706            android:value="2.0.1" />
+706-->[com.android.billingclient:billing:2.0.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5efee4f667682629b35a0a36aea60514/billing-2.0.1/AndroidManifest.xml:15:13-34
+707
+708        <activity
+708-->[com.android.billingclient:billing:2.0.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5efee4f667682629b35a0a36aea60514/billing-2.0.1/AndroidManifest.xml:17:9-20:75
+709            android:name="com.android.billingclient.api.ProxyBillingActivity"
+709-->[com.android.billingclient:billing:2.0.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5efee4f667682629b35a0a36aea60514/billing-2.0.1/AndroidManifest.xml:18:13-78
+710            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+710-->[com.android.billingclient:billing:2.0.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5efee4f667682629b35a0a36aea60514/billing-2.0.1/AndroidManifest.xml:19:13-96
+711            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+711-->[com.android.billingclient:billing:2.0.1] /home/rsl-10/.gradle/caches/transforms-2/files-2.1/5efee4f667682629b35a0a36aea60514/billing-2.0.1/AndroidManifest.xml:20:13-72
+712    </application>
+713
+714</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/pop_op_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_layout_bg">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/pop_up_title"
+            android:text="@string/place_bid"
+            android:layout_gravity="center"
+            android:padding="@dimen/txt_margin_lr"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/default_amoutn"
+            android:layout_gravity="center"
+            android:padding="@dimen/txt_margin_lr"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/colorblack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="@string/enter_amount"
+            android:layout_margin="@dimen/aboutus_padding"
+            android:inputType="numberDecimal"
+            android:focusableInTouchMode="true"
+            android:gravity="start"
+            android:id="@+id/bit_amount"
+            android:maxLength="9"
+            android:textSize="@dimen/edt_textsize"
+            android:padding="@dimen/edt_marg_right"
+            android:textColorHint="@color/coloraddreferal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorblack"
+            android:background="@drawable/editext_acountprofile"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/settings_padding"
+            android:paddingTop="0.5dp"
+            android:background="@color/colorgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:stateListAnimator="@null"
+                android:textSize="@dimen/btn_txt_size"
+                android:textColor="@color/colorbtn"
+                android:textAllCaps="false"
+                android:background="@color/colorwhite"
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel" />
+
+            <View
+                android:background="@color/colorgray"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:stateListAnimator="@null"
+                android:textSize="@dimen/btn_txt_size"
+                android:textAllCaps="false"
+                android:background="@color/colorwhite"
+                android:id="@+id/submit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/place_bid" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
