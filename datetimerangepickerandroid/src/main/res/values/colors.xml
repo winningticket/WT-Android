@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calendar_bg">#FFFFFF</color>
+    <color name="calendar_text_selected">#FFFFFF</color>
+    <color name="calendar_text_active">#2F2F2F</color>
+    <color name="calendar_text_unselectable">#66000000</color>
+    <color name="calendar_text_inactive">#00000000</color>
+    <color name="calendar_divider">#00000000</color>
+    <color name="calendar_title_bg">#FAFAFA</color>
+    <color name="calendar_text_title">#52575C</color>
+    <color name="calendar_text_day_header">#66000000</color>
+
+</resources>
